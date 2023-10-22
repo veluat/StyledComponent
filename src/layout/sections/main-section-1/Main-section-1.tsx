@@ -3,36 +3,38 @@ import {Icon} from "../../../components/icon/Icon";
 import section1 from '../../../assets/images/section-1.webp'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Title} from "../../../components/title/Title";
+import {ButtonPrimary} from "../../../components/button-primary/Button-primary";
+import {ButtonClear} from "../../../components/button-clear/Button-clear";
+import {PContent} from "../../../components/text-content/PContent"
+import {Span} from "../../../components/span/Span";
 
-export const Main = () => {
+export const MainSection1 = () => {
+    const title = 'Discover and Collect The Best NFTs'
+    const primary = ['Digital Art.', '8.9', '65', '87']
+
     return (
         <MainContainer>
             <FlexWrapper justify={"space-between"} align={"flex-start"}>
                 <TextContent>
                     <FlexWrapper direction={"column"} justify={"flex-start"} align={"center"}>
-                        <h1>Discover and
-                            Collect The Best NFTs Digital Art.</h1>
-                        <p>Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s.
-                            Start exploring the world of digital art and NFTs today and take control of your digital
-                            assets
-                            with confidence!</p>
+                        <Title title={title} primary={['Digital Art.']} mainTitle={true}/>
+                        <PContent text={`Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}/>
                     </FlexWrapper>
                     <FlexWrapper justify={"flex-start"}>
-                        <a>Explore Now</a>
+                        <ButtonPrimary buttonName={'Explore Now'}/>
                         <a>Learn More</a>
                     </FlexWrapper>
                     <FlexWrapper justify={"space-between"} align={"center"}>
                         <FlexWrapper direction={"column"}>
-                            <span>8.9K</span>
-                            <span>Art work</span>
+                            <Title title={'K'} primary={['8.9']}/>
+                            <Span spanText={'Art work'}/>
                         </FlexWrapper>
                         <FlexWrapper direction={"column"}>
-                            <span>65K</span>
-                            <span>Artist</span>
+                            <Title title={'K'} primary={['65']}/>                            <Span spanText={'Artist'}/>
                         </FlexWrapper>
                         <FlexWrapper direction={"column"}>
-                            <span>87K</span>
-                            <span>Collection</span>
+                            <Title title={'K'} primary={['87']}/>                            <Span spanText={'Collection'}/>
                         </FlexWrapper>
                     </FlexWrapper>
                 </TextContent>
@@ -51,19 +53,19 @@ export const Main = () => {
 
                     </FlexWrapper>
                     <TextFrame>
-                        <FlexWrapper direction={"column"} justify={"flex-end"} align={"flex-end"}>
-                            <FlexWrapper justify={"space-between"} align={"center"}>
-                                <FlexWrapper direction={"column"}>
-                                    <span>Ends in</span>
-                                    <span>05:45:47</span>
+                        <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-end"} gap={'12px'}>
+                            <FlexWrapper direction={'row'} justify={"space-between"} align={"center"} gap={'auto'}>
+                                <FlexWrapper direction={"column"} gap={'4px'}>
+                                    <Span spanText={'Ends in'} color={'primary'}/>
+                                    <Span spanText={'05:45:47'} fontSize={'600'} lineHeight={'10px'}/>
                                 </FlexWrapper>
                                 <FlexWrapper direction={"column"}>
-                                    <span>Current bid</span>
-                                    <span>0.24ETH</span>
+                                    <Span spanText={'Current bid'} color={'primary'}/>
+                                    <Span spanText={'0.24ETH'} fontSize={'600'} lineHeight={'10px'}/>
                                 </FlexWrapper>
                             </FlexWrapper>
                             <FlexWrapper justify={"center"} align={"center"}>
-                                <a href="#">Place A Bid</a>
+                                <ButtonClear buttonName={'Place A Bid'}/>
                             </FlexWrapper>
                         </FlexWrapper>
                     </TextFrame>
@@ -73,9 +75,9 @@ export const Main = () => {
     )
 }
 
-const MainContainer = styled.div`
+const MainContainer = styled.section`
   min-height: 100vh;
-  background-color: #b7b9bb;
+  background-color: #090F1D;
   padding: 46px 56px;
 `
 
@@ -106,10 +108,15 @@ const Group = styled.div`
 `
 
 const TextFrame = styled.div`
-  width: 272px;
+  width: 132px;
+  height: 80px;
+  border-radius: 8px;
+  border-top: 0.5px solid #D3F85A;
   padding: 10px;
-
-  a {
-    padding: 6px 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #131E3A;
 `
