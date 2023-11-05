@@ -6,7 +6,7 @@ type SpanType = {
     fontWeight?: string
     fontSize?: string
     lineHeight?: string
-    color?: 'primary'
+    color?: string
 }
 
 export const Span = (props: SpanType) => {
@@ -19,9 +19,9 @@ export const Span = (props: SpanType) => {
 
 const StyledSpanContent = styled.span<SpanType>`
   font-family: Inter sans-serif;
-  font-weight: ${props => props.fontWeight || '100px'};
-  font-size: ${props => props.fontSize || '9px'};
-  line-height: ${props => props.fontSize || '12px'};
-  color: ${props => props.color === 'primary' ? '#D3F85A' : '#FFFFFD'};
-  width: 55px;
+  font-weight: ${props => props.fontWeight || '400px'};
+  font-size: ${props => props.fontSize || '16px'};
+  line-height: ${props => props.fontSize || '26px'};
+  color: ${props => props.color || '#FFFFFD'};
+  //width: 55px;
 `

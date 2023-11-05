@@ -3,6 +3,7 @@ import {ButtonPrimary} from "../../../components/button-primary/Button-primary";
 import {Title} from "../../../components/title/Title";
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Card} from "../../../components/card/Card";
 
 export const ArtOfWeekSection2 = () => {
 
@@ -15,6 +16,7 @@ export const ArtOfWeekSection2 = () => {
             <Title title={title} primary={primary}/>
             <ButtonPrimary buttonName={'See All'}/>
             </FlexWrapper>
+            <Card/>
         </StyledArtOfWeek>
     );
 };
@@ -22,5 +24,5 @@ export const ArtOfWeekSection2 = () => {
 const StyledArtOfWeek = styled.section`
   min-height: 100vh;
   background-color: rgba(206, 164, 245, 0.49);
-  padding: 46px 56px;
+  padding: 92px 111px;
 `

@@ -10,20 +10,25 @@ type TitlePropsType = {
 
 export const Title = (props: TitlePropsType) => {
     return (
-            props.mainTitle ? <StyledH1>{props.title} <StyledSpan>{props.primary}</StyledSpan></StyledH1> : <StyledH2><StyledSpan>{props.primary[0]}</StyledSpan> {props.title}<StyledSpan>{props.primary[1]}</StyledSpan></StyledH2>
+            props.mainTitle ? <StyledH1>{props.title}<StyledSpan>{props.primary}</StyledSpan></StyledH1> : <StyledH2><StyledSpan>{props.primary[0]}</StyledSpan>{props.title}<StyledSpan>{props.primary[1]}</StyledSpan></StyledH2>
     );
 };
 
 const StyledH1 = styled.h1`
-  width: 272px;
-  font-family: Inter sans-serif;
+  width: 506px;
+  font-family: Canela sans-serif;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 64px;
   color: #FFFFFD;
-  line-height: 38px;
+  line-height: 76px;
 `
 const StyledH2 = styled.h2`
-  width: 272px;
+  width: 506px;
+  font-family: Canela sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: #FFFFFD;
+  line-height: 58px;
 `
 const StyledSpan = styled.span`
   color: #D3F85A;

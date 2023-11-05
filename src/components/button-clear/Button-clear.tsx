@@ -15,14 +15,14 @@ export const ButtonClear = (props: ButtonType) => {
 };
 
 const StyledButtonClear = styled.button`
-  padding: 6px 20px;
+  padding: 12px 40px;
   background-color: #131E3A;
-  border-radius: 4px;
-  border: 0.5px solid #D3F85A;
+  border-radius: 8px;
+  border: 1px solid #D3F85A;
   color: #D3F85A;
   font-family: Inter sans-serif;
-  font-weight: 600;
-  font-size: 9px;
-  line-height: 10px;
-  width: 112px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 168px;
 `

@@ -15,10 +15,11 @@ export const PContent = (props: PContentType) => {
 
 const StyledTextContent = styled.p`
   font-family: Inter sans-serif;
-  font-weight: 100;
-  font-size: 9px;
+  font-weight: 400;
+  font-size: 16px;
   color: #FFFFFD;
-  line-height: 12px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 475px;
 `
