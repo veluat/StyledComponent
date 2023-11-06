@@ -3,23 +3,29 @@ import styled from "styled-components";
 
 type ButtonType = {
     buttonName: string
+    width?: string
 }
+
 export const ButtonPrimary = (props: ButtonType) => {
+    const {buttonName, ...rest} = props;
     return (
-        <StyledButton>
+        <StyledButton {...rest}>
             {props.buttonName}
         </StyledButton>
     );
 };
 
-const StyledButton = styled.button`
-  padding: 6px 20px;
+const StyledButton = styled.button<{ width?: string }
+>`
+  padding: 12px 40px;
   background-color: #D3F85A;
-  border-radius: 4px;
+  border-radius: 8px;
   border-color: transparent;
-  font-family: "Inter Semi Bold",sans-serif;
-  font-weight: 600;
-  font-size: 9px;
-  line-height: 10px;
+  font-family: Inter sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   color: #090F1D;
+  width: ${props => props.width || '134px'};
+  //height: 52px;
 `

@@ -3,18 +3,19 @@ import styled from "styled-components";
 
 type ButtonType = {
     buttonName: string
-    width?: string
+    widthButtonClear?: string
 }
 
 export const ButtonClear = (props: ButtonType) => {
+    const { buttonName, widthButtonClear, ...rest } = props;
     return (
-        <StyledButtonClear>
-            {props.buttonName}
+        <StyledButtonClear widthButtonClear={widthButtonClear} {...rest}>
+            {buttonName}
         </StyledButtonClear>
     );
 };
 
-const StyledButtonClear = styled.button`
+const StyledButtonClear = styled.button<{widthButtonClear?: string}>`
   padding: 12px 40px;
   background-color: #131E3A;
   border-radius: 8px;
@@ -24,5 +25,5 @@ const StyledButtonClear = styled.button`
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  width: 168px;
+  width: ${props => props.widthButtonClear || '100%'};
 `

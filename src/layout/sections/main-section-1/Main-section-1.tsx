@@ -8,21 +8,22 @@ import {ButtonClear} from "../../../components/button-clear/Button-clear";
 import {PContent} from "../../../components/text-content/PContent"
 import {Span} from "../../../components/span/Span";
 import {Photo} from "../../../components/photo/Photo";
-import img from '../../../assets/images/section-1.webp'
+import img from '../../../assets/images/section-1.webp';
+import {themes} from '../../../style/themes'
 
 export const MainSection1 = () => {
     const title = 'Discover and Collect The Best NFTs '
 
     return (
         <MainContainer>
-            <FlexWrapper justify={"space-between"} align={"flex-start"} gap={"auto"}>
+            <FlexWrapper justify={"space-between"} align={"flex-start"} gap={"auto"} style={{width: ''}}>
                 <TextContent>
                     <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"}>
                         <Title title={title} primary={['Digital Art.']} mainTitle={true}/>
                         <PContent text={`Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}/>
                     </FlexWrapper>
-                    <FlexWrapper justify={"flex-start"}  gap={'18px'}>
-                        <ButtonPrimary buttonName={'Explore Now'}/>
+                    <FlexWrapper justify={"flex-start"} align='center' gap={'36px'}>
+                        <ButtonPrimary buttonName={'Explore Now'} width='178px'/>
                         <a>Learn More</a>
                     </FlexWrapper>
                     <Wrapper>
@@ -43,29 +44,27 @@ export const MainSection1 = () => {
 
                 <PhotoContent>
                     <FlexWrapper>
-                        <Photo img={img} width={'464px'} height={'444px'} radius={'24px'}/>
-
+                        <Photo img={img} width={'464px'} height={'544px'} radius={'24px'}/>
                         <Star>
-                            <Icon iconId="star" width="18" height="18" viewBox="0 0 35 35"/>
-
+                            <Icon iconId="star" width="35" height="35" viewBox="0 0 35 35"/>
                         </Star>
                         <Group>
-                            <Icon iconId="group" width="86" height="86" viewBox="0 0 172 172"/>
+                            <Icon iconId="group" width="172" height="172" viewBox="0 0 172 172"/>
                         </Group>
                     </FlexWrapper>
                     <TextFrame>
-                        <FlexWrapper direction={"column"} justify={"space-between"} align={"flex-end"} gap={'12px'}>
-                            <FlexWrapper direction={'row'} justify={"space-between"} align={"center"} gap={'36px'}>
-                                <FlexWrapper direction={"column"} gap={'4px'} justify={"flex-start"} align={"flex-start"}>
+                        <FlexWrapper direction={"column"} justify={"space-between"} align={"flex-end"} gap={'24px'} style={{width: '100%'}}>
+                            <FlexWrapper direction={'row'} justify={"space-between"} align={"center"} gap={'36px'} style={{width: '100%'}}>
+                                <FlexWrapper direction={"column"} gap={'4px'} justify={"flex-start"} align={"flex-start"} >
                                     <Span spanText={'Ends in'} color={'#D3F85A'}/>
                                     <Span spanText={'05:45:47'} fontSize={'600'} lineHeight={'10px'}/>
                                 </FlexWrapper>
-                                <FlexWrapper direction={"column"} gap={'4px'} justify={"flex-end"} align={"flex-end"}>
+                                <FlexWrapper direction={"column"} gap={'4px'} justify={"flex-end"} align={"flex-end"} >
                                     <Span spanText={'Current bid'} color={'primary'}/>
                                     <Span spanText={'0.24ETH'} fontSize={'600'} lineHeight={'10px'}/>
                                 </FlexWrapper>
                             </FlexWrapper>
-                            <FlexWrapper justify={"center"} align={"center"}>
+                            <FlexWrapper justify={"center"} align={"center"}  style={{width: '100%'}}>
                                 <ButtonClear buttonName={'Place A Bid'}/>
                             </FlexWrapper>
                         </FlexWrapper>
@@ -77,12 +76,9 @@ export const MainSection1 = () => {
 }
 
 const MainContainer = styled.section`
-  min-height: max-content;
-  background-color: #090F1D;
-  padding: 92px 111px;
+  background-color: ${themes.backgroundColor};
+  padding: ${themes.padding};
 `
-
-
 
 const TextContent = styled.div`
   width: 544px;
@@ -91,34 +87,30 @@ const TextContent = styled.div`
 const PhotoContent = styled.div`
   width: 575px;
   height: 637px;
-  //position: relative;
+  position: relative;
 `
 const Star = styled.div`
   position: absolute;
-  top: 420px;
+  top: 48%;
   padding-left: 5px;
 `
 
 const Group = styled.div`
   position: absolute;
-  top: 380px;
-  right: 400px;
+  top: 37.3%;
+  left: -60px;
 `
 
 const TextFrame = styled.div`
-  width: 264px;
-  height: 129px;
+  width: 304px;
+  height: 169px;
   border-radius: 16px;
   border-top: 1px solid #D3F85A;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  justify-content: flex-end;
-  align-items: flex-end;
   background-color: #131E3A;
-  /*position: absolute;
-  top: 234px;*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
 `
 
 const Wrapper = styled.div`
