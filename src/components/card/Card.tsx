@@ -35,10 +35,9 @@ export const Card = (props: CardProps) => {
                             <h5>03:24:56</h5>
                         </FlexWrapper>
                     </FlexWrapper>
-                    <ButtonClear buttonName='Place A Bid' widthButtonClear='168px'/>
+                    <ButtonClear buttonName='Place A Bid' widthButtonClear={widthButtonClear}/>
                 </FlexWrapper>
             </FlexWrapper>
-
         </StyledCard>
     );
 };

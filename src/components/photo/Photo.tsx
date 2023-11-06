@@ -7,6 +7,7 @@ type PhotoType = {
     height: string
     radius?: string
     marginBottom?: string
+    objectPosition?: string
 }
 
 export const Photo = (props: PhotoType) => {
@@ -22,11 +23,12 @@ const StyledPhoto = styled.img<{
     radius?: string
     margin?: string
     marginBottom?: string
+    objectPosition?: string
 }>`
   max-width: ${props => props.width};
   max-height: ${props => props.height};
   object-fit: cover;
-  object-position: top;
+  object-position: ${props => props.objectPosition || 'top'};
   border-radius: ${props => props.radius || '24px'};
   position: relative;
   margin-bottom: ${props => props.marginBottom || 0};

@@ -27,5 +27,4 @@ const StyledButton = styled.button<{ width?: string }
   line-height: 20px;
   color: #090F1D;
   width: ${props => props.width || '134px'};
-  //height: 52px;
 `

@@ -16,7 +16,7 @@ export const MainSection1 = () => {
 
     return (
         <MainContainer>
-            <FlexWrapper justify={"space-between"} align={"flex-start"} gap={"auto"} style={{width: ''}}>
+            <FlexWrapper justify={"space-between"} align={"flex-start"} gap={"auto"}>
                 <TextContent>
                     <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"}>
                         <Title title={title} primary={['Digital Art.']} mainTitle={true}/>
