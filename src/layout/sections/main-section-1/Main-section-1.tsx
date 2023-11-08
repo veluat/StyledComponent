@@ -103,7 +103,7 @@ const Group = styled.div`
 
 const TextFrame = styled.div`
   width: 304px;
-  height: 169px;
+  max-height: 169px;
   border-radius: 16px;
   border-top: 1px solid #D3F85A;
   padding: 20px;
@@ -120,7 +120,7 @@ const Wrapper = styled.div`
   gap: 94px;
   justify-content: flex-start;
   align-items: center;
-  //border-right: 1px solid #D3F85A;
+
   h2 {
     width: 88px;
     height: 58px;
