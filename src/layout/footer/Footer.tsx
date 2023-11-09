@@ -35,7 +35,7 @@ export const Footer = () => {
                             </a>
                         </FlexWrapper>
                     </FlexWrapper>
-                    <FlexWrapper gap='94px'>
+                    <FlexWrapper gap='94px' align='flex-start'>
                         <Column text={row1}/>
                         <Column text={row2}/>
                         <Column text={row3}/>
