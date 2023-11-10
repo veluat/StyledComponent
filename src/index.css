@@ -6,6 +6,33 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Canela;
+  src: url("./assets/fonts/CanelaText-Bold.eot?") format("embedded-opentype");
+  src: url("./assets/fonts/CanelaText-Bold.woff2") format("woff2");
+  src: url("./assets/fonts/CanelaText-Bold-Trial.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Canela;
+  src: url("./assets/fonts/CanelaText-Medium.eot?") format("embedded-opentype");
+  src: url("./assets/fonts/CanelaText-Medium.woff2") format("woff2");
+  src: url("./assets/fonts/CanelaText-Medium-Trial.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Canela;
+  src: url("./assets/fonts/CanelaText-Regular.eot?") format("embedded-opentype");
+  src: url("./assets/fonts/CanelaText-Regular.woff2") format("woff2");
+  src: url("./assets/fonts/CanelaText-Regular-Trial.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
