@@ -8,29 +8,35 @@
 
 @font-face {
   font-family: Canela;
+  src: local('Canela');
   src: url("./assets/fonts/CanelaText-Bold.eot?") format("embedded-opentype");
   src: url("./assets/fonts/CanelaText-Bold.woff2") format("woff2");
   src: url("./assets/fonts/CanelaText-Bold-Trial.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Canela;
+  src: local('Canela');
   src: url("./assets/fonts/CanelaText-Medium.eot?") format("embedded-opentype");
   src: url("./assets/fonts/CanelaText-Medium.woff2") format("woff2");
   src: url("./assets/fonts/CanelaText-Medium-Trial.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Canela;
+  src: local('Canela');
   src: url("./assets/fonts/CanelaText-Regular.eot?") format("embedded-opentype");
   src: url("./assets/fonts/CanelaText-Regular.woff2") format("woff2");
   src: url("./assets/fonts/CanelaText-Regular-Trial.otf") format("opentype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 body {

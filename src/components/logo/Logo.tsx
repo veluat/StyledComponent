@@ -23,6 +23,7 @@ const LogoWrapper = styled.div`
     position: absolute;
     top: 10px;
     left: 37px;
+    font-family: Canela, sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;

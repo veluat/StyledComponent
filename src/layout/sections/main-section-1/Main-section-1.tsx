@@ -12,14 +12,14 @@ import img from '../../../assets/images/section-1.webp';
 import {themes} from '../../../style/themes'
 
 export const MainSection1 = () => {
-    const title = 'Discover and Collect The Best NFTs '
+    const title = 'Discover and Collect The Best NFTs'
 
     return (
         <MainContainer>
             <FlexWrapper justify={"space-between"} align={"flex-start"} gap={"auto"}>
                 <TextContent>
                     <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"}>
-                        <Title title={title} primary={['Digital Art.']} mainTitle={true}/>
+                        <Title title={title} primary={[' Digital Art.']} mainTitle={true}/>
                         <PContent text={`Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}/>
                     </FlexWrapper>
                     <FlexWrapper justify={"flex-start"} align='center' gap={'36px'}>

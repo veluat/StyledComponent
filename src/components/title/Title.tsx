@@ -17,7 +17,7 @@ export const Title = (props: TitlePropsType) => {
 
 const StyledH1 = styled.h1`
   width: 506px;
-  font-family: Canela sans-serif;
+  font-family: Canela, sans-serif;
   font-weight: 500;
   font-size: 64px;
   color: #FFFFFD;
@@ -25,7 +25,7 @@ const StyledH1 = styled.h1`
 `
 const StyledH2 = styled.h2`
   width: 506px;
-  font-family: Canela sans-serif;
+  font-family: Canela, sans-serif;
   font-weight: 500;
   font-size: 48px;
   color: #FFFFFD;
@@ -33,4 +33,4 @@ const StyledH2 = styled.h2`
 `
 const StyledSpan = styled.span`
   color: #D3F85A;
-`;
+`
