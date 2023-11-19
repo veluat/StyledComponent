@@ -1,27 +1,31 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
+import {Menu} from "./menu/Menu";
 import {ButtonPrimary} from "../../components/button-primary/Button-primary";
-import {themes} from "../../style/themes";
+import {FlexWrapper} from "../../components/FlexWrapper";
+
+const items = ["Marketplace", "Artists", "Community", "Collections"]
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
-            <Menu/>
-            <a href="">
-                <ButtonPrimary buttonName='Contact'/>
+            <FlexWrapper justify='space-between' align='center'>
+                <Logo/>
+                <Menu menuItems={items}/>
+                <a href="">
+                    <ButtonPrimary buttonName='Contact'/>
                 </a>
+            </FlexWrapper>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
+  max-width: 1512px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
   height: 104px;
-  background-color: ${themes.backgroundColor};
-  padding: ${themes.padding};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 28px 111px;
 `
