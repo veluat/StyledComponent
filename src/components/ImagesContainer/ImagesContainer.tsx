@@ -12,12 +12,12 @@ type ImagesContainerProps = {
 };
 
 export const ImagesContainer = (props: ImagesContainerProps) => {
-    const { width, height, bg, position } = props;
+    const {width, height, bg, position} = props;
     return (
         <StyledDiv width={width} height={height} bg={bg} position={position}>
-            <GradientOverlay />
+            <GradientOverlay/>
             <AbsoluteWrapper>
-                <Ava spanText='Osvaldo Percy' xlinkHref={ava1} />
+                <Ava spanText='Osvaldo Percy' xlinkHref={ava1}/>
             </AbsoluteWrapper>
         </StyledDiv>
     );
@@ -32,20 +32,21 @@ const StyledDiv = styled.div<{
   width: ${props => props.width};
   height: ${props => props.height};
   background-image: url(${props => props.bg});
+  background-position-y: -35px;
   background-size: cover;
-  background-position: ${props => props.position || 'center'};
+  background-repeat: no-repeat;
   border-radius: 16px;
   position: relative;
 `;
 
 const GradientOverlay = styled.div`
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-    background-image: linear-gradient(to top, rgba(19, 30, 58, 0.98) 0%, rgba(19, 30, 58, 0) 100%);
-    border-radius: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-image: linear-gradient(to top, rgba(19, 30, 58, 0.98) 0%, rgba(19, 30, 58, 0) 100%);
+  border-radius: 16px;
 `;
 
 const AbsoluteWrapper = styled.div`

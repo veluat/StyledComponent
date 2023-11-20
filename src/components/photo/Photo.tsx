@@ -13,7 +13,7 @@ type PhotoType = {
 export const Photo = (props: PhotoType) => {
     const {img, ...rest} = props;
     return (
-            <StyledPhoto src={img} {...rest} />
+        <StyledPhoto src={img} {...rest} />
     );
 };
 

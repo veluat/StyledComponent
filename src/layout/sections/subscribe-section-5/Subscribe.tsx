@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {themes} from "../../../style/themes";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Title} from "../../../components/title/Title";
 import {PContent} from "../../../components/text-content/PContent";
@@ -8,13 +7,14 @@ import {ButtonPrimary} from "../../../components/button-primary/Button-primary";
 import {Photo} from "../../../components/photo/Photo";
 import img from "../../../assets/images/section-5-1.webp";
 import img1 from "../../../assets/images/section-5-2.webp";
+import {Container} from "../../../components/Container";
 
 export const Subscribe = () => {
     const title = 'Subscribe And '
     const title2 = 'Every Week'
     const primary = ['', 'get our Updates ']
     return (
-        <StyledSubscribe>
+        <Container>
             <FlexWrapper justify='space-between' align='center'>
                 <ImgBox>
                     <FirstPhoto>
@@ -34,14 +34,9 @@ export const Subscribe = () => {
                     <ButtonPrimary buttonName='Subscribe' width='160px'/>
                 </ContentBox>
             </FlexWrapper>
-        </StyledSubscribe>
+        </Container>
     );
 };
-
-const StyledSubscribe = styled.section`
-  background-color: ${themes.backgroundColor};
-  padding: ${themes.padding};
-`
 
 const ImgBox = styled.div`
   width: 630px;

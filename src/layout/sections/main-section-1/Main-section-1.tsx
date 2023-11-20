@@ -9,13 +9,14 @@ import {PContent} from "../../../components/text-content/PContent"
 import {Span} from "../../../components/span/Span";
 import {Photo} from "../../../components/photo/Photo";
 import img from '../../../assets/images/section-1.webp';
-import {themes} from '../../../style/themes'
+import {theme} from '../../../style/Theme'
+import {Container} from "../../../components/Container";
 
 export const MainSection1 = () => {
     const title = 'Discover and Collect The Best NFTs'
 
     return (
-        <MainContainer>
+        <Container>
             <FlexWrapper justify={"space-between"} align={"flex-start"} gap={"auto"}>
                 <TextContent>
                     <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"}>
@@ -71,14 +72,9 @@ export const MainSection1 = () => {
                     </TextFrame>
                 </PhotoContent>
             </FlexWrapper>
-        </MainContainer>
+        </Container>
     )
 }
-
-const MainContainer = styled.section`
-  background-color: ${themes.backgroundColor};
-  padding: ${themes.padding};
-`
 
 const TextContent = styled.div`
   width: 544px;
@@ -88,6 +84,26 @@ const PhotoContent = styled.div`
   width: 575px;
   height: 637px;
   position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: 236px;
+    bottom: 20px;
+    width: 631px;
+    height: 458px;
+    background-image: radial-gradient(50% 50%, rgba(31, 65, 61, 1), rgba(31, 65, 61, 0));
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -33px;
+    bottom: -58px;
+    width: 352px;
+    height: 221px;
+    background-image: radial-gradient(65% 55%, rgba(26, 38, 82, 1), rgba(26, 38, 82, 0));
+  }
 `
 const Star = styled.div`
   position: absolute;
@@ -111,6 +127,8 @@ const TextFrame = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 2;
+  box-shadow: 0 9px 50px rgba(23, 36, 65, 0.04);
 `
 
 const Wrapper = styled.div`

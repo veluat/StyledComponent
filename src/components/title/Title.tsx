@@ -11,7 +11,9 @@ type TitlePropsType = {
 
 export const Title = (props: TitlePropsType) => {
     return (
-            props.mainTitle ? <StyledH1>{props.title}<StyledSpan>{props.primary}</StyledSpan></StyledH1> : <StyledH2><StyledSpan>{props.primary[0]}</StyledSpan>{props.title}<StyledSpan>{props.primary[1]}</StyledSpan><br/>{props.title2}</StyledH2>
+        props.mainTitle ? <StyledH1>{props.title}<StyledSpan>{props.primary}</StyledSpan></StyledH1> :
+            <StyledH2><StyledSpan>{props.primary[0]}</StyledSpan>{props.title}<StyledSpan>{props.primary[1]}</StyledSpan><br/>{props.title2}
+            </StyledH2>
     );
 };
 
