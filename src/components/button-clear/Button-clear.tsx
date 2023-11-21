@@ -7,7 +7,7 @@ type ButtonType = {
 }
 
 export const ButtonClear = (props: ButtonType) => {
-    const { buttonName, widthButtonClear, ...rest } = props;
+    const {buttonName, widthButtonClear, ...rest} = props;
     return (
         <StyledButtonClear widthButtonClear={widthButtonClear} {...rest}>
             {buttonName}
@@ -15,7 +15,7 @@ export const ButtonClear = (props: ButtonType) => {
     );
 };
 
-const StyledButtonClear = styled.button<{widthButtonClear?: string}>`
+const StyledButtonClear = styled.button<{ widthButtonClear?: string }>`
   padding: 12px 40px;
   background-color: #131E3A;
   border-radius: 8px;

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {themes} from "../../../style/themes";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Title} from "../../../components/title/Title";
 import {PContent} from "../../../components/text-content/PContent";
@@ -8,17 +7,18 @@ import {ButtonPrimary} from "../../../components/button-primary/Button-primary";
 import {Photo} from "../../../components/photo/Photo";
 import img from "../../../assets/images/section-3-1.webp"
 import img1 from "../../../assets/images/section-3-2.webp"
+import {Container} from "../../../components/Container";
 
 export const CreateAndSell = () => {
 
-    const title = 'Create And Sell Your '
+    const title = 'Create And Sell Your'
 
     return (
-        <StyledCreateAndSell>
+        <Container>
             <FlexWrapper justify='space-between' align='center'>
                 <TextContent>
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
-                        <Title title={title} primary={['Best NFTs']} mainTitle={false}/>
+                        <Title title={title} primary={['Best NFTs ']} mainTitle={false}/>
                         <PContent
                             text={`Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}/>
                     </FlexWrapper>
@@ -37,14 +37,13 @@ export const CreateAndSell = () => {
                     </SecondPhoto>
                 </PhotoGroup>
             </FlexWrapper>
-        </StyledCreateAndSell>
+        </Container>
     );
 };
 
-const StyledCreateAndSell = styled.section`
-  background-color: ${themes.backgroundColor};
-  padding: ${themes.padding};
-`
+/*onst StyledCreateAndSell = styled.section`
+  padding: ${theme.padding};
+`*/
 
 const TextContent = styled.div`
   width: 426px;
