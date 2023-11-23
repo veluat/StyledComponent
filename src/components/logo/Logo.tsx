@@ -21,15 +21,14 @@ const LogoWrapper = styled.div`
 
   h3 {
     transform: translateY(10px);
-    font-family: Canela, sans-serif;
-    font-weight: 500;
+    font-family: 'Canela Text Trial', sans-serif;
     font-size: 32px;
     line-height: 38px;
     color: #FFFFFD;
-
+    font-weight: 500;
+    
     span {
       color: #D3F85A
     }
   }
-
 `
