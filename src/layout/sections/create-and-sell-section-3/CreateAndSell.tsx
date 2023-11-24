@@ -11,14 +11,15 @@ import {Container} from "../../../components/Container";
 
 export const CreateAndSell = () => {
 
-    const title = 'Create And Sell Your'
+    const title = 'Create And Sell Your '
+    const primary = ['', 'Best NFTs']
 
     return (
         <Container>
             <FlexWrapper justify='space-between' align='center'>
                 <TextContent>
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
-                        <Title title={title} primary={['Best NFTs ']} mainTitle={false}/>
+                        <Title title={title} primary={primary} mainTitle={false}/>
                         <PContent
                             text={`Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}/>
                     </FlexWrapper>

@@ -26,7 +26,7 @@ export const Subscribe = () => {
                 </ImgBox>
                 <ContentBox>
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
-                        <Title title={title} primary={primary} title2={title2} mainTitle={false}/>
+                        <Title title={title} primary={primary} title2={title2} mainTitle={false} width='520px'/>
                         <PContent
                             text={`We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly`}/>
                     </FlexWrapper>

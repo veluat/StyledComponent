@@ -92,7 +92,7 @@ const PhotoContent = styled.div`
     bottom: 20px;
     width: 631px;
     height: 458px;
-    background-image: radial-gradient(50% 50%, rgba(31, 65, 61, 1), rgba(31, 65, 61, 0));
+    background-image: radial-gradient(260px 260px, rgba(31, 65, 61, 1), rgba(31, 65, 61, 0));
   }
 
   &:after {

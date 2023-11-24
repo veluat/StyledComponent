@@ -18,7 +18,7 @@ export const ArtOfWeekSection2 = () => {
     return (
         <Container>
             <FlexWrapper justify='space-between' align='flex-end'>
-                <Title title={title} primary={primary}/>
+                <Title title={title} primary={primary} width='506px'/>
                 <ButtonPrimary buttonName={'See All'}/>
             </FlexWrapper>
             <CardContainer>

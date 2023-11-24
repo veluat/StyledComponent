@@ -19,7 +19,7 @@ export const PopularArtists = () => {
     return (
         <Container>
             <FlexWrapper justify='space-between' align='flex-end'>
-                <Title title={title} title2={title2} primary={primary}/>
+                <Title title={title} title2={title2} primary={primary} width='407px'/>
                 <ButtonPrimary buttonName={'See All'}/>
             </FlexWrapper>
 
