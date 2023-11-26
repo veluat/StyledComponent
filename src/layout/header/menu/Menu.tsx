@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {Simulate} from "react-dom/test-utils";
 import {theme} from "../../../style/Theme";
 
 export const Menu = (props: { menuItems: Array<string> }) => {
@@ -25,13 +24,10 @@ const StyledMenu = styled.nav`
   }
 `
 const ListItem = styled.li`
-
-  
-
 `
-
 const Link = styled.a`
-  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   color: ${theme.colors.fontGray};

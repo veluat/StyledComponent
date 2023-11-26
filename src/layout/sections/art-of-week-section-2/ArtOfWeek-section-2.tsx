@@ -12,34 +12,28 @@ import {Container} from "../../../components/Container";
 
 export const ArtOfWeekSection2 = () => {
 
-    const title = ' and Super Unique Art of This '
-    const primary = ['Amazing', 'Week']
+    const title = ' and Super Unique Art of This'
+    const primary = ['Amazing', ' Week']
 
     return (
         <Container>
             <FlexWrapper justify='space-between' align='flex-end'>
-                <Title title={title} primary={primary} width='506px'/>
+                <Title title={title} primary={primary} width='600px'/>
                 <ButtonPrimary buttonName={'See All'}/>
             </FlexWrapper>
             <CardContainer>
                 <FlexWrapper justify='space-between'>
                     <Card img={img1} width='370px' height='340px' radius='16px' marginBottom='24px'
-                          widthButtonClear='168px'/>
+                          widthButtonClear='178px'/>
                     <Card img={img2} width='370px' height='340px' radius='16px' marginBottom='24px'
-                          widthButtonClear='168px'/>
+                          widthButtonClear='178px'/>
                     <Card img={img3} width='370px' height='340px' radius='16px' marginBottom='24px'
-                          widthButtonClear='168px'/>
+                          widthButtonClear='178px'/>
                 </FlexWrapper>
             </CardContainer>
         </Container>
     );
 };
-
-/*const StyledArtOfWeek = styled.section`
-  min-height: 100vh;
-  //background-color: ;
-  padding: ${theme.padding};
-`*/
 
 const CardContainer = styled.div`
   margin-top: 64px;

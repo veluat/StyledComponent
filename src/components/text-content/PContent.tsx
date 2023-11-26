@@ -3,17 +3,19 @@ import styled from "styled-components";
 
 type PContentType = {
     text: string
+    width?: string
 }
 
 export const PContent = (props: PContentType) => {
+    const {text, width, ...rest} = props
     return (
-        <StyledTextContent>
-            {props.text}
+        <StyledTextContent width={width} {...rest}>
+            {text}
         </StyledTextContent>
     );
 };
 
-const StyledTextContent = styled.p`
+const StyledTextContent = styled.p<{width?: string}>`
   font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -21,5 +23,5 @@ const StyledTextContent = styled.p`
   line-height: 26px;
   margin-top: 20px;
   margin-bottom: 40px;
-  width: 475px;
+  width: ${props => props.width || '544px'};
 `

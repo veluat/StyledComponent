@@ -21,7 +21,7 @@ const StyledButton = styled.button<{ width?: string }
   background-color: #D3F85A;
   border-radius: 8px;
   border-color: transparent;
-  font-family: Inter sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;

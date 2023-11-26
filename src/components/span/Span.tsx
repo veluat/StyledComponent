@@ -24,7 +24,7 @@ const StyledSpanContent = styled.span<{
     lineHeight?: string
     color?: string
 }>`
-  font-family: Inter sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: ${props => props.fontWeight || '400px'};
   font-size: ${props => props.fontSize || '16px'};
   line-height: ${props => props.lineHeight || '26px'};

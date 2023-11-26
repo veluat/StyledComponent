@@ -37,5 +37,6 @@ const StyledH2 = styled.h2<{width?: string}>`
 `
 
 const StyledSpan = styled.span`
+  display: inline;
   color: #D3F85A;
 `

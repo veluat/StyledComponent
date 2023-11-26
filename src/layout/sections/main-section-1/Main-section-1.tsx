@@ -28,15 +28,15 @@ export const MainSection1 = () => {
                         <a>Learn More</a>
                     </FlexWrapper>
                     <Wrapper>
-                        <FlexWrapper direction={"column"}>
+                        <FlexWrapper direction={"column"} gap='8px'>
                             <Title title={'K'} primary={['8.9']}/>
                             <Span spanText={'Art work'}/>
                         </FlexWrapper>
-                        <FlexWrapper direction={"column"}>
+                        <FlexWrapper direction={"column"} gap='8px'>
                             <Title title={'K'} primary={['65']}/>
                             <Span spanText={'Artist'}/>
                         </FlexWrapper>
-                        <FlexWrapper direction={"column"}>
+                        <FlexWrapper direction={"column"} gap='8px'>
                             <Title title={'K'} primary={['87']}/>
                             <Span spanText={'Collection'}/>
                         </FlexWrapper>
@@ -54,15 +54,15 @@ export const MainSection1 = () => {
                         </Group>
                     </FlexWrapper>
                     <TextFrame>
-                        <FlexWrapper direction={"column"} justify={"space-between"} align={"flex-end"} gap={'24px'} style={{width: '100%'}}>
-                            <FlexWrapper direction={'row'} justify={"space-between"} align={"center"} gap={'36px'} style={{width: '100%'}}>
-                                <FlexWrapper direction={"column"} gap={'4px'} justify={"flex-start"} align={"flex-start"} >
-                                    <Span spanText={'Ends in'} color={'#D3F85A'}/>
-                                    <Span spanText={'05:45:47'} fontSize={'600'} lineHeight={'10px'}/>
+                        <FlexWrapper direction="column" justify="space-between" align="flex-end" gap='24px' style={{width: '100%'}}>
+                            <FlexWrapper direction='row' justify="space-between" align="center" gap='36px' style={{width: '100%'}}>
+                                <FlexWrapper direction="column" gap='8px' justify="flex-start" align="flex-start" >
+                                    <Span spanText='Ends in' color='#D3F85A'/>
+                                    <Span spanText='05:45:47' fontSize='700' lineHeight='20px'/>
                                 </FlexWrapper>
-                                <FlexWrapper direction={"column"} gap={'4px'} justify={"flex-end"} align={"flex-end"} >
-                                    <Span spanText={'Current bid'} color={'primary'}/>
-                                    <Span spanText={'0.24ETH'} fontSize={'600'} lineHeight={'10px'}/>
+                                <FlexWrapper direction="column" gap='8px' justify="flex-end" align="flex-end" >
+                                    <Span spanText='Current bid' color='#D3F85A'/>
+                                    <Span spanText='0.24ETH' fontSize='700' lineHeight='20px'/>
                                 </FlexWrapper>
                             </FlexWrapper>
                             <FlexWrapper justify={"center"} align={"center"}  style={{width: '100%'}}>

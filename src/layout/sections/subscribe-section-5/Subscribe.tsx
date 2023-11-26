@@ -8,6 +8,7 @@ import {Photo} from "../../../components/photo/Photo";
 import img from "../../../assets/images/section-5-1.webp";
 import img1 from "../../../assets/images/section-5-2.webp";
 import {Container} from "../../../components/Container";
+import {theme} from "../../../style/Theme";
 
 export const Subscribe = () => {
     const title = 'Subscribe And '
@@ -28,10 +29,12 @@ export const Subscribe = () => {
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
                         <Title title={title} primary={primary} title2={title2} mainTitle={false} width='520px'/>
                         <PContent
-                            text={`We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly`}/>
+                            text={`We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly`} width='520px'/>
                     </FlexWrapper>
                     <InputStyled type="text" placeholder='Enter your e-mail'/>
-                    <ButtonPrimary buttonName='Subscribe' width='160px'/>
+                    <Absolute>
+                        <ButtonPrimary buttonName='Subscribe' width='160px'/>
+                    </Absolute>
                 </ContentBox>
             </FlexWrapper>
         </Container>
@@ -63,14 +66,22 @@ const SecondPhoto = styled.div`
 const ContentBox = styled.div`
   width: 520px;
   height: 288px;
+  position: relative;
 `
 
 const InputStyled = styled.input.attrs({type: 'text'})`
-  width: 308px;
+  width: 516px;
   min-height: 28px;
   font-size: 16px;
   border-radius: 8px;
   border: none;
   padding: 16px 24px;
-  background-color: rgba(19, 30, 58, 1);
+  background-color: ${theme.colors.secondaryBg};
+`
+
+const Absolute = styled.div`
+position: absolute;
+  left: 356px;
+  bottom: 13px;
+  z-index: 3;
 `

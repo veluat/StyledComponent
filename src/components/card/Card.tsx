@@ -4,6 +4,7 @@ import {FlexWrapper} from "../FlexWrapper";
 import {Photo} from "../photo/Photo";
 import {Icon} from "../icon/Icon";
 import {ButtonClear} from "../button-clear/Button-clear";
+import {theme} from "../../style/Theme";
 
 type CardProps = {
     img: string
@@ -21,18 +22,18 @@ export const Card = (props: CardProps) => {
             <Photo img={img} width={width} height={height} radius={radius} marginBottom={marginBottom}/>
             <FlexWrapper direction={'column'} gap='16px'>
                 <FlexWrapper justify='space-between' align='center'>
-                    <h4 style={{fontSize: '24px', lineHeight: '29px', fontWeight: '700'}}>Cyberpunk Cocomo</h4>
+                    <StyledH4>Cyberpunk Cocomo</StyledH4>
                     <FlexWrapper align='center'>
                         <Icon iconId='doubleArrow'/>
-                        <h5 style={{fontSize: '16px', lineHeight: '20px', fontWeight: '700'}}>490ETH</h5>
+                        <StyledH5>490ETH</StyledH5>
                     </FlexWrapper>
                 </FlexWrapper>
                 <FlexWrapper justify='space-between'>
-                    <FlexWrapper direction={'column'}>
-                        <span>Ending In</span>
+                    <FlexWrapper direction={'column'} gap='4px'>
+                        <StyledSpan>Ending In</StyledSpan>
                         <FlexWrapper gap='12px' align='flex-end'>
                             <Icon iconId='clock'/>
-                            <h5>03:24:56</h5>
+                            <StyledH5>03:24:56</StyledH5>
                         </FlexWrapper>
                     </FlexWrapper>
                     <ButtonClear buttonName='Place A Bid' widthButtonClear={widthButtonClear}/>
@@ -49,4 +50,26 @@ const StyledCard = styled.div`
   border-radius: 28px;
   border-top: 1px solid #D3F85A;
   background-color: #131E3A;
+`
+
+const StyledH5 = styled.h5`
+font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+`
+
+const StyledH4 = styled.h4`
+font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+`
+
+const StyledSpan = styled.span`
+  color: ${theme.colors.fontGray};
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
 `

@@ -6,6 +6,7 @@ import {PContent} from "../../components/text-content/PContent";
 import {Icon} from "../../components/icon/Icon";
 import {Column} from "./column/Column";
 import {Container} from "../../components/Container";
+import {theme} from "../../style/Theme";
 
 export const Footer = () => {
     const row1 = ['Explore', 'Art Sign In', 'Collectibles', 'Domain Name', 'Utility']
@@ -21,7 +22,7 @@ export const Footer = () => {
                         <FlexWrapper direction='column' justify='center'>
                             <Logo/>
                             <PContent
-                                text='Discover NFTs by category, track the latest drop, and and follow the collections you love. Enjoy it!'/>
+                                text='Discover NFTs by category, track the latest drop, and and follow the collections you love. Enjoy it!' width='272px'/>
                             <FlexWrapper gap='12px'>
                                 <a>
                                     <Icon iconId='facebook' width='24px' height='24px' viewBox='0 0 24 24'/>
@@ -45,7 +46,7 @@ export const Footer = () => {
                         </FlexWrapper>
                     </FlexWrapper>
                     <FlexWrapper justify='space-between' align='center'>
-                        <small>© Copyright 2023 - Creativeart</small>
+                        <Copyright>© Copyright 2023 - Creativeart</Copyright>
                         <FlexWrapper gap='28px' align='center'>
                             <a>Privacy Policy</a>
                             <a>Terms & Conditions</a>
@@ -65,10 +66,18 @@ const StyledFooter = styled.footer`
   }
 
   a {
-    text-decoration: none;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    color: rgba(255, 255, 253, 1);
+    color: rgba(255, 255, 255, 1);
   }
+`
+
+const Copyright = styled.small`
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: ${theme.colors.fontWhite};
 `

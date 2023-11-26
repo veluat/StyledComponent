@@ -21,7 +21,7 @@ export const CreateAndSell = () => {
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
                         <Title title={title} primary={primary} mainTitle={false}/>
                         <PContent
-                            text={`Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}/>
+                            text={`Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`} width='426px'/>
                     </FlexWrapper>
                     <FlexWrapper justify={"flex-start"} align='center' gap={'36px'}>
                         <ButtonPrimary buttonName={'Create Now'} width='176px'/>

@@ -21,7 +21,7 @@ const StyledButtonClear = styled.button<{ widthButtonClear?: string }>`
   border-radius: 8px;
   border: 1px solid #D3F85A;
   color: #D3F85A;
-  font-family: Inter sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
