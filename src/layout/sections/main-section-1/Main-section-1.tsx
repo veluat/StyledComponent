@@ -9,8 +9,8 @@ import {PContent} from "../../../components/text-content/PContent"
 import {Span} from "../../../components/span/Span";
 import {Photo} from "../../../components/photo/Photo";
 import img from '../../../assets/images/section-1.webp';
-import {theme} from '../../../style/Theme'
 import {Container} from "../../../components/Container";
+import {Frame} from "../../../components/frame/Frame";
 
 export const MainSection1 = () => {
     const title = 'Discover and Collect The Best NFTs'
@@ -28,18 +28,9 @@ export const MainSection1 = () => {
                         <a>Learn More</a>
                     </FlexWrapper>
                     <Wrapper>
-                        <FlexWrapper direction={"column"} gap='8px'>
-                            <Title title={'K'} primary={['8.9']}/>
-                            <Span spanText={'Art work'}/>
-                        </FlexWrapper>
-                        <FlexWrapper direction={"column"} gap='8px'>
-                            <Title title={'K'} primary={['65']}/>
-                            <Span spanText={'Artist'}/>
-                        </FlexWrapper>
-                        <FlexWrapper direction={"column"} gap='8px'>
-                            <Title title={'K'} primary={['87']}/>
-                            <Span spanText={'Collection'}/>
-                        </FlexWrapper>
+                        <Frame title='K' primary={['8.9']} spanText='Art work'/>
+                        <Frame title='K' primary={['65']} spanText='Artist'/>
+                        <Frame title='K' primary={['87']} spanText='Collection'/>
                     </Wrapper>
                 </TextContent>
 

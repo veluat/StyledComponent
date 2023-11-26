@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    cursor: pointer;
   }
 
   ul {
@@ -29,6 +30,7 @@ export const GlobalStyle = createGlobalStyle`
   button {
     background-color: unset;
     border: unset;
+    cursor: pointer;
   }
 
 `
