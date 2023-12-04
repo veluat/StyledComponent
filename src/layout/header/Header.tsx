@@ -4,6 +4,8 @@ import {Logo} from "../../components/logo/Logo";
 import {Menu} from "./menu/Menu";
 import {ButtonPrimary} from "../../components/button-primary/Button-primary";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {theme} from "../../style/Theme";
+import {MobileMenu} from "./mobile-menu/MobileMenu";
 
 const items = ["Marketplace", "Artists", "Community", "Collections"]
 
@@ -13,9 +15,8 @@ export const Header = () => {
             <FlexWrapper justify='space-between' align='center'>
                 <Logo/>
                 <Menu menuItems={items}/>
-                <a href="">
-                    <ButtonPrimary buttonName='Contact'/>
-                </a>
+                <MobileMenu menuItems={items}/>
+                <ButtonPrimary buttonName='Contact' head/>
             </FlexWrapper>
         </StyledHeader>
     );
@@ -28,4 +29,8 @@ const StyledHeader = styled.header`
   margin: 0 auto;
   height: 104px;
   padding: 28px 111px;
+
+  @media ${theme.media.tablet} {
+    padding: 40px 16px 60px;
+  }
 `
