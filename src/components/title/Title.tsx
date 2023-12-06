@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../style/Theme";
+import {font} from "../../style/Common";
 
 type TitlePropsType = {
     title: string
@@ -19,21 +21,22 @@ export const Title = (props: TitlePropsType) => {
 };
 
 const StyledH1 = styled.h1`
-  width: 544px;
-  font-family: 'Canela Text Trial', sans-serif;
-  font-size: 64px;
-  color: #FFFFFD;
-  line-height: 77px;
-  font-weight: 500;
+  ${font({family: "'Canela Text Trial', sans-serif", Fmax: 64, Fmin: 39})}
+  max-width: 544px;
+
+  @media ${theme.media.tablet} {
+    text-align: center;
+  }
 `
+
 const StyledH2 = styled.h2<{width?: string}>`
+  ${font({family: "'Canela Text Trial', sans-serif", Fmax: 48, Fmin: 31})}
   display: inline-block;
-  width: ${props => props.width};
-  font-family: 'Canela Text Trial', sans-serif;
-  font-size: 48px;
-  color: #FFFFFD;
-  line-height: 58px;
-  font-weight: 500;
+  max-width: ${props => props.width};
+
+  @media ${theme.media.tablet} {
+    text-align: center;
+  }
 `
 
 const StyledSpan = styled.span`

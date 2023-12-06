@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../style/Theme";
+import {font} from "../../style/Common";
 
 type PContentType = {
     text: string
@@ -16,12 +18,13 @@ export const PContent = (props: PContentType) => {
 };
 
 const StyledTextContent = styled.p<{width?: string}>`
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgba(255, 255, 253, 1);
-  line-height: 26px;
+  ${font({lineHeight: 1.6, weight: 400, Fmax: 16, Fmin: 16})}
+  
   margin-top: 20px;
   margin-bottom: 40px;
-  width: ${props => props.width || '544px'};
+  max-width: ${props => props.width || '544px'};
+
+  @media ${theme.media.tablet} {
+    text-align: center;
+  }
 `
