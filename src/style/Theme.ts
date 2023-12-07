@@ -7,4 +7,9 @@ export const theme = {
         fontGray: 'rgba(131, 131, 130, 1)'
     },
     padding: '92px 111px',
+    media: {
+        tablet: 'screen and (max-width: 990px)',
+        mobile: 'screen and (max-width: 576px)',
+        desktop: 'screen and (min-width: 1512px)'
+    }
 }
