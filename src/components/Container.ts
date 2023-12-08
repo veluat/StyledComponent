@@ -7,4 +7,8 @@ export const Container = styled.div`
   min-height: 100%;
   margin: 0 auto;
   padding: ${theme.padding};
-`
+
+  @media ${theme.media.mobile} {
+    padding: 60px 16px 40px;
+  }
+  `
