@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../style/Theme";
 
 type PhotoType = {
     img: string
@@ -32,4 +33,9 @@ const StyledPhoto = styled.img<{
   border-radius: ${props => props.radius || '24px'};
   position: relative;
   margin-bottom: ${props => props.marginBottom || 0};
+
+  @media ${theme.media.mobile} {
+    width: 294px;
+    height: 344px;
+  }
 `

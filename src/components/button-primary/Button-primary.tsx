@@ -1,24 +1,26 @@
 import React from 'react';
 import styled from "styled-components";
+import { theme } from '../../style/Theme';
 
 type ButtonType = {
     buttonName: string
     width?: string
+    head?: boolean
 }
 
 export const ButtonPrimary = (props: ButtonType) => {
     const {buttonName, ...rest} = props;
     return (
-        <StyledButton {...rest}>
-            {props.buttonName}
-        </StyledButton>
+            <StyledButton {...rest}>
+                {props.buttonName}
+            </StyledButton>
     );
 };
 
-const StyledButton = styled.button<{ width?: string }
+const StyledButton = styled.a<{ width?: string, head?: boolean }
 >`
   padding: 12px 40px;
-  background-color: #D3F85A;
+  background-color: ${theme.colors.primary};
   border-radius: 8px;
   border-color: transparent;
   font-family: Inter, sans-serif;
@@ -27,4 +29,8 @@ const StyledButton = styled.button<{ width?: string }
   line-height: 20px;
   color: #090F1D;
   width: ${props => props.width || '134px'};
+  
+  @media ${theme.media.tablet} {
+    display: ${props => props.head  ? "none" : 'inline'};
+  }
 `
