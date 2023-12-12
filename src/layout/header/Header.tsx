@@ -16,7 +16,7 @@ export const Header = () => {
                 <Logo/>
                 <Menu menuItems={items}/>
                 <MobileMenu menuItems={items}/>
-                <ButtonPrimary buttonName='Contact' head/>
+                <ButtonPrimary buttonName='Contact' height='48px'/>
             </FlexWrapper>
         </StyledHeader>
     );
