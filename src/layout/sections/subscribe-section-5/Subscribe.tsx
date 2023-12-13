@@ -29,12 +29,13 @@ export const Subscribe = () => {
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
                         <Title title={title} primary={primary} title2={title2} mainTitle={false} width='520px'/>
                         <PContent
-                            text={`We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly`} width='520px'/>
+                            text={`We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly`}
+                            width='520px'/>
                     </FlexWrapper>
-                    <InputStyled type="text" placeholder='Enter your e-mail'/>
-                    <Absolute>
+                    <FlexWrapper wrap='flex-wrap'>
+                        <InputStyled type="text" placeholder='Enter your e-mail'/>
                         <ButtonPrimary buttonName='Subscribe' width='160px'/>
-                    </Absolute>
+                    </FlexWrapper>
                 </ContentBox>
             </FlexWrapper>
         </Container>
@@ -53,20 +54,18 @@ const FirstPhoto = styled.div`
   left: 0;
   z-index: 1;
   transform: rotate(-12deg);
-
-`;
+`
 
 const SecondPhoto = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 2;
-`;
+`
 
 const ContentBox = styled.div`
   width: 520px;
   height: 288px;
-  position: relative;
 `
 
 const InputStyled = styled.input.attrs({type: 'text'})`
@@ -74,14 +73,7 @@ const InputStyled = styled.input.attrs({type: 'text'})`
   min-height: 28px;
   font-size: 16px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid ${theme.colors.secondaryBg};
   padding: 16px 24px;
   background-color: ${theme.colors.secondaryBg};
-`
-
-const Absolute = styled.div`
-position: absolute;
-  left: 356px;
-  bottom: 13px;
-  z-index: 3;
 `

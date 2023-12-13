@@ -15,7 +15,7 @@ export const Frame = (props: FrameProps) => {
     const {title, primary, spanText} = props
     return (
         <StyledFrame>
-            <FlexWrapper direction={"column"} gap='8px'>
+            <FlexWrapper direction={"column"} gap='16px'>
                 <Title title={title} primary={primary}/>
                 <Span spanText={spanText}/>
             </FlexWrapper>
@@ -28,4 +28,7 @@ const StyledFrame = styled.div`
     padding-right: 28px;
     border-right: 1px solid ${theme.colors.primary}
   }  
+  :first-child {
+    padding-right: 56px;
+  }
 `
