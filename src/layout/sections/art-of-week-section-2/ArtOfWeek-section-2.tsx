@@ -8,6 +8,7 @@ import img1 from '../../../assets/images/section-2-1.webp'
 import img2 from '../../../assets/images/section-2-2.webp'
 import img3 from '../../../assets/images/section-2-3.webp'
 import {Container} from "../../../components/Container";
+import {theme} from "../../../style/Theme";
 
 
 export const ArtOfWeekSection2 = () => {
@@ -22,14 +23,12 @@ export const ArtOfWeekSection2 = () => {
                 <ButtonPrimary buttonName={'See All'}/>
             </FlexWrapper>
             <CardContainer>
-                <FlexWrapper justify='space-between'>
                     <Card img={img1} width='370px' height='340px' radius='16px' marginBottom='24px'
                           widthButtonClear='178px'/>
                     <Card img={img2} width='370px' height='340px' radius='16px' marginBottom='24px'
                           widthButtonClear='178px'/>
                     <Card img={img3} width='370px' height='340px' radius='16px' marginBottom='24px'
                           widthButtonClear='178px'/>
-                </FlexWrapper>
             </CardContainer>
         </Container>
     );
@@ -37,4 +36,16 @@ export const ArtOfWeekSection2 = () => {
 
 const CardContainer = styled.div`
   margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 64px;
+
+  @media screen and (max-width: 1410px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
 `
