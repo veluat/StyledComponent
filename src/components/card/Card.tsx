@@ -50,6 +50,11 @@ const StyledCard = styled.div`
   border-radius: 28px;
   border-top: 1px solid #D3F85A;
   background-color: #131E3A;
+
+
+  @media ${theme.media.mobile} {
+    max-width: 343px;
+  }
 `
 
 const StyledH5 = styled.h5`
