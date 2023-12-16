@@ -42,10 +42,6 @@ export const CreateAndSell = () => {
     );
 };
 
-/*onst StyledCreateAndSell = styled.section`
-  padding: ${theme.padding};
-`*/
-
 const TextContent = styled.div`
   width: 426px;
   height: 280px;
