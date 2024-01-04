@@ -1,11 +1,3 @@
-/*@font-face {*/
-/*    font-family: Canela;*/
-/*    src: url("./assets/fonts/CanelaText-Regular.eot?") format("embedded-opentype"), url("./assets/fonts/CanelaText-Regular.woff2") format("woff2"), url("./assets/fonts/CanelaText-Regular-Trial.otf") format("opentype");*/
-/*    font-style: normal;*/
-/*    !**/
-/*    font-display: swap;*/
-/*    *!*/
-/*}*/
 .App {
     background-image: url('./assets/images/BgImage.svg');
     background-color: rgba(9, 15, 29, 0.97);

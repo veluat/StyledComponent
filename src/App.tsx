@@ -1,7 +1,7 @@
 import './App.css';
 import {Header} from "./layout/header/Header";
-import {MainSection1} from "./layout/sections/main-section-1/Main-section-1";
-import {ArtOfWeekSection2} from "./layout/sections/art-of-week-section-2/ArtOfWeek-section-2";
+import {MainSection} from "./layout/sections/main-section-1/MainSection";
+import {ArtOfWeekSection} from "./layout/sections/art-of-week-section-2/ArtOfWeekSection";
 import React from "react";
 import {CreateAndSell} from "./layout/sections/create-and-sell-section-3/CreateAndSell";
 import {PopularArtists} from "./layout/sections/pop-artists-section-4/PopularArtists";
@@ -13,8 +13,8 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <MainSection1/>
-            <ArtOfWeekSection2/>
+            <MainSection/>
+            <ArtOfWeekSection/>
             <CreateAndSell/>
             <PopularArtists/>
             <Subscribe/>
