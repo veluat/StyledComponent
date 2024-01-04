@@ -11,13 +11,13 @@ import {Container} from "../../../components/Container";
 import {theme} from "../../../style/Theme";
 
 
-export const ArtOfWeekSection2 = () => {
+export const ArtOfWeekSection = () => {
 
     const title = ' and Super Unique Art of This'
     const primary = ['Amazing', ' Week']
 
     return (
-        <Container>
+        <Container id='amazing'>
             <FlexWrapper justify='space-between' align='flex-end'>
                 <Title title={title} primary={primary} width='600px'/>
                 <ButtonPrimary buttonName={'See All'}/>

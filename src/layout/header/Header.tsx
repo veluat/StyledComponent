@@ -6,7 +6,17 @@ import {ButtonPrimary} from "../../components/button-primary/Button-primary";
 import {theme} from "../../style/Theme";
 import {MobileMenu} from "./mobile-menu/MobileMenu";
 
-const items = ["Marketplace", "Artists", "Community", "Collections"]
+export type ItemType = {
+    title: string
+    href: string
+}
+
+const items: ItemType[] = [
+    {title: 'Marketplace', href: 'home'},
+    {title: 'Artists', href: 'amazing'},
+    {title: 'Community', href: 'best'},
+    {title: 'Collections', href: 'popular'},
+]
 
 export const Header = () => {
     return (
@@ -20,6 +30,11 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+  position: sticky;
+  z-index: 3333;
+  left: 0;
+  right: 0;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +44,8 @@ const StyledHeader = styled.header`
   margin: 0 auto;
   height: 104px;
   padding: 28px 111px;
+  background-image: url('./../../assets/images/BgImage.svg');
+  background-color: rgba(5, 7, 16, 0.95);
 
   @media ${theme.media.tablet} {
     padding: 40px 16px 60px;

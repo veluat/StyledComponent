@@ -24,7 +24,7 @@ export const Card = (props: CardProps) => {
                 <FlexWrapper justify='space-between' align='center'>
                     <StyledH4>Cyberpunk Cocomo</StyledH4>
                     <FlexWrapper align='center'>
-                        <Icon iconId='doubleArrow'/>
+                        <Icon IconTitle='doubleArrow'/>
                         <StyledH5>490ETH</StyledH5>
                     </FlexWrapper>
                 </FlexWrapper>
@@ -32,7 +32,7 @@ export const Card = (props: CardProps) => {
                     <FlexWrapper direction={'column'} gap='4px'>
                         <StyledSpan>Ending In</StyledSpan>
                         <FlexWrapper gap='12px' align='flex-end'>
-                            <Icon iconId='clock'/>
+                            <Icon IconTitle='clock'/>
                             <StyledH5>03:24:56</StyledH5>
                         </FlexWrapper>
                     </FlexWrapper>

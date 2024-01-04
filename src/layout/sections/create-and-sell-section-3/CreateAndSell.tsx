@@ -15,7 +15,7 @@ export const CreateAndSell = () => {
     const primary = ['', 'Best NFTs']
 
     return (
-        <Container>
+        <Container id='best'>
             <FlexWrapper justify='space-between' align='center'>
                 <TextContent>
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>

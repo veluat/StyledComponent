@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -16,12 +17,13 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 375px;
+    min-width: 360px;
   }
 
   a {
     text-decoration: none;
     cursor: pointer;
+    color: ${theme.colors.fontWhite};
   }
 
   ul {

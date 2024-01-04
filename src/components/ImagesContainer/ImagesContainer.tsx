@@ -11,13 +11,15 @@ type ImagesContainerProps = {
 
 };
 
+const ava = ['Osvaldo Percy', 'Ranson Sqiure', 'Sebastian waltan', 'Abraham Zack', 'Cristio leo']
+
 export const ImagesContainer = (props: ImagesContainerProps) => {
     const {width, height, bg, position} = props;
     return (
         <StyledDiv width={width} height={height} bg={bg} position={position}>
             <GradientOverlay/>
             <AbsoluteWrapper>
-                <Ava spanText='Osvaldo Percy' xlinkHref={ava1}/>
+                <Ava spanText={ava} xlinkHref={ava1}/>
             </AbsoluteWrapper>
         </StyledDiv>
     );

@@ -17,7 +17,7 @@ export const PopularArtists = () => {
     const title2 = 'On This Week'
     const primary = ['', `Artists `]
     return (
-        <Container>
+        <Container id='popular'>
             <FlexWrapper justify='space-between' align='flex-end'>
                 <Title title={title} title2={title2} primary={primary} width='407px'/>
                 <ButtonPrimary buttonName={'See All'}/>

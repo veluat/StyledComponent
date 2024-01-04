@@ -17,9 +17,9 @@ export const PContent = (props: PContentType) => {
     );
 };
 
-const StyledTextContent = styled.p<{width?: string}>`
+const StyledTextContent = styled.p<{ width?: string }>`
   ${font({lineHeight: 1.6, weight: 400, Fmax: 16, Fmin: 16})}
-  
+
   margin-top: 20px;
   margin-bottom: 40px;
   max-width: ${props => props.width || '544px'};

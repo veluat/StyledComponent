@@ -1,22 +1,25 @@
 import React from 'react';
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Span} from "../../../components/span/Span";
+import {FooterMenuType} from "../FooterData";
+import styled from "styled-components";
+import {FooterMenuItem} from "../footerMenuItem/FooterMenuItem";
 
 type ColumnType = {
-    text: string[]
+    menu: FooterMenuType[]
 }
 
 export const Column = (props: ColumnType) => {
-    const {text} = props
+    const {menu} = props
     return (
-        <FlexWrapper direction='column' justify='center' gap='24px'>
-            <h3>{text[0]}</h3>
-            <FlexWrapper direction='column' justify='center' gap='8px'>
-                <Span spanText={text[1]}/>
-                <Span spanText={text[2]}/>
-                <Span spanText={text[3]}/>
-                <Span spanText={text[4]}/>
-            </FlexWrapper>
-        </FlexWrapper>
+        <FooterMenuWrapper>
+            {menu.map(el => {
+                return <FooterMenuItem key={el.id} title={el.title} items={el.items}/>
+            })}
+        </FooterMenuWrapper>
     );
 };
+
+const FooterMenuWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 94px;
+`

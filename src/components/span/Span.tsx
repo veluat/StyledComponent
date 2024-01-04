@@ -13,7 +13,7 @@ export const Span = (props: SpanType) => {
     const {spanText, ...rest} = props
     return (
         <StyledSpanContent {...rest}>
-            {props.spanText}
+            {spanText}
         </StyledSpanContent>
     );
 };

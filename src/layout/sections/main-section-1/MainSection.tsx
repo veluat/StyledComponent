@@ -14,12 +14,12 @@ import {Frame} from "../../../components/frame/Frame";
 import {theme} from "../../../style/Theme";
 import {useMediaQuery} from 'react-responsive';
 
-export const MainSection1 = () => {
+export const MainSection = () => {
     const title = 'Discover and Collect The Best NFTs'
     const isMobile = useMediaQuery({maxWidth: 576});
     return (
-        <Container>
-            <MainSection>
+        <Container id='home'>
+            <MainBox>
                 <TextContent>
                     <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"} wrap="wrap">
                         <Title title={title} primary={[' Digital Art.']} mainTitle={true}/>
@@ -36,11 +36,11 @@ export const MainSection1 = () => {
                     <FlexWrapper wrap="wrap">
                         <Photo img={img} width={'464px'} height={'544px'} radius={'24px'}/>
                         <Star>
-                            <Icon iconId="star" width={isMobile ? "20" : "35"} height={isMobile ? "20" : "35"}
+                            <Icon IconTitle="star" width={isMobile ? "20" : "35"} height={isMobile ? "20" : "35"}
                                   viewBox={isMobile ? "0 0 20 20" : "0 0 35 35"}/>
                         </Star>
                         <Group>
-                            <Icon iconId={isMobile ? "group_small" : "group"} width={isMobile ? "86" : "172"}
+                            <Icon IconTitle={isMobile ? "group_small" : "group"} width={isMobile ? "86" : "172"}
                                   height={isMobile ? "86" : "172"} viewBox={isMobile ? "0 0 86 86" : "0 0 172 172"}/>
                         </Group>
                     </FlexWrapper>
@@ -72,12 +72,12 @@ export const MainSection1 = () => {
                     <Frame title='K' primary={['65']} spanText='Artist'/>
                     <Frame title='K' primary={['87']} spanText='Collection'/>
                 </Wrapper>
-            </MainSection>
+            </MainBox>
         </Container>
     )
 }
 
-const MainSection = styled.section`
+const MainBox = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

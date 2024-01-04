@@ -1,8 +1,9 @@
 import React from 'react';
 import styled, {css} from "styled-components";
 import {theme} from "../../../style/Theme";
+import {ItemType} from "../Header";
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu = (props: { menuItems: Array<ItemType> }) => {
     return (
         <StyledMobileMenu>
             <BurgerButton isOpen={false}>
@@ -13,7 +14,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                 <ul>
                     {props.menuItems.map((item, index) => {
                         return <ListItem key={index}>
-                            <Link href="">{item}</Link>
+                            <Link href={item.href}>{item.title}</Link>
                         </ListItem>
                     })}
                 </ul>

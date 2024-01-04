@@ -24,7 +24,7 @@ export const Logo = () => {
             <a href="">
                 <FlexWrapper justify="flex-start" gap="8px">
                     <Icon
-                        iconId='pacMan'
+                        IconTitle='pacMan'
                         width={isMobile ? "24" : "29"}
                         height={isMobile ? "24" : "28"}
                         viewBox='0 0 29 28'
