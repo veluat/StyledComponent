@@ -1,25 +1,40 @@
 import React from 'react';
 import styled from "styled-components";
-import ava1 from "../../assets/images/ava-1.svg";
-import {Ava} from "../ava/Ava";
+import {FlexWrapper} from "../FlexWrapper";
+import {Span} from "../span/Span";
 
 type ImagesContainerProps = {
     width: string;
     height: string;
     bg: string;
     position?: string
+    spanText: string
+    avatar: string
+    id: number
 
-};
-
-const ava = ['Osvaldo Percy', 'Ranson Sqiure', 'Sebastian waltan', 'Abraham Zack', 'Cristio leo']
+}
 
 export const ImagesContainer = (props: ImagesContainerProps) => {
-    const {width, height, bg, position} = props;
+    const {width, height, bg, position, spanText, avatar, id} = props;
     return (
         <StyledDiv width={width} height={height} bg={bg} position={position}>
             <GradientOverlay/>
             <AbsoluteWrapper>
-                <Ava spanText={ava} xlinkHref={ava1}/>
+                <FlexWrapper gap='12px' justify='flex-start' align='center'>
+                    <svg key={id} width='48px' height='48px'>
+                        <image xlinkHref={avatar}/>
+                    </svg>
+                    <FlexWrapper direction='column' gap='4px'>
+                        <Span spanText='Owner' fontSize='14px' lineHeight='22px' fontWeight='400'/>
+                        <Span
+                            key={id}
+                            spanText={spanText}
+                            fontSize='16px'
+                            lineHeight='20px'
+                            fontWeight='700'
+                        />
+                    </FlexWrapper>
+                </FlexWrapper>
             </AbsoluteWrapper>
         </StyledDiv>
     );
@@ -51,8 +66,9 @@ const GradientOverlay = styled.div`
   border-radius: 16px;
 `;
 
+
 const AbsoluteWrapper = styled.div`
   position: absolute;
   bottom: 24px;
   left: 24px;
-`;
+`

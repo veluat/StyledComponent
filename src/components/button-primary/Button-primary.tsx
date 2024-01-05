@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { theme } from '../../style/Theme';
+import { theme } from '../../assets/style/Theme';
 
 type ButtonType = {
     buttonName: string

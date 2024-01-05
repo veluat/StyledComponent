@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import styled from "styled-components";
-import {theme} from "../../../style/Theme";
+import {theme} from "../../../assets/style/Theme";
 
 export const Copyright = () => {
     return (

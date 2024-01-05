@@ -13,8 +13,8 @@ export const Socials = (props: SocialsType) => {
     return (
         <FlexWrapper gap='12px'>
 
-            {socialsTitle.map(el =>
-                <AStyled href={el.link}>
+            {socialsTitle.map((el, i) =>
+                <AStyled href={el.link} key={i}>
                     <Icon iconId={el.id}
                           IconTitle={el.title}
                           width='24px'

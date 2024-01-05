@@ -3,7 +3,7 @@ import {Title} from "../title/Title";
 import {Span} from "../span/Span";
 import {FlexWrapper} from "../FlexWrapper";
 import styled from "styled-components";
-import {theme} from "../../style/Theme";
+import {theme} from "../../assets/style/Theme";
 
 type FrameProps = {
     title: string

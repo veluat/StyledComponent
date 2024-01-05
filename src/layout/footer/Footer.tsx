@@ -4,7 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Logo} from "../../components/logo/Logo";
 import {PContent} from "../../components/text-content/PContent";
 import {Column} from "./column/Column";
-import {theme} from "../../style/Theme";
+import {theme} from "../../assets/style/Theme";
 import {FooterData} from "./FooterData";
 import {Socials} from "../../components/socials/Socials";
 import {Copyright} from "./copyright/Copyright";
@@ -14,8 +14,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <FlexWrapper gap='48px' direction='column' justify='center'>
-                <FlexWrapper justify='space-between'
-                             style={{borderBottom: '1px solid rgba(131, 131, 130, 1)', paddingBottom: '48px'}}>
+                <FooterContentWrapper>
                     <FlexWrapper direction='column' justify='center'>
                         <Logo/>
                         <PContent text={FooterData.text} width='272px'/>
@@ -24,7 +23,7 @@ export const Footer = () => {
                     <FlexWrapper gap='94px' align='flex-start'>
                         <Column menu={FooterData.menu}/>
                     </FlexWrapper>
-                </FlexWrapper>
+                </FooterContentWrapper>
                 <Copyright/>
             </FlexWrapper>
         </StyledFooter>
@@ -46,4 +45,10 @@ const StyledFooter = styled.footer`
   p {
     margin: 30px 0 24px;
   }
+`
+const FooterContentWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(131, 131, 130, 1);
+  padding-bottom: 48px;
 `

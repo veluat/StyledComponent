@@ -11,7 +11,7 @@ import {Photo} from "../../../components/photo/Photo";
 import img from '../../../assets/images/section-1.webp';
 import {Container} from "../../../components/Container";
 import {Frame} from "../../../components/frame/Frame";
-import {theme} from "../../../style/Theme";
+import {theme} from "../../../assets/style/Theme";
 import {useMediaQuery} from 'react-responsive';
 
 export const MainSection = () => {

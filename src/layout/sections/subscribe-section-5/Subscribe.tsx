@@ -8,7 +8,7 @@ import {Photo} from "../../../components/photo/Photo";
 import img from "../../../assets/images/section-5-1.webp";
 import img1 from "../../../assets/images/section-5-2.webp";
 import {Container} from "../../../components/Container";
-import {theme} from "../../../style/Theme";
+import {theme} from "../../../assets/style/Theme";
 
 export const Subscribe = () => {
     const title = 'Subscribe And '
@@ -43,7 +43,8 @@ export const Subscribe = () => {
 };
 
 const ImgBox = styled.div`
-  width: 630px;
+  max-width: 630px;
+  width: 100%;
   height: 458px;
   position: relative;
 `
@@ -64,7 +65,8 @@ const SecondPhoto = styled.div`
 `
 
 const ContentBox = styled.div`
-  width: 520px;
+  max-width: 520px;
+  width: 100%;
   height: 288px;
 `
 

@@ -15,5 +15,6 @@ font-family: ${family || 'Inter'};
 font-weight: ${weight || 500};
 color: ${color || theme.colors.fontWhite};
 line-height: ${lineHeight || 1.2};
-font-size: calc( (100vw - 375px)/(1290 - 375) * (${Fmax} - ${Fmin}) + ${Fmin}px );
+font-size: clamp(${Fmin}px, calc( (100vw - 375px)/(1290 - 375) * (${Fmax} - ${Fmin}) + ${Fmin}px), ${Fmax}px);
+
 `

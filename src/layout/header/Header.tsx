@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "./menu/Menu";
 import {ButtonPrimary} from "../../components/button-primary/Button-primary";
-import {theme} from "../../style/Theme";
+import {theme} from "../../assets/style/Theme";
 import {MobileMenu} from "./mobile-menu/MobileMenu";
 
 export type ItemType = {
