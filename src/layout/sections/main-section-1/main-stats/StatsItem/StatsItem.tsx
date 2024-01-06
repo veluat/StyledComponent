@@ -1,9 +1,9 @@
 import React from 'react';
-import {Title} from "../title/Title";
-import {Span} from "../span/Span";
-import {FlexWrapper} from "../FlexWrapper";
+import {FlexWrapper} from "../../../../../components/FlexWrapper";
+import {Title} from "../../../../../components/title/Title";
+import {Span} from "../../../../../components/span/Span";
 import styled from "styled-components";
-import {theme} from "../../assets/style/Theme";
+import {theme} from "../../../../../assets/style/Theme";
 
 type FrameProps = {
     title: string
@@ -11,7 +11,7 @@ type FrameProps = {
     spanText: string
 }
 
-export const Frame = (props: FrameProps) => {
+export const StatsItem = (props: FrameProps) => {
     const {title, primary, spanText} = props
     return (
         <StyledFrame>
@@ -25,10 +25,10 @@ export const Frame = (props: FrameProps) => {
 
 const StyledFrame = styled.div`
   :nth-child(-n + 2) {
-    padding-right: 28px;
+    padding-right: 24px;
     border-right: 1px solid ${theme.colors.primary}
   }  
   :first-child {
-    padding-right: 56px;
+    padding-right: 29px;
   }
 `

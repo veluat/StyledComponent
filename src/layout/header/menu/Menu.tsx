@@ -34,7 +34,7 @@ const StyledMenu = styled.nav`
   @media ${theme.media.tablet} {
     display: none;
   }
-`;
+`
 
 const ListItem = styled.li``;
 

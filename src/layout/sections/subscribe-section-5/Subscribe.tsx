@@ -70,7 +70,7 @@ const ContentBox = styled.div`
   height: 288px;
 `
 
-const InputStyled = styled.input.attrs({type: 'text'})`
+const InputStyled = styled.input.attrs({title: 'text'})`
   width: 516px;
   min-height: 28px;
   font-size: 16px;
