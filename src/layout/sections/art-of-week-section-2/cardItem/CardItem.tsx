@@ -1,10 +1,10 @@
 import React from 'react';
-import {FlexWrapper} from "../../../../components/FlexWrapper";
-import {Icon} from "../../../../components/icon/Icon";
-import {ButtonClear} from "../../../../components/button-clear/Button-clear";
-import {theme} from "../../../../assets/style/Theme";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Icon} from "@components/icon";
+import {ClearButton} from "@components/clear-button/ClearButton";
+import {theme} from "@assets/style/Theme";
 import styled from "styled-components";
-import {Photo} from "../../../../components/photo/Photo";
+import {Photo} from "@components/photo";
 
 type CardItemProps = {
     title: string
@@ -51,7 +51,7 @@ export const CardItem: React.FC<CardItemProps> = ({
                                 <StyledH5>03:24:56</StyledH5>
                             </FlexWrapper>
                         </FlexWrapper>
-                        <ButtonClear buttonName='Place A Bid' widthButtonClear={widthButtonClear}/>
+                        <ClearButton buttonName='Place A Bid' widthButtonClear={widthButtonClear}/>
                     </FlexWrapper>
                 </FlexWrapper>
             </FlexWrapper>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from "react-scroll";
+import {Link} from "react-scroll";
 import styled from "styled-components";
-import { theme } from "../../../assets/style/Theme";
-import { ItemType } from "../Header";
+import {theme} from "@assets/style/Theme";
+import {ItemType} from "../Header";
 
 export const Menu = (props: { menuItems: Array<ItemType> }) => {
     return (

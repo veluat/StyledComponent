@@ -1,18 +1,17 @@
 import React from 'react';
 import {Link} from "react-scroll";
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import styled from "styled-components";
+import {FlexWrapper} from "@components/flex-wrapper";
 
 type PropsType = {
     items: string[]
-
 }
+
 export const FooterMenu: React.FC<PropsType> = ({items}) => {
     const menuItems = items.map(item => {
         return (
-            <MenuItem key={item}>
+            <li key={item}>
                 <Link to="#">{item}</Link>
-            </MenuItem>
+            </li>
         )
     })
     return (
@@ -23,6 +22,3 @@ export const FooterMenu: React.FC<PropsType> = ({items}) => {
         </ul>
     )
 }
-
-const MenuItem = styled.li`
-`

@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../FlexWrapper";
-import {Span} from "../span/Span";
 
 type AvaProps = {
     avatar: string

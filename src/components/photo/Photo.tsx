@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../assets/style/Theme";
-import {CardDataType} from "../../layout/sections/art-of-week-section-2/cardData/CardData";
+import {theme} from "@assets/style/Theme";
 
 type PhotoType = {
     img: string;

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {Logo} from "../../components/logo/Logo";
+import {Logo} from "@components/logo";
 import {Menu} from "./menu/Menu";
-import {ButtonPrimary} from "../../components/button-primary/Button-primary";
-import {theme} from "../../assets/style/Theme";
+import {PrimaryButton} from "@components/primary-button/Primary-button";
+import {theme} from "@assets/style/Theme";
 import {MobileMenu} from "./mobile-menu/MobileMenu";
 
 export type ItemType = {
@@ -24,7 +24,7 @@ export const Header = () => {
             <Logo/>
             <Menu menuItems={items}/>
             <MobileMenu menuItems={items}/>
-            <ButtonPrimary buttonName='Contact' height='48px'/>
+            <PrimaryButton buttonName='Contact' height='48px'/>
         </StyledHeader>
     );
 };
@@ -46,7 +46,7 @@ const StyledHeader = styled.header`
   margin: 0 auto;
   height: 104px;
   padding: 28px 111px;
-  background-image: url('./../../assets/images/BgImage.svg');
+  background-image: url('../../assets/images/bg-image/BgImage.svg');
   background-color: rgba(5, 7, 16, 0.95);
 
   @media ${theme.media.tablet} {

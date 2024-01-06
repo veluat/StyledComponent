@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {theme} from "../assets/style/Theme";
+import {theme} from "@assets/style/Theme";
 
 export const Container = styled.section`
   max-width: 1512px;
@@ -11,4 +11,4 @@ export const Container = styled.section`
   @media ${theme.media.mobile} {
     padding: 60px 16px 40px;
   }
-  `
+`

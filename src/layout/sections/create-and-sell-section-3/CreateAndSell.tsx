@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Title} from "../../../components/title/Title";
-import {PContent} from "../../../components/text-content/PContent";
-import {ButtonPrimary} from "../../../components/button-primary/Button-primary";
-import {Photo} from "../../../components/photo/Photo";
-import img from "../../../assets/images/section-3-1.webp"
-import img1 from "../../../assets/images/section-3-2.webp"
-import {Container} from "../../../components/Container";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Title} from "@components/title";
+import {TextContent} from "@components/text-content/TextContent";
+import {PrimaryButton} from "@components/primary-button/Primary-button";
+import {Photo} from "@components/photo";
+import img from "@assets/images/create-and-sell/section-3-1.webp"
+import img1 from "@assets/images/create-and-sell/section-3-2.webp"
+import {Container} from "@components/container/Container";
 
 export const CreateAndSell = () => {
 
@@ -17,17 +17,18 @@ export const CreateAndSell = () => {
     return (
         <Container id='best'>
             <FlexWrapper justify='space-between' align='center'>
-                <TextContent>
+                <TextContentStyled>
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
                         <Title title={title} primary={primary} mainTitle={false}/>
-                        <PContent
-                            text={`Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`} width='426px'/>
+                        <TextContent
+                            text={`Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}
+                            width='426px'/>
                     </FlexWrapper>
                     <FlexWrapper justify={"flex-start"} align='center' gap={'36px'}>
-                        <ButtonPrimary buttonName={'Create Now'} width='176px'/>
+                        <PrimaryButton buttonName={'Create Now'} width='176px'/>
                         <a>Learn More</a>
                     </FlexWrapper>
-                </TextContent>
+                </TextContentStyled>
 
                 <PhotoGroup>
                     <FirstPhoto>
@@ -42,7 +43,7 @@ export const CreateAndSell = () => {
     );
 };
 
-const TextContent = styled.div`
+const TextContentStyled = styled.div`
   width: 426px;
   height: 280px;
 `

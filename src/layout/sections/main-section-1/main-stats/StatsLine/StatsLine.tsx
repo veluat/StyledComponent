@@ -1,7 +1,7 @@
 import React from 'react';
-import {MainType} from "../../main-data/mainData";
-import {useResponsiveSize} from "../../../../../hook";
-import {FlexWrapper} from "../../../../../components/FlexWrapper";
+import {MainType} from "../../main-data/MainData";
+import {useResponsiveSize} from "@/hook";
+import {FlexWrapper} from "@components/flex-wrapper";
 import {StatsItem} from "../StatsItem/StatsItem";
 import styled from "styled-components";
 

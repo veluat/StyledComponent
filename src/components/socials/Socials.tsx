@@ -1,7 +1,7 @@
 import React from 'react';
-import {FooterSocialType} from "../../layout/footer/FooterData";
+import {FooterSocialType} from "@layout/footer/footer-data/FooterData";
 import {Icon} from "../icon/Icon";
-import {FlexWrapper} from "../FlexWrapper";
+import {FlexWrapper} from "@components/flex-wrapper";
 import styled from "styled-components";
 
 type SocialsType = {
@@ -12,7 +12,6 @@ export const Socials = (props: SocialsType) => {
     const {socialsTitle} = props
     return (
         <FlexWrapper gap='12px'>
-
             {socialsTitle.map((el, i) =>
                 <AStyled href={el.link} key={i}>
                     <Icon iconId={el.id}

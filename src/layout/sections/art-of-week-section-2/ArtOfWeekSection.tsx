@@ -1,9 +1,9 @@
 import React from 'react';
-import {ButtonPrimary} from '../../../components/button-primary/Button-primary';
-import {Title} from '../../../components/title/Title';
+import {PrimaryButton} from '@components/primary-button/Primary-button';
+import {Title} from '@components/title';
 import styled from 'styled-components';
-import {FlexWrapper} from '../../../components/FlexWrapper';
-import {Container} from '../../../components/Container';
+import {FlexWrapper} from '@components/flex-wrapper';
+import {Container} from '@components/container/Container';
 import cardData from "./cardData/CardData";
 import {Card} from "./card/Card";
 
@@ -14,7 +14,7 @@ export const ArtOfWeekSection = () => {
         <Container id="amazing">
             <FlexWrapper justify="space-between" align="flex-end">
                 <Title title={title} primary={primary} width="600px"/>
-                <ButtonPrimary buttonName={'See All'}/>
+                <PrimaryButton buttonName={'See All'}/>
             </FlexWrapper>
             <CardContainer>
                 <Card

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import {Container} from "../../../components/Container";
+import {Container} from "@components/container/Container";
 import {StatsLine} from "./main-stats/StatsLine/StatsLine";
-import {MainData} from './main-data/mainData'
+import {MainData} from './main-data/MainData'
 import {PhotoContent} from "./main-photo-content/PhotoContent";
 import {MainContent} from "./main-content/MainContent";
 

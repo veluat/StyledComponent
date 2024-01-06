@@ -6,7 +6,7 @@ type ButtonType = {
     widthButtonClear?: string
 }
 
-export const ButtonClear = (props: ButtonType) => {
+export const ClearButton = (props: ButtonType) => {
     const {buttonName, widthButtonClear, ...rest} = props;
     return (
         <StyledButtonClear widthButtonClear={widthButtonClear} {...rest}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { theme } from '../../assets/style/Theme';
+import {theme} from '@assets/style/Theme';
 
 type ButtonType = {
     buttonName: string
@@ -8,12 +8,12 @@ type ButtonType = {
     height?: string
 }
 
-export const ButtonPrimary = (props: ButtonType) => {
+export const PrimaryButton = (props: ButtonType) => {
     const {buttonName, ...rest} = props;
     return (
-            <StyledButton {...rest}>
-                {props.buttonName}
-            </StyledButton>
+        <StyledButton {...rest}>
+            {props.buttonName}
+        </StyledButton>
     );
 };
 

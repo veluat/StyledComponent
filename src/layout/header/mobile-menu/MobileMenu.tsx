@@ -1,7 +1,7 @@
 import React from 'react';
-import styled, { css } from "styled-components";
-import { theme } from "../../../assets/style/Theme";
-import { ItemType } from "../Header";
+import styled, {css} from "styled-components";
+import {theme} from "@assets/style/Theme";
+import {ItemType} from "../Header";
 
 export const MobileMenu = (props: { menuItems: Array<ItemType> }) => {
     return (
@@ -9,7 +9,6 @@ export const MobileMenu = (props: { menuItems: Array<ItemType> }) => {
             <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
-
             <MobileMenuPopup isOpen={false}>
                 <ul>
                     {props.menuItems.map((item, index) => {
@@ -50,7 +49,6 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
             justify-content: center;
             align-items: center;
           `}
-
   ul {
     display: flex;
     gap: 40px;
@@ -87,7 +85,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
             css<{ isOpen: boolean }>`
               background-color: rgba(255, 255, 253, 0);
             `}
-
     &::before {
       content: '';
       display: block;

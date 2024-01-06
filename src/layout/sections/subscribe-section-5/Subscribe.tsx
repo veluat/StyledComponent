@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Title} from "../../../components/title/Title";
-import {PContent} from "../../../components/text-content/PContent";
-import {ButtonPrimary} from "../../../components/button-primary/Button-primary";
-import {Photo} from "../../../components/photo/Photo";
-import img from "../../../assets/images/section-5-1.webp";
-import img1 from "../../../assets/images/section-5-2.webp";
-import {Container} from "../../../components/Container";
-import {theme} from "../../../assets/style/Theme";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Title} from "@components/title";
+import {TextContent} from "@components/text-content/TextContent";
+import {PrimaryButton} from "@components/primary-button/Primary-button";
+import {Photo} from "@components/photo";
+import img from "@assets/images/subscribe/section-5-1.webp";
+import img1 from "@assets/images/subscribe/section-5-2.webp";
+import {Container} from "@components/container/Container";
+import {theme} from "@assets/style/Theme";
 
 export const Subscribe = () => {
     const title = 'Subscribe And '
@@ -28,13 +28,13 @@ export const Subscribe = () => {
                 <ContentBox>
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
                         <Title title={title} primary={primary} title2={title2} mainTitle={false} width='520px'/>
-                        <PContent
+                        <TextContent
                             text={`We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly`}
                             width='520px'/>
                     </FlexWrapper>
                     <FlexWrapper wrap='flex-wrap'>
                         <InputStyled type="text" placeholder='Enter your e-mail'/>
-                        <ButtonPrimary buttonName='Subscribe' width='160px'/>
+                        <PrimaryButton buttonName='Subscribe' width='160px'/>
                     </FlexWrapper>
                 </ContentBox>
             </FlexWrapper>

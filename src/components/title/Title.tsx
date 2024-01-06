@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../assets/style/Theme";
-import {font} from "../../assets/style/Common";
+import {theme} from "@assets/style/Theme";
+import {font} from "@assets/style/Common";
 
 type TitlePropsType = {
     title: string

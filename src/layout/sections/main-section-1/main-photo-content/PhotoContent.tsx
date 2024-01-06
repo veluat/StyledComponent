@@ -1,7 +1,7 @@
 import React from 'react';
-import {MainType} from "../main-data/mainData";
-import {FlexWrapper} from "../../../../components/FlexWrapper";
-import {Photo} from "../../../../components/photo/Photo";
+import {MainType} from "../main-data/MainData";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Photo} from "@components/photo";
 import styled from "styled-components";
 import {Promotion} from "./promotion/Promotion";
 import {CircleContent} from "./circle-content/CircleContent";
@@ -17,7 +17,7 @@ export const PhotoContent: React.FC<PhotoContentPropsType> = ({mainData}) => {
                 <CircleContent/>
             </FlexWrapper>
 
-            <Promotion/>
+            <Promotion price={mainData.price} endingTime={mainData.endingTime}/>
         </PhotoContentStyled>
     )
 }

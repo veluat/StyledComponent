@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../assets/style/Theme";
-import {font} from "../../assets/style/Common";
+import {theme} from "@assets/style/Theme";
+import {font} from "@assets/style/Common";
 
 type PContentType = {
     text: string
     width?: string
 }
 
-export const PContent = (props: PContentType) => {
+export const TextContent = (props: PContentType) => {
     const {text, width, ...rest} = props
     return (
         <StyledTextContent width={width} {...rest}>

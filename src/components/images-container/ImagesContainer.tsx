@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../FlexWrapper";
+import {FlexWrapper} from "@components/flex-wrapper";
 import {Span} from "../span/Span";
 
 type ImagesContainerProps = {
@@ -11,7 +11,6 @@ type ImagesContainerProps = {
     spanText: string
     avatar: string
     id: number
-
 }
 
 export const ImagesContainer = (props: ImagesContainerProps) => {
@@ -54,7 +53,7 @@ const StyledDiv = styled.div<{
   background-repeat: no-repeat;
   border-radius: 16px;
   position: relative;
-`;
+`
 
 const GradientOverlay = styled.div`
   position: absolute;
@@ -64,7 +63,7 @@ const GradientOverlay = styled.div`
   height: 70%;
   background-image: linear-gradient(to top, rgba(19, 30, 58, 0.98) 0%, rgba(19, 30, 58, 0) 100%);
   border-radius: 16px;
-`;
+`
 
 
 const AbsoluteWrapper = styled.div`

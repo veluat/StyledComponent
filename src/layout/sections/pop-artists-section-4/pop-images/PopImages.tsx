@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImagesContainer} from "../../../../components/ImagesContainer/ImagesContainer";
+import {ImagesContainer} from "@components/images-container/ImagesContainer";
 import {PopType} from "../pop-data/PopData";
 import styled from "styled-components";
 

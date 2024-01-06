@@ -1,6 +1,6 @@
-import img1 from '../../../../assets/images/section-2-1.webp'
-import img2 from '../../../../assets/images/section-2-2.webp'
-import img3 from '../../../../assets/images/section-2-3.webp'
+import img1 from '@assets/images/art-of-week/section-2-1.webp'
+import img2 from '@assets/images/art-of-week/section-2-2.webp'
+import img3 from '@assets/images/art-of-week/section-2-3.webp'
 
 const CardData: CardDataType[] = [
     {

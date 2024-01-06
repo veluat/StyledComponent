@@ -1,8 +1,7 @@
-import mainBG from './../../../../assets/images/section-1.webp'
+import mainBG from '@assets/images/main/section-1.webp'
 
 export const MainData: MainType = {
-    price: 0.24,
-    moneyType: 'ETH',
+    price: '0.24ETH',
     endingTime: '03:24:56',
     backgroundImage: mainBG,
     statistics: [
@@ -20,8 +19,7 @@ type StatisticsType = {
 }
 
 export type MainType = {
-    price: number
-    moneyType: string
+    price: string
     endingTime: string
     backgroundImage: string
     statistics: StatisticsType[]

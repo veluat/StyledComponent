@@ -1,23 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../../components/FlexWrapper";
-import {Logo} from "../../components/logo/Logo";
-import {PContent} from "../../components/text-content/PContent";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Logo} from "@components/logo";
+import {TextContent} from "@components/text-content/TextContent";
 import {Column} from "./column/Column";
-import {theme} from "../../assets/style/Theme";
-import {FooterData} from "./FooterData";
-import {Socials} from "../../components/socials/Socials";
+import {theme} from "@assets/style/Theme";
+import {FooterData} from "./footer-data/FooterData";
+import {Socials} from "@components/socials";
 import {Copyright} from "./copyright/Copyright";
 
 export const Footer = () => {
-
     return (
         <StyledFooter>
             <FlexWrapper gap='48px' direction='column' justify='center'>
                 <FooterContentWrapper>
                     <FlexWrapper direction='column' justify='center'>
                         <Logo/>
-                        <PContent text={FooterData.text} width='272px'/>
+                        <TextContent text={FooterData.text} width='272px'/>
                         <Socials socialsTitle={FooterData.socials}/>
                     </FlexWrapper>
                     <FlexWrapper gap='94px' align='flex-start'>
