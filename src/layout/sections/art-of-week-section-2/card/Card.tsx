@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {CardDataType} from "../cardData/CardData";
-import {CardItem} from "../cardItem/CardItem";
+import {CardDataType} from "../cardData";
+import {CardItem} from "../cardItem";
 
 type CardProps = {
     width: string

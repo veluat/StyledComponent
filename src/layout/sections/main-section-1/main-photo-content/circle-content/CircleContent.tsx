@@ -1,8 +1,8 @@
 import React from 'react';
-import {Icon} from "@components/icon";
 import styled from "styled-components";
-import {theme} from "@assets/style/Theme";
-import {useResponsiveSize} from "@/hook";
+import {Icon} from "../../../../../components/icon";
+import {useResponsiveSize} from "../../../../../hook";
+import {theme} from "../../../../../assets/style/Theme";
 
 export const CircleContent = () => {
     const isMobile = useResponsiveSize(576)

@@ -1,11 +1,11 @@
 import React from 'react';
-import {PrimaryButton} from '@components/primary-button/Primary-button';
-import {Title} from '@components/title';
-import styled from 'styled-components';
-import {FlexWrapper} from '@components/flex-wrapper';
-import {Container} from '@components/container/Container';
 import cardData from "./cardData/CardData";
-import {Card} from "./card/Card";
+import {Card} from "./card";
+import {FlexWrapper} from "../../../components/flex-wrapper";
+import {Container} from "../../../components/container";
+import {Title} from "../../../components/title";
+import {PrimaryButton} from "../../../components/primary-button";
+import styled from "styled-components";
 
 export const ArtOfWeekSection = () => {
     const title = ' and Super Unique Art of This';

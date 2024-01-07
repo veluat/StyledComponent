@@ -1,10 +1,10 @@
 import React from 'react';
-import {FlexWrapper} from "@components/flex-wrapper";
-import {Icon} from "@components/icon";
-import {ClearButton} from "@components/clear-button/ClearButton";
-import {theme} from "@assets/style/Theme";
+import {FlexWrapper} from "../../../../components/flex-wrapper";
+import {Photo} from "../../../../components/photo";
+import {Icon} from "../../../../components/icon";
+import {ClearButton} from "../../../../components/clear-button";
 import styled from "styled-components";
-import {Photo} from "@components/photo";
+import {theme} from "../../../../assets/style/Theme";
 
 type CardItemProps = {
     title: string
