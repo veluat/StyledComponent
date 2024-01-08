@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "@components/flex-wrapper";
-import {Logo} from "@components/logo";
-import {TextContent} from "@components/text-content/TextContent";
-import {Column} from "./column/Column";
-import {theme} from "@assets/style/Theme";
-import {FooterData} from "./footer-data/FooterData";
-import {Socials} from "@components/socials";
-import {Copyright} from "./copyright/Copyright";
+import {Column} from "./column";
+import {FooterData} from "./footer-data";
+import {Copyright} from "./copyright";
+import {FlexWrapper} from "../../components/flex-wrapper";
+import {Socials} from "../../components/socials";
+import {Logo} from "../../components/logo";
+import {TextContent} from "../../components/text-content";
+import {theme} from "../../assets/style/Theme";
 
 export const Footer = () => {
     return (

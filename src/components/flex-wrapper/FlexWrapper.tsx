@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {theme} from "@assets/style/Theme";
+import {theme} from "../../assets";
 
 type FlexWrapperPropType = {
     direction?: string
