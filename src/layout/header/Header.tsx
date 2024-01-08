@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import {Logo} from "@components/logo";
-import {Menu} from "./menu/Menu";
-import {PrimaryButton} from "@components/primary-button/Primary-button";
-import {theme} from "@assets/style/Theme";
-import {MobileMenu} from "./mobile-menu/MobileMenu";
+import {Menu} from "./menu";
+import {MobileMenu} from "./mobile-menu";
+import {PrimaryButton} from "../../components/primary-button";
+import {Logo} from "../../components/logo";
+import {theme} from "../../assets/style/Theme";
 
 export type ItemType = {
     title: string

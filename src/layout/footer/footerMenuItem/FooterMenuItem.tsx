@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {FooterMenu} from "../footerMenu/FooterMenu";
+import {FooterMenu} from "../footerMenu";
 
 type PropsType = {
     title: string
