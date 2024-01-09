@@ -1,1 +1,1 @@
-export * from './FooterMenu'
+export * from './../footerMenu/FooterMenu'

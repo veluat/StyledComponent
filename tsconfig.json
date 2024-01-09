@@ -6,12 +6,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "paths": {
-      "@/*": ["src/*"],
-      "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
-      "@layout/*": ["src/layout/*"]
-    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -26,7 +20,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "baseUrl": "src",
+  "paths": {
+    "@assets/*": ["assets/*"],
+    "@components/*": ["components/*"],
+    "@hook/*": ["hook/*"],
+    "@layout/*": ["layout/*"]
+  },
+  "include": ["src"]
 }

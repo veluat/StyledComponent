@@ -1,10 +1,10 @@
 import React from 'react';
-import {FlexWrapper} from "@components/flex-wrapper";
-import {Title} from "@components/title";
-import {TextContent} from "@components/text-content/TextContent";
-import {PrimaryButton} from "@components/primary-button/Primary-button";
 import styled from "styled-components";
-import {theme} from "@assets/style/Theme";
+import {Title} from "../../../../components/title";
+import {TextContent} from "../../../../components/text-content";
+import {FlexWrapper} from "../../../../components/flex-wrapper";
+import {PrimaryButton} from "../../../../components/primary-button";
+import {theme} from "../../../../assets/style/Theme";
 
 export const MainContent = () => {
     const title = 'Discover and Collect The Best NFTs'

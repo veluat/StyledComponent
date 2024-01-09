@@ -1,1 +1,1 @@
-export * from './ImagesContainer'
+export * from './../images-container/ImagesContainer'

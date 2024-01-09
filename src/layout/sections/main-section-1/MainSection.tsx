@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import {Container} from "@components/container/Container";
-import {StatsLine} from "./main-stats/StatsLine/StatsLine";
-import {MainData} from './main-data/MainData'
-import {PhotoContent} from "./main-photo-content/PhotoContent";
-import {MainContent} from "./main-content/MainContent";
+import {StatsLine} from "./main-stats/StatsLine";
+import {MainData} from './main-data'
+import {PhotoContent} from "./main-photo-content";
+import {MainContent} from "./main-content";
+import {Container} from "../../../components/container";
 
 export const MainSection = () => {
     return (

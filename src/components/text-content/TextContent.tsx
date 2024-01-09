@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "@assets/style/Theme";
-import {font} from "@assets/style/Common";
+import {font, theme} from "../../assets";
+
 
 type PContentType = {
     text: string

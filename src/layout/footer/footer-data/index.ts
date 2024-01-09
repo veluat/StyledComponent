@@ -1,1 +1,1 @@
-export * from './FooterData'
+export * from './../footer-data/FooterData'

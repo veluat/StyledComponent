@@ -1,9 +1,9 @@
 import React from 'react';
-import {FlexWrapper} from "@components/flex-wrapper";
-import {Title} from "@components/title";
-import {Span} from "@components/span";
+import {FlexWrapper} from "../../../../../components/flex-wrapper";
+import {Title} from "../../../../../components/title";
+import {Span} from "../../../../../components/span";
 import styled from "styled-components";
-import {theme} from "@assets/style/Theme";
+import {theme} from "../../../../../assets/style/Theme";
 
 type FrameProps = {
     title: string

@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "@components/flex-wrapper";
-import {Title} from "@components/title";
-import {TextContent} from "@components/text-content/TextContent";
-import {PrimaryButton} from "@components/primary-button/Primary-button";
-import {Photo} from "@components/photo";
 import img from "@assets/images/subscribe/section-5-1.webp";
 import img1 from "@assets/images/subscribe/section-5-2.webp";
-import {Container} from "@components/container/Container";
-import {theme} from "@assets/style/Theme";
+import {FlexWrapper} from "../../../components/flex-wrapper";
+import {Container} from "../../../components/container";
+import {Photo} from "../../../components/photo";
+import {Title} from "../../../components/title";
+import {TextContent} from "../../../components/text-content";
+import {PrimaryButton} from "../../../components/primary-button";
+import {theme} from "../../../assets/style/Theme";
+
 
 export const Subscribe = () => {
     const title = 'Subscribe And '

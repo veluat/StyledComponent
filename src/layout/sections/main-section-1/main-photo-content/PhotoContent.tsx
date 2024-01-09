@@ -1,10 +1,10 @@
 import React from 'react';
-import {MainType} from "../main-data/MainData";
-import {FlexWrapper} from "@components/flex-wrapper";
-import {Photo} from "@components/photo";
+import {MainType} from "../main-data";
 import styled from "styled-components";
-import {Promotion} from "./promotion/Promotion";
-import {CircleContent} from "./circle-content/CircleContent";
+import {Promotion} from "./promotion";
+import {CircleContent} from "./circle-content";
+import {FlexWrapper} from "../../../../components/flex-wrapper";
+import {Photo} from "../../../../components/photo";
 
 type PhotoContentPropsType = {
     mainData: MainType

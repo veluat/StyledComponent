@@ -1,9 +1,9 @@
 import React from 'react';
-import {MainType} from "../../main-data/MainData";
-import {useResponsiveSize} from "@/hook";
-import {FlexWrapper} from "@components/flex-wrapper";
-import {StatsItem} from "../StatsItem/StatsItem";
+import {MainType} from "../../main-data";
+import {StatsItem} from "../StatsItem";
 import styled from "styled-components";
+import {useResponsiveSize} from "../../../../../hook";
+import {FlexWrapper} from "../../../../../components/flex-wrapper";
 
 type StatsLinPropsType = {
     mainData: MainType

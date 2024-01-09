@@ -1,1 +1,1 @@
-export * from './Span'
+export * from './../span/Span'
