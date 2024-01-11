@@ -1,7 +1,7 @@
 import React from 'react';
 import {ImagesContainer} from "@components/images-container/ImagesContainer";
-import {PopType} from "../pop-data/PopData";
 import styled from "styled-components";
+import {PopType} from "@layout/sections/pop-artists-section-4/pop-data";
 
 type PopImagesProps = {
     popData: PopType[]

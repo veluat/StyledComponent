@@ -1,1 +1,1 @@
-export * from './../clear-button/ClearButton'
+export * from './ClearButton.tsx'

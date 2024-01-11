@@ -1,1 +1,1 @@
-export * from "./../flex-wrapper/FlexWrapper"
+export * from "./FlexWrapper.tsx"

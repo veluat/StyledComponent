@@ -1,1 +1,1 @@
-export * from './../mobile-menu/MobileMenu'
+export * from './MobileMenu.tsx'

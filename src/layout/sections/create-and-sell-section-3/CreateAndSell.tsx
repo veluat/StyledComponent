@@ -1,13 +1,12 @@
-import React from 'react';
 import styled from "styled-components";
 import img from "@assets/images/create-and-sell/section-3-1.webp"
 import img1 from "@assets/images/create-and-sell/section-3-2.webp"
-import {Photo} from "../../../components/photo";
-import {FlexWrapper} from "../../../components/flex-wrapper";
-import {TextContent} from "../../../components/text-content";
-import {Container} from "../../../components/container";
-import {Title} from "../../../components/title";
-import {PrimaryButton} from "../../../components/primary-button";
+import {Photo} from "@components/photo";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {TextContent} from "@components/text-content";
+import {Container} from "@components/container";
+import {Title} from "@components/title";
+import {PrimaryButton} from "@components/primary-button";
 
 export const CreateAndSell = () => {
 

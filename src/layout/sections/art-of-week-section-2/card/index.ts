@@ -1,1 +1,1 @@
-export * from './../card/Card'
+export * from './Card.tsx'

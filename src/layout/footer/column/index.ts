@@ -1,1 +1,1 @@
-export * from './../column/Column'
+export * from './Column.tsx'

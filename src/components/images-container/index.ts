@@ -1,1 +1,1 @@
-export * from './../images-container/ImagesContainer'
+export * from './ImagesContainer.tsx'

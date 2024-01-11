@@ -1,1 +1,1 @@
-export * from './StatsItem'
+export * from './StatsItem.tsx'

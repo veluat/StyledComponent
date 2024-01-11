@@ -1,10 +1,10 @@
-import React from 'react';
-import {MainType} from "../main-data";
+import React from "react";
 import styled from "styled-components";
-import {Promotion} from "./promotion";
-import {CircleContent} from "./circle-content";
-import {FlexWrapper} from "../../../../components/flex-wrapper";
-import {Photo} from "../../../../components/photo";
+import {MainType} from "@layout/sections/main-section-1/main-data";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Photo} from "@components/photo";
+import {CircleContent} from "@layout/sections/main-section-1/main-photo-content/circle-content";
+import {Promotion} from "@layout/sections/main-section-1/main-photo-content/promotion";
 
 type PhotoContentPropsType = {
     mainData: MainType

@@ -1,11 +1,10 @@
-import React from 'react';
-import cardData from "./cardData/CardData";
-import {Card} from "./card";
-import {FlexWrapper} from "../../../components/flex-wrapper";
-import {Container} from "../../../components/container";
-import {Title} from "../../../components/title";
-import {PrimaryButton} from "../../../components/primary-button";
 import styled from "styled-components";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Container} from "@components/container";
+import {Title} from "@components/title";
+import {PrimaryButton} from "@components/primary-button";
+import {Card} from "@layout/sections/art-of-week-section-2/card";
+import cardData from "@layout/sections/art-of-week-section-2/cardData/CardData.tsx";
 
 export const ArtOfWeekSection = () => {
     const title = ' and Super Unique Art of This';

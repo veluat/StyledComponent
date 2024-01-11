@@ -1,1 +1,1 @@
-export * from './../footer-data/FooterData'
+export * from './FooterData.ts'

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {CardDataType} from "../cardData";
-import {CardItem} from "../cardItem";
+import {CardDataType} from "@layout/sections/art-of-week-section-2/cardData";
+import {CardItem} from "@layout/sections/art-of-week-section-2/cardItem";
 
 type CardProps = {
     width: string

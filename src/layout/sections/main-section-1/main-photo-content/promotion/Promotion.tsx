@@ -1,8 +1,8 @@
-import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../../../../../components/flex-wrapper";
-import {Span} from "../../../../../components/span";
-import {ClearButton} from "../../../../../components/clear-button";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Span} from "@components/span";
+import {ClearButton} from "@components/clear-button";
+import React from "react";
 
 type PromotionPropsType = {
     price: string

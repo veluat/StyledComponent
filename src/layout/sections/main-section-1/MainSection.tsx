@@ -1,10 +1,9 @@
-import React from 'react';
+import {Container} from "@components/container";
+import {MainContent} from "@layout/sections/main-section-1/main-content";
+import {PhotoContent} from "@layout/sections/main-section-1/main-photo-content";
+import {MainData} from "@layout/sections/main-section-1/main-data";
+import {StatsLine} from "@layout/sections/main-section-1/main-stats/StatsLine";
 import styled from "styled-components";
-import {StatsLine} from "./main-stats/StatsLine";
-import {MainData} from './main-data'
-import {PhotoContent} from "./main-photo-content";
-import {MainContent} from "./main-content";
-import {Container} from "../../../components/container";
 
 export const MainSection = () => {
     return (

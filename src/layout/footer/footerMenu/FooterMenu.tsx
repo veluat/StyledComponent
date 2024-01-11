@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-scroll";
-import {FlexWrapper} from "../../../components/flex-wrapper";
+import {FlexWrapper} from "@components/flex-wrapper";
 
 type PropsType = {
     items: string[]

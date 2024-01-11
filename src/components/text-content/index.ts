@@ -1,1 +1,1 @@
-export * from './../text-content/TextContent'
+export * from './TextContent.tsx'

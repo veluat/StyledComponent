@@ -1,1 +1,1 @@
-export * from './PopularArtists'
+export * from './PopularArtists.tsx'

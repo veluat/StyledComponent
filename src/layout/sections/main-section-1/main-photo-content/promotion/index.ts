@@ -1,1 +1,1 @@
-export * from './Promotion'
+export * from './Promotion.tsx'

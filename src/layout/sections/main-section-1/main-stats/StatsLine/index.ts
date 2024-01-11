@@ -1,1 +1,1 @@
-export * from './StatsLine'
+export * from './StatsLine.tsx'

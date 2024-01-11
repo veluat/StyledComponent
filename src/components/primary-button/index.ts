@@ -1,1 +1,1 @@
-export * from './../primary-button/Primary-button'
+export * from './Primary-button.tsx'

@@ -1,1 +1,1 @@
-export * from './CreateAndSell'
+export * from './CreateAndSell.tsx'

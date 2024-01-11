@@ -1,1 +1,1 @@
-export * from './PhotoContent'
+export * from './PhotoContent.tsx'

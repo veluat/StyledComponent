@@ -1,1 +1,1 @@
-export * from './../footerMenu/FooterMenu'
+export * from './FooterMenu.tsx'

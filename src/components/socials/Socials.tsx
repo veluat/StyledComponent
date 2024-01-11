@@ -1,8 +1,7 @@
-import React from 'react';
-import {Icon} from "../icon";
 import styled from "styled-components";
-import {FlexWrapper} from "../flex-wrapper";
-import {FooterSocialType} from "../../layout/footer/footer-data";
+import {FooterSocialType} from "@layout/footer/footer-data";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Icon} from "@components/icon";
 
 type SocialsType = {
     socialsTitle: FooterSocialType[]

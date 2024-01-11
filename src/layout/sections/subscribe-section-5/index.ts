@@ -1,1 +1,1 @@
-export * from './Subscribe'
+export * from './Subscribe.tsx'

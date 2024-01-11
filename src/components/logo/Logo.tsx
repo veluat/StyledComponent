@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {Icon} from "../icon";
+import {useEffect, useState} from 'react';
+import {theme} from "@assets/style/Theme.ts";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Icon} from "@components/icon";
 import styled from "styled-components";
-import {FlexWrapper} from "../flex-wrapper";
-import {theme} from "../../assets";
+
 
 export const Logo = () => {
     const [isMobile, setIsMobile] = useState(window.matchMedia(theme.media.tablet).matches);

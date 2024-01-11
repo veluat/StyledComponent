@@ -1,7 +1,6 @@
-import React from 'react';
-import {FooterMenuType} from "../footer-data";
 import styled from "styled-components";
-import {FooterMenuItem} from "../footerMenuItem/FooterMenuItem";
+import {FooterMenuItem} from "@layout/footer/footerMenuItem";
+import {FooterMenuType} from "@layout/footer/footer-data";
 
 type ColumnType = {
     menu: FooterMenuType[]

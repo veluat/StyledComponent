@@ -1,1 +1,1 @@
-export * from './PopData'
+export * from './PopData.ts'

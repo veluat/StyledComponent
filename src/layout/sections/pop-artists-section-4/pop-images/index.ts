@@ -1,1 +1,1 @@
-export * from './PopImages'
+export * from './PopImages.tsx'

@@ -1,1 +1,1 @@
-export * from './MainData'
+export * from './MainData.ts'

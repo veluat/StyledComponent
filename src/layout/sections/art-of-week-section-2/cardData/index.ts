@@ -1,1 +1,1 @@
-export * from './../cardData/CardData'
+export * from './CardData.tsx'

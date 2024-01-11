@@ -1,1 +1,1 @@
-export * from './../icon/Icon'
+export * from './Icon.tsx'

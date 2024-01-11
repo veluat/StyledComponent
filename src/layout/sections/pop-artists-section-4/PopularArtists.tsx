@@ -1,11 +1,10 @@
-import React from 'react';
+import {Container} from "@components/container";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Title} from "@components/title";
+import {PrimaryButton} from "@components/primary-button";
+import {PopImages} from "@layout/sections/pop-artists-section-4/pop-images";
+import popData from "@layout/sections/pop-artists-section-4/pop-data/PopData.ts";
 import styled from "styled-components";
-import {PopImages} from "./pop-images";
-import popData from "./pop-data/PopData";
-import {PrimaryButton} from "../../../components/primary-button";
-import {Container} from "../../../components/container";
-import {FlexWrapper} from "../../../components/flex-wrapper";
-import {Title} from "../../../components/title";
 
 export const PopularArtists = () => {
 

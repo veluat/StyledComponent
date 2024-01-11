@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {theme} from "../../assets";
+import {theme} from "@assets/style/Theme.ts";
 
 export const Container = styled.section`
   max-width: 1512px;

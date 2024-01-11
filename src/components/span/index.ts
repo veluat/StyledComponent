@@ -1,1 +1,1 @@
-export * from './../span/Span'
+export * from './Span.tsx'

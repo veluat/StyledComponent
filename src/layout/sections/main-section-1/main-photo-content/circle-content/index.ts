@@ -1,1 +1,1 @@
-export * from './CircleContent'
+export * from './CircleContent.tsx'

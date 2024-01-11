@@ -1,1 +1,1 @@
-export * from './../logo/Logo'
+export * from './Logo.tsx'

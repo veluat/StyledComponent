@@ -1,1 +1,1 @@
-export * from './../copyright/Copyright'
+export * from './Copyright.tsx'

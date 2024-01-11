@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from "styled-components";
-import {Span} from "../span";
-import {FlexWrapper} from "../flex-wrapper";
+import {FlexWrapper} from "@components/flex-wrapper";
+import {Span} from "@components/span";
 
 type ImagesContainerProps = {
     width: string;

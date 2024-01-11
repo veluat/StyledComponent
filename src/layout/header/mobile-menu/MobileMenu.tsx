@@ -1,7 +1,6 @@
-import React from 'react';
 import styled, {css} from "styled-components";
-import {ItemType} from "../Header";
-import {theme} from "../../../assets/style/Theme";
+import {theme} from "@assets/style/Theme.ts";
+import {ItemType} from "@layout/header";
 
 export const MobileMenu = (props: { menuItems: Array<ItemType> }) => {
     return (

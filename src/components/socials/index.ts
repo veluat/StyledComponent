@@ -1,1 +1,1 @@
-export * from './../socials/Socials'
+export * from './Socials.tsx'
