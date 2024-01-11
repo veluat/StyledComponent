@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/creative-art-layout/static/css/main.197ad438.css",
+    "main.js": "/creative-art-layout/static/js/main.483a2607.js",
+    "static/media/BgImage.svg": "/creative-art-layout/static/media/BgImage.cc4944d4491af2c09a9c.svg",
+    "static/media/ava-4.svg": "/creative-art-layout/static/media/ava-4.17c2952be024d63d0ac243737de10887.svg",
+    "static/media/ava-2.svg": "/creative-art-layout/static/media/ava-2.596a5644e327453a75b678d6840e20f9.svg",
+    "static/media/ava-3.svg": "/creative-art-layout/static/media/ava-3.095ed2b4e9141e4e65c6a75a0467cf05.svg",
+    "static/media/ava-1.svg": "/creative-art-layout/static/media/ava-1.05c32801981b4f91da27e69452752ef3.svg",
+    "static/media/section-4-3.webp": "/creative-art-layout/static/media/section-4-3.31c6f7cb2650ead49bfa.webp",
+    "static/media/section-4-5.webp": "/creative-art-layout/static/media/section-4-5.92c11ba6e0d39245ad2e.webp",
+    "static/media/section-4-4.webp": "/creative-art-layout/static/media/section-4-4.11973b0ac6f8f6cef4a2.webp",
+    "static/media/section-5-2.webp": "/creative-art-layout/static/media/section-5-2.56be0c693247533b227e.webp",
+    "static/media/section-1.webp": "/creative-art-layout/static/media/section-1.9eab4322d57d22f1d4ae.webp",
+    "static/media/section-4-2.webp": "/creative-art-layout/static/media/section-4-2.3014f4086ab60aab67b1.webp",
+    "static/media/section-5-1.webp": "/creative-art-layout/static/media/section-5-1.a56a880951f2c8d21bdb.webp",
+    "static/media/section-4-1.webp": "/creative-art-layout/static/media/section-4-1.0664c502ac547ca293d2.webp",
+    "static/media/section-3-2.webp": "/creative-art-layout/static/media/section-3-2.7c1a6002bd4475710a72.webp",
+    "static/media/section-2-2.webp": "/creative-art-layout/static/media/section-2-2.3c96df2c0e6dd1faa89c.webp",
+    "static/media/section-2-1.webp": "/creative-art-layout/static/media/section-2-1.c953aa1e5aeb297148cc.webp",
+    "static/media/section-3-1.webp": "/creative-art-layout/static/media/section-3-1.dd286f604a485bcef3c6.webp",
+    "static/media/ava-5.svg": "/creative-art-layout/static/media/ava-5.7d11e511f9a3c943e5cc6877c9abead7.svg",
+    "static/media/icons-sprite.svg": "/creative-art-layout/static/media/icons-sprite.e30b886ab0c289774284844b9248cb61.svg",
+    "index.html": "/creative-art-layout/index.html",
+    "main.197ad438.css.map": "/creative-art-layout/static/css/main.197ad438.css.map",
+    "main.483a2607.js.map": "/creative-art-layout/static/js/main.483a2607.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.197ad438.css",
+    "static/js/main.483a2607.js"
+  ]
+}
