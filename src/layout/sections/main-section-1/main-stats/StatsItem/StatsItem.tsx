@@ -8,12 +8,14 @@ type FrameProps = {
     title: string
     primary: string[]
     spanText: string
+    isLastItem: boolean
+    isFirstItem: boolean
 }
 
 export const StatsItem = (props: FrameProps) => {
-    const {title, primary, spanText} = props
+    const {title, primary, spanText, ...rest} = props
     return (
-        <StyledFrame>
+        <StyledFrame {...rest}>
             <FlexWrapper direction={"column"} gap='16px'>
                 <Title title={title} primary={primary}/>
                 <Span spanText={spanText}/>
@@ -22,13 +24,13 @@ export const StatsItem = (props: FrameProps) => {
     );
 };
 
-const StyledFrame = styled.div`
-  :nth-child(-n + 2) {
-    padding-right: 24px;
-    border-right: 1px solid ${theme.colors.primary}
-  }
-
-  :first-child {
-    padding-right: 29px;
-  }
+const StyledFrame = styled.div<{
+    isLastItem: boolean,
+    isFirstItem: boolean
+}
+>`
+  display: flex;
+  gap: 94px;
+  padding-right: ${(props) => (props.isFirstItem ? "29px" : "24px")};
+  border-right: ${(props) => (props.isLastItem ? "none" : `1px solid ${theme.colors.primary}`)};
 `
