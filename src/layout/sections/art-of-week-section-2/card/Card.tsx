@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from "styled-components";
 import {CardDataType} from "@layout/sections/art-of-week-section-2/cardData";
 import {CardItem} from "@layout/sections/art-of-week-section-2/cardItem";
+import {StyledCard} from "@layout/sections/art-of-week-section-2/card/Card.styled.ts";
 
 type CardProps = {
     width: string
@@ -34,22 +34,3 @@ export const Card: React.FC<CardProps> = ({
         </StyledCard>
     );
 };
-
-const StyledCard = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-
-  flex-basis: 343px;
-
-  width: 100%;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-
-  @media screen and (max-width: 1120px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-grow: 1;
-    width: 100%;
-  }
-`

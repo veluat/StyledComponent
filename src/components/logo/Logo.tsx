@@ -1,25 +1,12 @@
-import {useEffect, useState} from 'react';
 import {theme} from "@assets/style/Theme.ts";
 import {FlexWrapper} from "@components/flex-wrapper";
 import {Icon} from "@components/icon";
-import styled from "styled-components";
+import {LogoWrapper} from "@components/logo/Logo.styled.ts";
+import {useResponsiveSize} from "@/hook";
 
 
 export const Logo = () => {
-    const [isMobile, setIsMobile] = useState(window.matchMedia(theme.media.tablet).matches);
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia(theme.media.tablet);
-        const handleMediaQueryChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
-            setIsMobile(e.matches);
-        };
-
-        mediaQuery.addEventListener('change', handleMediaQueryChange);
-        return () => {
-            mediaQuery.removeEventListener('change', handleMediaQueryChange);
-        };
-    }, []);
-
+    const isMobile = useResponsiveSize(theme.media.tablet);
     return (
         <LogoWrapper>
             <a href="">
@@ -36,25 +23,3 @@ export const Logo = () => {
         </LogoWrapper>
     );
 };
-
-const LogoWrapper = styled.div`
-  position: relative;
-
-  h3 {
-    transform: translateY(10px);
-    font-family: 'Canela Text Trial', sans-serif;
-    font-size: 32px;
-    line-height: 38px;
-    color: #FFFFFD;
-    font-weight: 500;
-
-    @media ${theme.media.tablet} {
-      transform: translateY(-10px);
-      font-size: 24px;
-    }
-
-    span {
-      color: #D3F85A
-    }
-  }
-`;

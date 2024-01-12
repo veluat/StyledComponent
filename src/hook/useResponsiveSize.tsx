@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useResponsiveSize = (breakpoint: number) => {
+export const useResponsiveSize = (breakpoint: number | string) => {
     const [width, setWidth] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -11,5 +11,5 @@ export const useResponsiveSize = (breakpoint: number) => {
         return () => window.removeEventListener('resize', handleWindowResize)
     }, [])
 
-    return width <= breakpoint
+    return width <= +breakpoint
 }

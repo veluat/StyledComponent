@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import {StyledSpanContent} from "@components/span/Span.styled.ts";
 
 type SpanType = {
     spanText?: string
@@ -16,16 +16,3 @@ export const Span = (props: SpanType) => {
         </StyledSpanContent>
     );
 };
-
-const StyledSpanContent = styled.span<{
-    fontWeight?: string
-    fontSize?: string
-    lineHeight?: string
-    color?: string
-}>`
-  font-family: Inter, sans-serif;
-  font-weight: ${props => props.fontWeight || '400px'};
-  font-size: ${props => props.fontSize || '16px'};
-  line-height: ${props => props.lineHeight || '26px'};
-  color: ${props => props.color || '#FFFFFD'};
-`

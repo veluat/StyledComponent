@@ -1,6 +1,5 @@
-import styled from "styled-components";
 import {FlexWrapper} from "@components/flex-wrapper";
-import {theme} from "@assets/style/Theme.ts";
+import {CopyrightStyled} from "@layout/footer/copyright/Copyright.styled.ts";
 
 export const Copyright = () => {
     return (
@@ -13,11 +12,3 @@ export const Copyright = () => {
         </FlexWrapper>
     );
 };
-
-const CopyrightStyled = styled.small`
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: ${theme.colors.fontWhite};
-`

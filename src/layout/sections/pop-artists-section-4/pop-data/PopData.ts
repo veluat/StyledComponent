@@ -9,7 +9,6 @@ import ava3 from '@assets/images/pop-artists/ava-3.svg'
 import ava4 from '@assets/images/pop-artists/ava-4.svg'
 import ava5 from '@assets/images/pop-artists/ava-5.svg'
 
-
 const PopData: PopType[] = [
     {
         id: 1,

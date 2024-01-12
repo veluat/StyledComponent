@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
 import {FooterMenu} from "@layout/footer/footerMenu";
+import {FooterMenuItemStyled} from "@layout/footer/footerMenuItem/FooterMenuItem.styled.ts";
 
 type PropsType = {
     title: string
@@ -17,9 +17,3 @@ export const FooterMenuItem: React.FC<PropsType> = ({title, items}) => {
         </FooterMenuItemStyled>
     );
 };
-
-const FooterMenuItemStyled = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-`

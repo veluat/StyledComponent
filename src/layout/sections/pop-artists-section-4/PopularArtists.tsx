@@ -7,7 +7,6 @@ import popData from "@layout/sections/pop-artists-section-4/pop-data/PopData.ts"
 import styled from "styled-components";
 
 export const PopularArtists = () => {
-
     const title = 'Popular '
     const title2 = 'On This Week'
     const primary = ['', `Artists `]

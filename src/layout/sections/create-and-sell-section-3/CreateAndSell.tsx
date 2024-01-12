@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import img from "@assets/images/create-and-sell/section-3-1.webp"
 import img1 from "@assets/images/create-and-sell/section-3-2.webp"
 import {Photo} from "@components/photo";
@@ -7,6 +6,12 @@ import {TextContent} from "@components/text-content";
 import {Container} from "@components/container";
 import {Title} from "@components/title";
 import {PrimaryButton} from "@components/primary-button";
+import {
+    FirstPhoto,
+    PhotoGroup,
+    SecondPhoto,
+    TextContentStyled
+} from "@layout/sections/create-and-sell-section-3/CreateAndSell.styled.ts";
 
 export const CreateAndSell = () => {
 
@@ -41,28 +46,3 @@ export const CreateAndSell = () => {
         </Container>
     );
 };
-
-const TextContentStyled = styled.div`
-  width: 426px;
-  height: 280px;
-`
-
-const PhotoGroup = styled.div`
-  width: 740px;
-  height: 559px;
-  position: relative;
-`
-
-const FirstPhoto = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-`;
-
-const SecondPhoto = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-`;

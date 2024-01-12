@@ -1,10 +1,10 @@
-import styled from "styled-components";
 import {FlexWrapper} from "@components/flex-wrapper";
 import {Container} from "@components/container";
 import {Title} from "@components/title";
 import {PrimaryButton} from "@components/primary-button";
 import {Card} from "@layout/sections/art-of-week-section-2/card";
 import cardData from "@layout/sections/art-of-week-section-2/cardData/CardData.tsx";
+import {CardContainer} from "@layout/sections/art-of-week-section-2/ArtOfWeekSection.styled.ts";
 
 export const ArtOfWeekSection = () => {
     const title = ' and Super Unique Art of This';
@@ -28,18 +28,3 @@ export const ArtOfWeekSection = () => {
         </Container>
     );
 };
-
-const CardContainer = styled.div`
-  margin-top: 64px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
-
-  @media screen and (max-width: 1410px) {
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-  }
-`;

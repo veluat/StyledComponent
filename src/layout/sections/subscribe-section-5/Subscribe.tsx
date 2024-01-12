@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import img from "@assets/images/subscribe/section-5-1.webp";
 import img1 from "@assets/images/subscribe/section-5-2.webp";
 import {Container} from "@components/container";
@@ -7,8 +6,13 @@ import {Photo} from "@components/photo";
 import {Title} from "@components/title";
 import {TextContent} from "@components/text-content";
 import {PrimaryButton} from "@components/primary-button";
-import {theme} from "@assets/style/Theme.ts";
-
+import {
+    ContentBox,
+    FirstPhoto,
+    ImgBox,
+    InputStyled,
+    SecondPhoto
+} from "@layout/sections/subscribe-section-5/Subscribe.styled.ts";
 
 export const Subscribe = () => {
     const title = 'Subscribe And '
@@ -41,41 +45,3 @@ export const Subscribe = () => {
         </Container>
     );
 };
-
-const ImgBox = styled.div`
-  max-width: 630px;
-  width: 100%;
-  height: 458px;
-  position: relative;
-`
-
-const FirstPhoto = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: rotate(-12deg);
-`
-
-const SecondPhoto = styled.div`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-`
-
-const ContentBox = styled.div`
-  max-width: 520px;
-  width: 100%;
-  height: 288px;
-`
-
-const InputStyled = styled.input.attrs({title: 'text'})`
-  width: 516px;
-  min-height: 28px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid ${theme.colors.secondaryBg};
-  padding: 16px 24px;
-  background-color: ${theme.colors.secondaryBg};
-`

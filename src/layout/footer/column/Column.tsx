@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import {FooterMenuItem} from "@layout/footer/footerMenuItem";
 import {FooterMenuType} from "@layout/footer/footer-data";
+import {FooterMenuWrapper} from "@layout/footer/column/Column.styled.ts";
 
 type ColumnType = {
     menu: FooterMenuType[]
@@ -16,9 +16,3 @@ export const Column = (props: ColumnType) => {
         </FooterMenuWrapper>
     );
 };
-
-const FooterMenuWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 94px;
-`

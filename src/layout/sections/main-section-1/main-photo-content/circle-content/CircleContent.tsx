@@ -1,7 +1,6 @@
-import styled from "styled-components";
 import {Icon} from "@components/icon";
 import {useResponsiveSize} from "@/hook";
-import {theme} from "@assets/style/Theme.ts";
+import {Group, Star} from "@layout/sections/main-section-1/main-photo-content/circle-content/CircleContent.styled.ts";
 
 export const CircleContent = () => {
     const isMobile = useResponsiveSize(576)
@@ -20,18 +19,3 @@ export const CircleContent = () => {
     );
 }
 
-const Star = styled.div`
-  position: absolute;
-  top: 48%;
-  padding-left: 5px;
-
-    // @media ${theme.media.tablet} {
-  //   left: 0;
-  // }
-`
-
-const Group = styled.div`
-  position: absolute;
-  top: 37.3%;
-  left: -60px;
-`
