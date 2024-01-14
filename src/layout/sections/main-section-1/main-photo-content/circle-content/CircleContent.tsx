@@ -1,9 +1,10 @@
 import {Icon} from "@components/icon";
 import {useResponsiveSize} from "@/hook";
 import {Group, Star} from "@layout/sections/main-section-1/main-photo-content/circle-content/CircleContent.styled.ts";
+import {theme} from "@assets/style/Theme.ts";
 
 export const CircleContent = () => {
-    const isMobile = useResponsiveSize(576)
+    const isMobile = useResponsiveSize(theme.media.mobile)
 
     return (
         <>

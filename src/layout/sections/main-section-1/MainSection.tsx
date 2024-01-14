@@ -3,7 +3,7 @@ import {MainContent} from "@layout/sections/main-section-1/main-content";
 import {PhotoContent} from "@layout/sections/main-section-1/main-photo-content";
 import {MainData} from "@layout/sections/main-section-1/main-data";
 import {StatsLine} from "@layout/sections/main-section-1/main-stats/StatsLine";
-import styled from "styled-components";
+import {MainBox} from "@layout/sections/main-section-1/MainSection.styled.ts";
 
 export const MainSection = () => {
     return (
@@ -17,17 +17,5 @@ export const MainSection = () => {
     )
 }
 
-const MainBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-
-  @media screen and (max-width: 1410px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-`
 
 

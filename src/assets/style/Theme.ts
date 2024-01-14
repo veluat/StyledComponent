@@ -8,8 +8,8 @@ export const theme = {
     },
     padding: '92px 111px',
     media: {
+        desktop: 'screen and (min-width: 1512px)',
         tablet: 'screen and (max-width: 990px)',
-        mobile: 'screen and (max-width: 576px)',
-        desktop: 'screen and (min-width: 1512px)'
+        mobile: 'screen and (max-width: 576px)'
     }
 }

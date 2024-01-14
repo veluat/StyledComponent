@@ -4,7 +4,7 @@ import {FlexWrapper} from "@components/flex-wrapper";
 import {Photo} from "@components/photo";
 import {CircleContent} from "@layout/sections/main-section-1/main-photo-content/circle-content";
 import {Promotion} from "@layout/sections/main-section-1/main-photo-content/promotion";
-import {PhotoContentStyled} from "@layout/sections/main-section-1/PhotoContent.styled.ts";
+import {PhotoContentStyled} from "@layout/sections/main-section-1/main-photo-content/PhotoContent.styled.ts";
 
 type PhotoContentPropsType = {
     mainData: MainType
