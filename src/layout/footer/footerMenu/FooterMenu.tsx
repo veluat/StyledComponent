@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-scroll";
-import {FlexWrapper} from "@components/flex-wrapper";
+import {FooterMenuWrapper} from "@layout/footer/footerMenu/FooterMenu.styled.ts";
 
 type PropsType = {
     items: string[]
@@ -16,9 +16,9 @@ export const FooterMenu: React.FC<PropsType> = ({items}) => {
     })
     return (
         <ul>
-            <FlexWrapper direction='column' gap='8px'>
+            <FooterMenuWrapper>
                 {menuItems}
-            </FlexWrapper>
+            </FooterMenuWrapper>
         </ul>
     )
 }
