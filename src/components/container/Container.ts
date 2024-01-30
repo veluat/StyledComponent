@@ -9,6 +9,6 @@ export const Container = styled.section`
   padding: ${theme.padding};
 
   @media ${theme.media.mobile} {
-    padding: 60px 16px 40px;
+    padding: 40px 16px 40px;
   }
 `
