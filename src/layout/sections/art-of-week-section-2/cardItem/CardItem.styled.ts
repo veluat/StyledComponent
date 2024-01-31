@@ -10,7 +10,6 @@ export const CardItemStyled = styled.div`
   border-top: 1px solid ${theme.colors.primary};
   background-color: ${theme.colors.secondaryBg};
 
-
   @media ${theme.media.mobile} {
     max-width: 343px;
   }
