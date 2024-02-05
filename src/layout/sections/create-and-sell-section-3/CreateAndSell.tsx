@@ -7,23 +7,27 @@ import {Container} from "@components/container";
 import {Title} from "@components/title";
 import {PrimaryButton} from "@components/primary-button";
 import {
+    CreateAndSellWrapper,
     FirstPhoto,
     PhotoGroup,
     SecondPhoto,
     TextContentStyled
 } from "@layout/sections/create-and-sell-section-3/CreateAndSell.styled.ts";
+import {useResponsiveSize} from "@/hook";
+import {theme} from "@assets/style/Theme.ts";
 
 export const CreateAndSell = () => {
 
     const title = 'Create And Sell Your '
     const primary = ['', 'Best NFTs']
+    const isMobile = useResponsiveSize(theme.media.mobile)
 
     return (
         <Container id='best'>
-            <FlexWrapper justify='space-between' align='center'>
+            <CreateAndSellWrapper>
                 <TextContentStyled>
                     <FlexWrapper direction='column' justify='flex-start' align='flex-start'>
-                        <Title title={title} primary={primary} mainTitle={false}/>
+                        <Title title={title} primary={primary}/>
                         <TextContent
                             text={`Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}
                             width='426px'/>
@@ -34,7 +38,7 @@ export const CreateAndSell = () => {
                     </FlexWrapper>
                 </TextContentStyled>
 
-                <PhotoGroup>
+                <PhotoGroup isMobile={isMobile}>
                     <FirstPhoto>
                         <Photo img={img} width='410px' height='400px'/>
                     </FirstPhoto>
@@ -42,7 +46,7 @@ export const CreateAndSell = () => {
                         <Photo img={img1} width='410px' height='475px'/>
                     </SecondPhoto>
                 </PhotoGroup>
-            </FlexWrapper>
+            </CreateAndSellWrapper>
         </Container>
     );
 };
