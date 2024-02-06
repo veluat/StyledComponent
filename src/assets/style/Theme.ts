@@ -9,7 +9,10 @@ export const theme = {
     padding: '92px 111px',
     media: {
         desktop: 'screen and (min-width: 1512px)',
+        extraDesktop: 'screen and (max-width: 1200px)',
         tablet: 'screen and (max-width: 990px)',
-        mobile: 'screen and (max-width: 576px)'
+        extraTablet: 'screen and (max-width: 794px)',
+        mobile: 'screen and (max-width: 576px)',
+        extraMobile: 'screen and (max-width: 376px)'
     }
 }

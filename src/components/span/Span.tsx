@@ -6,6 +6,7 @@ type SpanType = {
     fontSize?: string
     lineHeight?: string
     color?: string
+    textAlign?: string
 }
 
 export const Span = (props: SpanType) => {
