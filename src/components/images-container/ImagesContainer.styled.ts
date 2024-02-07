@@ -4,12 +4,14 @@ export const StyledDiv = styled.div<{
     width: string;
     height: string;
     bg: string;
-    position?: string
+    position?: boolean
 }>`
-  width: ${props => props.width};
-  height: ${props => props.height};
+  max-width: ${props => props.width};
+  width: 100%;
+  max-height: ${props => props.height};
+  height: 100%;
   background-image: url(${props => props.bg});
-  background-position-y: -35px;
+  background-position: ${props => !props.position ? 'center -35px' : 'center top'};
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;

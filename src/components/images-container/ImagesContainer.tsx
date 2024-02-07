@@ -6,7 +6,7 @@ type ImagesContainerProps = {
     width: string;
     height: string;
     bg: string;
-    position?: string
+    position?: boolean
     spanText: string
     avatar: string
     id: number
@@ -23,7 +23,7 @@ export const ImagesContainer = (props: ImagesContainerProps) => {
                         <image xlinkHref={avatar}/>
                     </svg>
                     <FlexWrapper direction='column' gap='4px'>
-                        <Span spanText='Owner' fontSize='14px' lineHeight='22px' fontWeight='400'/>
+                        <Span spanText='Owner' fontSize='14px' lineHeight='22px' fontWeight='400' textAlign='start'/>
                         <Span
                             key={id}
                             spanText={spanText}
