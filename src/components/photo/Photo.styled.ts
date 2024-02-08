@@ -10,6 +10,7 @@ export const StyledPhoto = styled.img<{
     objectPosition?: string;
 }>`
   max-width: ${(props) => props.width};
+  width: 100%;
   max-height: ${(props) => props.height};
   object-fit: cover;
   object-position: ${(props) => props.objectPosition || 'top'};

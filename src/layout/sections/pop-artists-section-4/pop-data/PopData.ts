@@ -15,7 +15,7 @@ const PopData: PopType[] = [
         userName: 'Osvaldo Percy',
         avatar: ava1,
         bg: img1,
-        width: '300px',
+        width: '343px',
         height: '311px'
     },
     {
