@@ -1,7 +1,7 @@
 import {theme} from "@assets/style/Theme.ts";
 import styled from "styled-components";
 
-export const StyledButton = styled.a<{ width?: string, height?: string }
+export const StyledButton = styled.a<{ width?: string, height?: string}
 >`
   display: flex;
   align-items: center;

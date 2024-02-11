@@ -1,16 +1,19 @@
-import {StyledButton} from "@components/primary-button/PrimaryButton.styled.ts";
+import { StyledButton } from "@components/primary-button/PrimaryButton.styled.ts";
 
 type ButtonType = {
-    buttonName: string
-    width?: string
-    height?: string
-}
+    buttonName: string;
+    width?: string;
+    height?: string;
+    isHide?: boolean;
+};
 
 export const PrimaryButton = (props: ButtonType) => {
-    const {buttonName, ...rest} = props;
+    const { buttonName, isHide, ...rest } = props;
     return (
-        <StyledButton {...rest}>
-            {props.buttonName}
-        </StyledButton>
+        <>
+            {!isHide ? (
+                <StyledButton {...rest}>{buttonName}</StyledButton>
+            ) : null}
+        </>
     );
 };
