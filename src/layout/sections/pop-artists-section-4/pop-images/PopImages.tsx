@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImagesContainer} from "@components/images-container/ImagesContainer";
+import {ImagesContainer} from "@layout/sections/pop-artists-section-4/pop-images/images-container/ImagesContainer";
 import {PopType} from "@layout/sections/pop-artists-section-4/pop-data";
 import {PopGrid, PopGridItem} from "@layout/sections/pop-artists-section-4/pop-images/PopImages.styled.ts";
 import {useResponsiveSize} from "@/hook";

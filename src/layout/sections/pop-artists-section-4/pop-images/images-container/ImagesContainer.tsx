@@ -1,6 +1,6 @@
 import {FlexWrapper} from "@components/flex-wrapper";
 import {Span} from "@components/span";
-import {AbsoluteWrapper, GradientOverlay, StyledDiv} from "@components/images-container/ImagesContainer.styled.ts";
+import {AbsoluteWrapper, GradientOverlay, StyledDiv} from "@layout/sections/pop-artists-section-4/pop-images/images-container/ImagesContainer.styled.ts";
 
 type ImagesContainerProps = {
     width: string;
