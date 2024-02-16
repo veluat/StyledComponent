@@ -33,8 +33,8 @@ export const CardItem: React.FC<CardItemProps> = ({
         <CardItemStyled>
             <FlexWrapper direction="column" gap="24px">
                 <Photo img={backgroundImage}
-                       width={width}
-                       height={height}
+                       maxWidth={width}
+                       maxHeight={height}
                        radius={radius}
                        marginBottom={marginBottom}/>
 
