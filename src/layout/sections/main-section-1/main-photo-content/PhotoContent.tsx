@@ -13,7 +13,7 @@ export const PhotoContent: React.FC<PhotoContentPropsType> = ({mainData}) => {
     return (
         <PhotoContentStyled>
             <FlexWrapper wrap="wrap">
-                <Photo img={mainData.backgroundImage} width={'464px'} height={'544px'} radius={'24px'}/>
+                <Photo img={mainData.backgroundImage} maxWidth='464px' maxHeight='544px' radius='24px'/>
                 <CircleContent/>
             </FlexWrapper>
 

@@ -1,19 +1,24 @@
 import {StyledPhoto} from "@components/photo/Photo.styled.ts";
 
-type PhotoType = {
-    img: string;
-    width: string;
-    height: string;
-    radius?: string;
-    marginBottom?: string;
-    objectPosition?: string;
-};
-
 export const Photo = (props: PhotoType) => {
-    const {img, ...rest} = props;
+    const {img, alt, ...rest} = props;
     return (
         <>
-            <StyledPhoto src={img} {...rest} />
+            <StyledPhoto src={img} alt={alt} {...rest} />
         </>
-    );
+    )
+}
+
+type PhotoType = {
+    img: string;
+    width?: string;
+    maxWidth?: string;
+    height?: string;
+    maxHeight?: string;
+    radius?: string;
+    margin?: string;
+    marginBottom?: string;
+    objectPosition?: string;
+    alt?: string
 };
+
