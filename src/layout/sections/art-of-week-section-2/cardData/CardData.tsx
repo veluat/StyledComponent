@@ -2,7 +2,7 @@ import img1 from '@assets/images/art-of-week/section-2-1.webp'
 import img2 from '@assets/images/art-of-week/section-2-2.webp'
 import img3 from '@assets/images/art-of-week/section-2-3.webp'
 
-const CardData: CardDataType[] = [
+export const CardData: CardDataType[] = [
     {
         id: 1,
         title: 'Cyberpunk Cocomo',
@@ -21,10 +21,9 @@ const CardData: CardDataType[] = [
 ]
 
 // types
-    export type CardDataType = {
-        id: number
-        title: string
-        backgroundImage: string
-    }
+export type CardDataType = {
+    id: number
+    title: string
+    backgroundImage: string
+}
 
-export default CardData;
