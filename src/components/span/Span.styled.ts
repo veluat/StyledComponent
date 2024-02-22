@@ -12,5 +12,4 @@ export const StyledSpanContent = styled.span<{
   font-size: ${props => props.fontSize || '16px'};
   line-height: ${props => props.lineHeight || '26px'};
   color: ${props => props.color || '#FFFFFD'};
-  text-align: ${props => props.textAlign};
 `
