@@ -18,7 +18,6 @@ export const StyledHeader = styled.header`
   margin: 0 auto;
   height: 104px;
   padding: 28px 111px;
-  background-image: url('../../assets/images/bg-image/BgImage.svg');
   background-color: rgba(5, 7, 16, 0.95);
 
   @media ${theme.media.tablet} {
