@@ -18,12 +18,12 @@ export const ImagesContainer = (props: ImagesContainerProps) => {
         <StyledDiv width={width} height={height} bg={bg} position={position}>
             <GradientOverlay/>
             <AbsoluteWrapper>
-                <FlexWrapper gap='12px' justify='flex-start' align='center'>
+                <FlexWrapper gap='12px'>
                     <svg key={id} width='48px' height='48px'>
                         <image xlinkHref={avatar}/>
                     </svg>
                     <FlexWrapper direction='column' gap='4px'>
-                        <Span spanText='Owner' fontSize='14px' lineHeight='22px' fontWeight='400' textAlign='start'/>
+                        <Span spanText='Owner' fontSize='14px' lineHeight='22px' fontWeight='400'/>
                         <Span
                             key={id}
                             spanText={spanText}

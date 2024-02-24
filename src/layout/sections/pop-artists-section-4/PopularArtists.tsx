@@ -11,7 +11,7 @@ export const PopularArtists = () => {
     const title = 'Popular '
     const title2 = 'On This Week'
     const primary = ['', `Artists `]
-    const isHide = useResponsiveSize(1124)
+    const isHide = useResponsiveSize(1410)
 
     return (
         <Container id='popular'>
