@@ -26,11 +26,11 @@ export const StatsItem = (props: FrameProps) => {
 
 const StyledFrame = styled.div<{
     isLastItem: boolean,
-    isFirstItem: boolean
+    isFirstItem: boolean,
 }
 >`
   display: flex;
-  gap: 94px;
   padding-right: ${(props) => (props.isFirstItem ? "29px" : "24px")};
   border-right: ${(props) => (props.isLastItem ? "none" : `1px solid ${theme.colors.primary}`)};
+  
 `
