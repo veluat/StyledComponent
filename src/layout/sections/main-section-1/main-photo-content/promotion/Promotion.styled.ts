@@ -12,4 +12,9 @@ export const StyledPromotion = styled.div`
   bottom: 0;
   z-index: 2;
   box-shadow: 0 9px 50px rgba(23, 36, 65, 0.04);
+
+  @media screen and (max-width: 1128px) {
+    right: -33px;
+    bottom: -58px;
+  }
 `
