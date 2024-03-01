@@ -1,24 +1,21 @@
-import './App.css';
 import {Header} from "@layout/header";
-import {MainSection} from "@layout/sections/main-section-1";
-import {ArtOfWeekSection} from "@layout/sections/art-of-week-section-2";
+import {Main} from "@layout/sections/main-section-1";
+import {ArtOfWeek} from "@layout/sections/art-of-week-section-2";
+import {CreateAndSell} from "@layout/sections/create-and-sell-section-3";
 import {PopularArtists} from "@layout/sections/pop-artists-section-4";
 import {Subscribe} from "@layout/sections/subscribe-section-5";
 import {Footer} from "@layout/footer";
-import {CreateAndSell} from "@layout/sections/create-and-sell-section-3";
 
-function App() {
+export function App() {
     return (
-        <div className="App">
+        <div>
             <Header/>
-            <MainSection/>
-            <ArtOfWeekSection/>
+            <Main/>
+            <ArtOfWeek/>
             <CreateAndSell/>
             <PopularArtists/>
             <Subscribe/>
             <Footer/>
         </div>
-    );
+    )
 }
-
-export default App;
