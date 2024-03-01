@@ -1,16 +1,11 @@
 import React from 'react';
-import {Link} from "react-scroll";
-import {FooterMenuWrapper} from "@layout/footer/footerMenu/FooterMenu.styled.ts";
-
-type PropsType = {
-    items: string[]
-}
+import {FooterMenuWrapper} from "@layout/footer/footer-menu/FooterMenu.styled.ts";
 
 export const FooterMenu: React.FC<PropsType> = ({items}) => {
     const menuItems = items.map(item => {
         return (
             <li key={item}>
-                <Link to="#">{item}</Link>
+                <a href="#">{item}</a>
             </li>
         )
     })
@@ -21,4 +16,8 @@ export const FooterMenu: React.FC<PropsType> = ({items}) => {
             </FooterMenuWrapper>
         </ul>
     )
+}
+
+type PropsType = {
+    items: string[]
 }

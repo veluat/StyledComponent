@@ -1,11 +1,11 @@
 import {Photo} from "@components/photo";
-import img1 from "@assets/images/create-and-sell/section-3-1.webp";
-import img2 from "@assets/images/create-and-sell/section-3-2.webp";
+import img1 from "@assets/images/section-create-and-sell-3/section-3-1.webp";
+import img2 from "@assets/images/section-create-and-sell-3/section-3-2.webp";
 import {
     FirstPhoto,
     PhotoGroup,
     SecondPhoto
-} from "@layout/sections/create-and-sell-section-3/createAndSellPhoto/CreateAndSellPhoto.styled.ts";
+} from "@layout/sections/create-and-sell-section-3/create-and-sell-photo/CreateAndSellPhoto.styled.ts";
 
 export const CreateAndSellPhoto = () => {
     return (
@@ -14,7 +14,7 @@ export const CreateAndSellPhoto = () => {
                 <Photo img={img1}
                        maxWidth='410px'
                        maxHeight='400px'
-                       radius="24px"
+                       radius='24px'
                        objectPosition='center top'
                        alt='CreateAndSellImg-1'/>
             </FirstPhoto>
@@ -22,10 +22,10 @@ export const CreateAndSellPhoto = () => {
                 <Photo img={img2}
                        maxWidth='410px'
                        maxHeight='475px'
-                       radius="24px"
+                       radius='24px'
                        objectPosition='center'
                        alt='CreateAndSellImg-2'/>
             </SecondPhoto>
         </PhotoGroup>
-    );
+    )
 }

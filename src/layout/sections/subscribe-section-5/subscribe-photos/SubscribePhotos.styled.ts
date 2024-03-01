@@ -6,6 +6,7 @@ export const ImgBox = styled.div`
   width: 100%;
   height: 458px;
   position: relative;
+
   @media ${theme.media.tablet} {
     height: 400px;
   }
@@ -42,8 +43,8 @@ export const SecondPhoto = styled.div`
   bottom: 0;
   right: 0;
   z-index: 2;
-  
 `
+
 export const Img = styled.img`
   width: 100%;
   height: 100%;

@@ -6,7 +6,6 @@ export const ContentBox = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  
   max-width: 520px;
   width: 100%;
 `

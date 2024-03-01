@@ -14,6 +14,7 @@ export const SubscribeInputWrapper = styled.div`
     gap: 32px;
   }
 `
+
 export const InputStyled = styled.input.attrs({title: 'text'})`
   width: 100%;
   height: 54px;
