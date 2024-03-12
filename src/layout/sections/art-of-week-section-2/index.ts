@@ -1,1 +1,1 @@
-export * from './ArtOfWeekSection.tsx'
+export * from './ArtOfWeek.tsx'
