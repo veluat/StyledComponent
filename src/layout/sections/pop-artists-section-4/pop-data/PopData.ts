@@ -1,15 +1,15 @@
-import img1 from '@assets/images/pop-artists/section-4-1.webp'
-import img2 from '@assets/images/pop-artists/section-4-2.webp'
-import img3 from '@assets/images/pop-artists/section-4-3.webp'
-import img4 from '@assets/images/pop-artists/section-4-4.webp'
-import img5 from '@assets/images/pop-artists/section-4-5.webp'
-import ava1 from '@assets/images/pop-artists/ava-1.svg'
-import ava2 from '@assets/images/pop-artists/ava-2.svg'
-import ava3 from '@assets/images/pop-artists/ava-3.svg'
-import ava4 from '@assets/images/pop-artists/ava-4.svg'
-import ava5 from '@assets/images/pop-artists/ava-5.svg'
+import img1 from '@assets/images/section-pop-artists-4/section-4-1.webp'
+import img2 from '@assets/images/section-pop-artists-4/section-4-2.webp'
+import img3 from '@assets/images/section-pop-artists-4/section-4-3.webp'
+import img4 from '@assets/images/section-pop-artists-4/section-4-4.webp'
+import img5 from '@assets/images/section-pop-artists-4/section-4-5.webp'
+import ava1 from '@assets/images/section-pop-artists-4/ava-1.svg'
+import ava2 from '@assets/images/section-pop-artists-4/ava-2.svg'
+import ava3 from '@assets/images/section-pop-artists-4/ava-3.svg'
+import ava4 from '@assets/images/section-pop-artists-4/ava-4.svg'
+import ava5 from '@assets/images/section-pop-artists-4/ava-5.svg'
 
-const PopData: PopType[] = [
+export const PopData: PopType[] = [
     {
         id: 1,
         userName: 'Osvaldo Percy',
@@ -49,10 +49,9 @@ const PopData: PopType[] = [
         bg: img5,
         width: '410px',
         height: '652px'
-    },
+    }
 ]
 
-//types
 export type PopType = {
     id: number
     userName: string
@@ -61,5 +60,3 @@ export type PopType = {
     width: string
     height: string
 }
-
-export default PopData;

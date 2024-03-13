@@ -8,17 +8,18 @@ export const LogoWrapper = styled.div`
     transform: translateY(10px);
     font-family: 'Canela Text Trial', sans-serif;
     font-size: 32px;
-    line-height: 38px;
-    color: #FFFFFD;
+    line-height: 1.2;
+    color: ${theme.colors.fontWhite};
     font-weight: 500;
 
     @media ${theme.media.tablet} {
       transform: translateY(-10px);
       font-size: 24px;
+      font-weight: 700;
     }
 
     span {
-      color: #D3F85A
+      color: ${theme.colors.primary};
     }
   }
-`;
+`

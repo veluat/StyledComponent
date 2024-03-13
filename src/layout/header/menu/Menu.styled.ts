@@ -13,20 +13,15 @@ export const StyledMenu = styled.nav`
   }
 `
 
-export const ListItem = styled.li``;
+export const ListItem = styled.li`
+  a {
+    color: ${theme.colors.headerLink};
 
-export const LinkStyled = styled.span`
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: ${theme.colors.fontGray};
-  position: relative;
-
-  &:hover,
-  &:active {
-    color: ${theme.colors.fontWhite};
-    border-bottom: 1px solid ${theme.colors.primary};
-    padding-bottom: 3px;
+    &:hover,
+    &:active {
+      color: ${theme.colors.pureWhite};
+      border-bottom: 1px solid ${theme.colors.primary};
+      padding-bottom: 3px;
+    }
   }
-`;
+`

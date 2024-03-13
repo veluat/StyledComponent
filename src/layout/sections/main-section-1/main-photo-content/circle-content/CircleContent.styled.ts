@@ -1,27 +1,33 @@
 import styled from "styled-components";
-import {theme} from "@assets/style/Theme.ts";
 
 export const Star = styled.div`
   position: absolute;
-  top: 48%;
+  left: 10%;
+  top: 50%;
   padding-left: 5px;
 
-    @media ${theme.media.tablet} {
-     left: 0;
-   }
-
   @media screen and (max-width: 640px) {
-   top: 290px;
+    padding-left: 0;
+    left: 11%;
+  }
+
+  @media screen and (max-width: 576px) {
+    left: 8%;
   }
 `
 
 export const Group = styled.div`
   position: absolute;
-  top: 238px;
-  left: -60px;
+  left: -1%;
+  top: 39%;
   
   @media screen and (max-width: 640px) {
-    left: -25px;
-    top: 260px;
+    left: 5.5%;
+    top: 45.2%;
+  }
+  
+  @media screen and (max-width: 576px) {
+    left: -1%;
+    top: 42.3%;
   }
 `

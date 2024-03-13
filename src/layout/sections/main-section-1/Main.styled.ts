@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const MainBox = styled.div`
+export const MainWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
+  gap: 48px;
 
   @media screen and (max-width: 1410px) {
     flex-direction: column;

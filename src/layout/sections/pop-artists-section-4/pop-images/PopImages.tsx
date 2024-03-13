@@ -4,10 +4,6 @@ import {PopType} from "@layout/sections/pop-artists-section-4/pop-data";
 import {PopGrid, PopGridItem} from "@layout/sections/pop-artists-section-4/pop-images/PopImages.styled.ts";
 import {useResponsiveSize} from "@/hook";
 
-type PopImagesProps = {
-    popData: PopType[]
-}
-
 export const PopImages: React.FC<PopImagesProps> = ({popData}) => {
 const isTablet = useResponsiveSize(920)
     return (
@@ -30,4 +26,8 @@ const isTablet = useResponsiveSize(920)
             })}
         </PopGrid>
     )
+}
+
+type PopImagesProps = {
+    popData: PopType[]
 }

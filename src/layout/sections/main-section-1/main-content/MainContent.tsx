@@ -1,22 +1,28 @@
+import React from "react";
 import {Title} from "@components/title";
-import {TextContent} from "@components/text-content";
-import {FlexWrapper} from "@components/flex-wrapper";
-import {PrimaryButton} from "@components/primary-button";
-import {TextContentStyled} from "@layout/sections/main-section-1/main-content/MainContent.styled.ts";
+import {Description} from "@components/description";
+import {MainContentStyled} from "@layout/sections/main-section-1/main-content/MainContent.styled.ts";
+import {MainType} from "@layout/sections/main-section-1/main-data";
+import {StatsLine} from "@layout/sections/main-section-1/main-stats/Stats-line";
+import {ButtonBlock} from "@components/buttonBlock/ButtonBlock.tsx";
+import {useResponsiveSize} from "@/hook";
 
-export const MainContent = () => {
-    const title = 'Discover and Collect The Best NFTs'
+export const MainContent: React.FC<MainContentPropsType> = ({mainData, isHide}) => {
+    const isTablet = useResponsiveSize(990)
+
     return (
-        <TextContentStyled>
-            <FlexWrapper direction={"column"} justify={"flex-start"} align={"flex-start"} wrap="wrap">
-                <Title title={title} primary={[' Digital Art.']} mainTitle={true}/>
-                <TextContent
-                    text={`Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!`}/>
-            </FlexWrapper>
-            <FlexWrapper justify={"flex-start"} align='center' gap={'36px'} wrap="wrap">
-                <PrimaryButton buttonName={'Explore Now'} width='178px'/>
-                <a>Learn More</a>
-            </FlexWrapper>
-        </TextContentStyled>
-    );
+        <MainContentStyled>
+            <Title mainTitle
+                   title={<div>Discover and Collect The Best NFTs <span>Digital Art.</span></div>}/>
+            <Description
+                description="Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!"/>
+            <ButtonBlock buttonName='Explore Now' width='178px' centered={isTablet}/>
+            {!isHide && <StatsLine mainData={mainData}/>}
+        </MainContentStyled>
+    )
+}
+
+type MainContentPropsType = {
+    mainData: MainType
+    isHide: boolean
 }

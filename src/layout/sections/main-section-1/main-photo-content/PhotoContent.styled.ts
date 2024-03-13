@@ -1,29 +1,38 @@
 import styled from "styled-components";
+import {theme} from "@assets/style/Theme.ts";
 
 export const PhotoContentStyled = styled.div`
-  max-width: 575px;
+  width: 575px;
   height: 637px;
   position: relative;
-  flex-grow: 1;
-
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  
   &:before {
     content: '';
     position: absolute;
-    right: 236px;
-    bottom: 20px;
+    right: 170px;
+    bottom: -70px;
     width: 631px;
-    height: 458px;
-    background-image: radial-gradient(260px 260px, rgba(31, 65, 61, 1), rgba(31, 65, 61, 0));
+    height: 558px;
+    z-index: 0;
+    background-image: radial-gradient(52% 55.5%, rgba(31, 65, 61, 0.95), transparent);
   }
 
   &:after {
     content: '';
     position: absolute;
-    right: -33px;
-    bottom: -58px;
-    width: 352px;
+    right: -14%;
+    bottom: -12%;
+    width: 402px;
     height: 221px;
-    background-image: radial-gradient(65% 55%, rgba(26, 38, 82, 1), rgba(26, 38, 82, 0));
+    z-index: 0;
+    background-image: radial-gradient(53% 57%, rgba(26, 38, 82, 0.8), transparent);
+  }
+
+  @media ${theme.media.mobile} {
+    width: 343px;
+    height: 420px;
   }
 `
-

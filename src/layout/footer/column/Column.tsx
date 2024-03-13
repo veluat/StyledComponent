@@ -1,10 +1,6 @@
-import {FooterMenuItem} from "@layout/footer/footerMenuItem";
+import {FooterMenuItem} from "@layout/footer/footer-menu-item";
 import {FooterMenuType} from "@layout/footer/footer-data";
 import {FooterMenuWrapper} from "@layout/footer/column/Column.styled.ts";
-
-type ColumnType = {
-    menu: FooterMenuType[]
-}
 
 export const Column = (props: ColumnType) => {
     const {menu} = props
@@ -14,5 +10,9 @@ export const Column = (props: ColumnType) => {
                 return <FooterMenuItem key={el.id} title={el.title} items={el.items}/>
             })}
         </FooterMenuWrapper>
-    );
-};
+    )
+}
+
+type ColumnType = {
+    menu: FooterMenuType[]
+}

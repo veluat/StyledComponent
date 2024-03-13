@@ -6,4 +6,10 @@ export const TextContentStyled = styled.div`
   max-height: 280px;
   height: 100%;
   margin-bottom: 40px;
+
+  a {
+    &:hover {
+      transform: translate(0, -5%);
+    }
+  }
 `

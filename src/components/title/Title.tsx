@@ -1,25 +1,16 @@
-import {StyledH1, StyledH2, StyledSpan} from "@components/title/Title.styled.ts";
-
-type TitlePropsType = {
-    title: string
-    title2?: string
-    mainTitle?: boolean
-    primary: string[]
-    width?: string
-}
+import {H1Styled, H2Styled} from "@components/title/Title.styled.ts";
+import {ReactElement} from "react";
 
 export const Title = (props: TitlePropsType) => {
-    const {title, primary, title2, mainTitle, width, ...rest} = props;
+    const {width, mainTitle, title} = props;
     return (
-        mainTitle ?
-            <StyledH1>{title}
-                <StyledSpan>{primary}</StyledSpan>
-            </StyledH1>
-            : <StyledH2 width={width} {...rest}>
-                <StyledSpan>{primary[0]}</StyledSpan>
-                {title}
-                <StyledSpan>{primary[1]}</StyledSpan>
-                {title2}
-            </StyledH2>
-    );
-};
+        mainTitle ? <H1Styled> {title} </H1Styled> : <H2Styled width={width}> {title} </H2Styled>
+    )
+}
+
+type TitlePropsType = {
+    title: ReactElement
+    width?: string
+    mainTitle?: boolean
+}
+

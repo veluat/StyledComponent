@@ -31,7 +31,6 @@ export const FooterData: FooterType = {
   love. Enjoy it!`,
 }
 
-// types
 export type FooterSocialType = {
     id: number
     title: string

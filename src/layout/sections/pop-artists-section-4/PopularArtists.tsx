@@ -1,37 +1,35 @@
-import {Container} from "@components/container";
+import {SectionContainer} from "@components/section-container";
 import {FlexWrapper} from "@components/flex-wrapper";
 import {Title} from "@components/title";
-import {PrimaryButton} from "@components/primary-button";
 import {PopImages} from "@layout/sections/pop-artists-section-4/pop-images";
-import popData from "@layout/sections/pop-artists-section-4/pop-data/PopData.ts";
 import styled from "styled-components";
 import {useResponsiveSize} from "@/hook";
+import {PopData} from "@layout/sections/pop-artists-section-4/pop-data";
+import {Button} from "@components/button/Button.tsx";
 
 export const PopularArtists = () => {
-    const title = 'Popular '
-    const title2 = 'On This Week'
-    const primary = ['', `Artists `]
     const isHide = useResponsiveSize(1410)
 
     return (
-        <Container id='popular'>
+        <SectionContainer id='popular'>
             <FlexWrapper direction='column' gap={isHide ? '32px' : '64px'}>
                 <SectionHeader isHide={isHide}>
-                    <Title title={title} title2={title2} primary={primary} width={isHide ? '357px':'407px'}/>
-                    <PrimaryButton buttonName={'See All'} isHide={isHide}/>
+                    <Title title={<div>Popular <span>Artists</span> On This Week</div>}
+                           width={isHide ? '357px' : '407px'}/>
+                    <Button btnType='primary' buttonName='See All' isHide={isHide}/>
                 </SectionHeader>
-                <PopImages popData={popData}/>
+                <PopImages popData={PopData}/>
 
                 {isHide &&
                     <FlexWrapper justify='center'>
-                        <PrimaryButton buttonName={'See All'}/>
+                        <Button btnType='primary' buttonName='See All'/>
                     </FlexWrapper>}
             </FlexWrapper>
-        </Container>
-    );
-};
+        </SectionContainer>
+    )
+}
 
-const SectionHeader = styled.div<{isHide: boolean}>`
+const SectionHeader = styled.div<{ isHide: boolean }>`
   display: flex;
   flex-wrap: nowrap;
   justify-content: ${props => props.isHide ? 'center' : 'space-between'};

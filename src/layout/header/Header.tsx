@@ -1,13 +1,8 @@
 import {Menu} from "@layout/header/menu";
 import {Logo} from "@components/logo";
 import {MobileMenu} from "@layout/header/mobile-menu";
-import {PrimaryButton} from "@components/primary-button";
 import {StyledHeader} from "@layout/header/Header.styled.ts";
-
-export type ItemType = {
-    title: string
-    href: string
-}
+import {Button} from "@components/button/Button.tsx";
 
 const items: ItemType[] = [
     {title: 'Marketplace', href: 'home'},
@@ -22,7 +17,12 @@ export const Header = () => {
             <Logo/>
             <Menu menuItems={items}/>
             <MobileMenu menuItems={items}/>
-            <PrimaryButton buttonName='Contact' height='48px'/>
+            <Button btnType='primary' buttonName='Contact' height='48px'/>
         </StyledHeader>
-    );
-};
+    )
+}
+
+export type ItemType = {
+    title: string
+    href: string
+}

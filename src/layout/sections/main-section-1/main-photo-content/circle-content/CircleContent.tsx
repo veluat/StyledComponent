@@ -1,4 +1,4 @@
-import iconSprite from '@assets/images/svg/svg-sprite.svg'
+import iconSprite from '@assets/images/svg-sprite/svg-sprite.svg'
 import {useResponsiveSize} from "@/hook";
 import {Group, Star} from "@layout/sections/main-section-1/main-photo-content/circle-content/CircleContent.styled.ts";
 
@@ -26,6 +26,6 @@ export const CircleContent = () => {
                 </svg>
             </Group>
         </>
-    );
+    )
 }
 

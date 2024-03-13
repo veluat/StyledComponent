@@ -26,6 +26,7 @@ export const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
             justify-content: center;
             align-items: center;
           `}
+  
   ul {
     display: flex;
     gap: 40px;
@@ -34,11 +35,11 @@ export const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     flex-direction: column;
 
     a {
-      color: rgb(131, 131, 130, 1);
+      color: ${theme.colors.fontGray};
       font-size: 22px;
     }
   }
-`;
+`
 
 export const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
@@ -62,6 +63,7 @@ export const BurgerButton = styled.button<{ isOpen: boolean }>`
             css<{ isOpen: boolean }>`
               background-color: rgba(255, 255, 253, 0);
             `}
+    
     &::before {
       content: '';
       display: block;
@@ -94,9 +96,17 @@ export const BurgerButton = styled.button<{ isOpen: boolean }>`
               `}
     }
   }
-`;
+  
+  @media screen and (max-width: 700px) {
+    right: -50px;
+  }
 
-export const ListItem = styled.li``;
+  @media ${theme.media.mobile} {
+    right: -84px;
+  }
+`
+
+export const ListItem = styled.li``
 
 export const CustomLink = styled.a`
   font-family: Inter, sans-serif;
@@ -118,4 +128,4 @@ export const CustomLink = styled.a`
     border-bottom: 1px solid ${theme.colors.primary};
     padding-bottom: 3px;
   }
-`;
+`

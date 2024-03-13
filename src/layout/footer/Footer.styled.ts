@@ -32,7 +32,6 @@ export const FooterContentWrapper = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     padding: 24px 16px 40px;
-
   }
 `
 

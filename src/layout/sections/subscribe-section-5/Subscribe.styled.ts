@@ -10,6 +10,5 @@ export const SubscribeWrapper = styled.div`
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 96px;
   }
 `

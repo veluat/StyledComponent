@@ -10,9 +10,8 @@ export const PopGrid = styled.div`
   grid-template-rows: repeat(2, 310px);
 
   @media ${theme.media.tablet} {
-    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 310px);
-    margin-top: 0;
+    margin: 0 auto;
   }
 `
 
