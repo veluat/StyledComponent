@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {theme} from "@assets/style/Theme.ts";
 
 export const PhotoContentStyled = styled.div`
-  width: 575px;
+  width: 568px;
   height: 637px;
   position: relative;
   display: flex;

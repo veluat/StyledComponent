@@ -10,4 +10,8 @@ export const StatsItemWrap = styled.div<{
   display: flex;
   padding-right: ${(props) => (props.isFirstItem ? "28px" : props.isLastItem ? "0" : "24px")};
   border-right: ${(props) => (props.isLastItem ? "none" : `1px solid ${theme.colors.primary}`)};
+  
+  h2 {
+    font-family: Inter sans-serif;
+  }
 `

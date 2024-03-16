@@ -9,9 +9,9 @@ import {theme} from "@assets/style/Theme.ts";
 export const PromotionStatus: React.FC<PromotionStatusPropsType> = ({title, value}) => {
     return (
         <PromotionStatusWrap>
-            <Span spanValue={title} color={theme.colors.primary} fontSize='14px' fontWeight='500'/>
+            <Span spanValue={title} color={theme.colors.primary}/>
             <FlexWrapper align='center' gap='12px'>
-                <Span spanValue={value} fontSize='700' lineHeight='20px'/>
+                <h5>{value}</h5>
             </FlexWrapper>
         </PromotionStatusWrap>
     )

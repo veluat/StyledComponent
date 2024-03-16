@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Star = styled.div`
   position: absolute;
   left: 10%;
-  top: 50%;
+  top: 45.5%;
   padding-left: 5px;
 
   @media screen and (max-width: 640px) {
@@ -19,7 +19,7 @@ export const Star = styled.div`
 export const Group = styled.div`
   position: absolute;
   left: -1%;
-  top: 39%;
+  top: 35%;
   
   @media screen and (max-width: 640px) {
     left: 5.5%;

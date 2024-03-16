@@ -8,6 +8,7 @@ import {useResponsiveSize} from "@/hook";
 
 export const PhotoContent: React.FC<PhotoContentPropsType> = ({mainData}) => {
     const isMobile = useResponsiveSize(576)
+
     return (
         <PhotoContentStyled>
             <Photo img={mainData.backgroundImage}

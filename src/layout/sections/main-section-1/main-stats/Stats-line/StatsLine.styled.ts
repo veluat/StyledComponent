@@ -5,6 +5,7 @@ export const StatsLineWrap = styled.div<{gap: string
 }>`
   max-width: 509px;
   width: 100%;
+  height: 92px;
   margin-top: 72px;
   display: flex;
   justify-content: space-between;
