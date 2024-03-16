@@ -19,7 +19,7 @@ export const InputStyled = styled.input.attrs({title: 'text'})`
   width: 100%;
   height: 54px;
   padding: 16px 24px;
-  ${font({weight: 400, color: 'rgba(255, 255, 253, 0.7)'})};
+  ${font({weight: 400, color: `${theme.colors.headerLink}`})};
   border-radius: 8px;
   border: 1px solid ${theme.colors.secondaryBg};
   background-color: ${theme.colors.secondaryBg};

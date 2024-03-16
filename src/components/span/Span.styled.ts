@@ -11,6 +11,6 @@ export const StyledSpanValue = styled.span<{
   font-family: Inter, sans-serif;
   font-weight: ${props => props.fontWeight || '400px'};
   font-size: ${props => props.fontSize || '16px'};
-  line-height: ${props => props.lineHeight || '26px'};
+  line-height: ${props => props.lineHeight || '1.6'};
   color: ${props => props.color || `${theme.colors.fontWhite}`};
 `

@@ -26,13 +26,15 @@ export const CardItem: React.FC<CardsItemProps & CardDataType> = ({
                                                                       endingTime,
                                                                       backgroundImage,
                                                                       id
-}) => {
+                                                                  }) => {
+/*
     const isMobile = useResponsiveSize(576)
+*/
     const isPoint = useResponsiveSize(620)
 
     return (
         <CardItemStyled>
-            <FlexWrapper direction="column" gap='24px'>
+            <FlexWrapper direction="column" gap='18px'>
                 <CardImage>
                     <Photo
                         img={backgroundImage}
@@ -44,7 +46,7 @@ export const CardItem: React.FC<CardsItemProps & CardDataType> = ({
 
                 <CardTitle>
                     <FlexWrapper justify="space-between">
-                        <h3>{title}</h3>
+                        <h4>{title}</h4>
                         <CardPrice>
                             <FlexWrapper align='center' gap='4px'>
                                 <Icon IconTitle='doubleArrow'/>
@@ -59,9 +61,13 @@ export const CardItem: React.FC<CardsItemProps & CardDataType> = ({
                         <StatusCardBlock title='Ending In' endingTime={endingTime}/>
                         <Button btnType='outlined'
                                 buttonName='Place A Bid'
-                                width={isMobile ? '168px' : '178px'}/>
+                                width='168px'
+                                height='48px'
+                            /*width={isMobile ? '168px' : '178px'}*/
+                        />
                     </FlexWrapper>
                 </CardFullness>
+
             </FlexWrapper>
         </CardItemStyled>
     )

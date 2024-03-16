@@ -7,8 +7,8 @@ export const StyledButton = styled.button<StyledButtonPropsType>`
     weight: 700,
     lineHeight: 1.2,
     Fmax: 16,
-    Fmin: 16,
-  })}
+    Fmin: 16
+  })};
   border-radius: 8px;
   cursor: pointer;
 
@@ -33,7 +33,7 @@ export const StyledButton = styled.button<StyledButtonPropsType>`
   ${({btnType}) =>
           btnType === 'primary' &&
           css<StyledButtonPropsType>`
-            width: ${props => props.width || '134px'};
+            width: ${props => props.width || '143px'};
 
             @media ${theme.media.tablet} {
               display: ${props => props.height ? "none" : 'inline'};
