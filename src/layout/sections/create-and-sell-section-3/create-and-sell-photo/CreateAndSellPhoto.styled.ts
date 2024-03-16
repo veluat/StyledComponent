@@ -2,6 +2,8 @@ import styled from "styled-components";
 import {theme} from "@assets/style/Theme.ts";
 
 export const PhotoGroup = styled.div`
+  display: flex;
+  align-items: center;
   max-width: 740px;
   width: 100%;
   height: 559px;
