@@ -13,12 +13,11 @@ export const ImagesContainer = (props: ImagesContainerProps) => {
                         <image xlinkHref={avatar}/>
                     </svg>
                     <FlexWrapper direction='column' gap='4px'>
-                        <Span spanValue='Owner' fontSize='14px' lineHeight='22px' fontWeight='400'/>
+                        <Span spanValue='Owner' fontSize='14px'/>
                         <Span
                             key={id}
                             spanValue={spanText}
-                            fontSize='16px'
-                            lineHeight='20px'
+                            lineHeight='1.25'
                             fontWeight='700'
                         />
                     </FlexWrapper>

@@ -30,6 +30,6 @@ export const GradientOverlay = styled.div`
 
 export const AbsoluteWrapper = styled.div`
   position: absolute;
-  bottom: 24px;
+  bottom: 20px;
   left: 24px;
 `

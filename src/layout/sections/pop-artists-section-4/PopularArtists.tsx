@@ -16,7 +16,7 @@ export const PopularArtists = () => {
                 <SectionHeader isHide={isHide}>
                     <Title title={<div>Popular <span>Artists</span> On This Week</div>}
                            width={isHide ? '357px' : '307px'}/>
-                    <Button btnType='primary' buttonName='See All' isHide={isHide}/>
+                    <Button btnType='primary' buttonName='See All' isHide={isHide} width='134px'/>
                 </SectionHeader>
                 <PopImages popData={PopData}/>
 
@@ -34,7 +34,7 @@ const SectionHeader = styled.div<{ isHide: boolean }>`
   width: 100%;
   height: 116px;
   margin-left: 31.5px;
-  margin-top: -25px;
+  margin-top: -5px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: ${props => props.isHide ? 'center' : 'space-between'};
