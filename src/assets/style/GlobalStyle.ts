@@ -12,6 +12,33 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  @font-face {
+    font-family: 'Canela Trial';
+    src: url('./../../assets/fonts/Canela-Regular.eot?') format('eot');
+    src: url('./../../assets/fonts/Canela-Regular.woff2?') format('woff2');
+    src: url('./../../assets/fonts/Canela-Regular.ttf?') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Canela Trial';
+    src: url('./../../assets/fonts/Canela-Medium.eot?') format('eot');
+    src: url('./../../assets/fonts/Canela-Medium.woff2?') format('woff2');
+    src: url('./../../assets/fonts/Canela-Medium.ttf?') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Canela Trial';
+    src: url('./../../assets/fonts/Canela-Bold.eot?') format('eot');
+    src: url('./../../assets/fonts/Canela-Bold.woff2?') format('woff2');
+    src: url('./../../assets/fonts/Canela-Bold.ttf?') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
   body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -64,7 +91,7 @@ export const GlobalStyle = createGlobalStyle`
 
   h1 {
     ${font({
-      family: "'Canela Text Trial', sans-serif",
+      family: "'Canela Trial', sans-serif",
       weight: 500,
       lineHeight: 1.2,
       Fmax: 64,
@@ -74,7 +101,7 @@ export const GlobalStyle = createGlobalStyle`
 
   h2 {
     ${font({
-      family: "'Canela Text Trial', sans-serif",
+      family: "'Canela Trial', sans-serif",
       weight: 500,
       lineHeight: 1.2,
       Fmax: 48,
