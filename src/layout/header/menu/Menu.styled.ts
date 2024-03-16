@@ -2,10 +2,12 @@ import styled from "styled-components";
 import {theme} from "@assets/style/Theme.ts";
 
 export const StyledMenu = styled.nav`
+  max-width: 435px;
+  width: 100%;
+  
   ul {
     display: flex;
-    gap: 30px;
-    justify-items: center;
+    gap: 40px;
   }
 
   @media ${theme.media.tablet} {
@@ -14,6 +16,7 @@ export const StyledMenu = styled.nav`
 `
 
 export const ListItem = styled.li`
+  
   a {
     color: ${theme.colors.headerLink};
 

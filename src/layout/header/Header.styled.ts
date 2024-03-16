@@ -14,13 +14,13 @@ export const StyledHeader = styled.header`
   align-items: center;
   max-width: 1512px;
   width: 100%;
-  min-height: 100%;
   margin: 0 auto;
   height: 104px;
   padding: 28px 111px;
   background-color: rgba(5, 7, 16, 0.95);
 
   @media ${theme.media.tablet} {
-    padding: 40px 16px 60px;
+    padding-left: 16px;
+    padding-top: 40px;
   }
 `
