@@ -10,10 +10,10 @@ export const SubscribePhotos = () => {
     return (
         <ImgBox>
             <FirstPhoto>
-                <Img src={img1} alt="SubscribeImg-1"/>
+                <Img src={img1} alt="SubscribeImg-1" position='left 2px top -42px'/>
             </FirstPhoto>
             <SecondPhoto>
-                <Img src={img2} alt="SubscribeImg-2"/>
+                <Img src={img2} alt="SubscribeImg-2" position='top -2px'/>
             </SecondPhoto>
         </ImgBox>
     )

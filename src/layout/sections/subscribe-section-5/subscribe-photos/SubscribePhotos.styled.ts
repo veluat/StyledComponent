@@ -22,12 +22,12 @@ export const ImgBox = styled.div`
 
 export const FirstPhoto = styled.div`
   max-width: 410px;
-  width: 65%;
+  width: 95%;
   max-height: 376px;
-  height: 82%;
+  height: 84%;
   border-radius: 20px;
   position: absolute;
-  bottom: 30px;
+  bottom: 42px;
   left: 30px;
   z-index: 1;
   transform: rotate(-11.16deg);
@@ -37,7 +37,7 @@ export const SecondPhoto = styled.div`
   max-width: 282px;
   width: 45%;
   max-height: 348px;
-  height: 76%;
+  height: 78%;
   border-radius: 16px;
   position: absolute;
   bottom: 0;
@@ -45,10 +45,10 @@ export const SecondPhoto = styled.div`
   z-index: 2;
 `
 
-export const Img = styled.img`
+export const Img = styled.img<{position: string}>`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: ${props => props.position};
   border-radius: inherit;
 `
