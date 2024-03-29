@@ -1,11 +1,11 @@
 import React from "react";
-import {StyledButton} from "@components/button/Button.styled.ts";
+import {S} from "@components/button/Button.styled.ts";
 
 export const Button: React.FC<BtnPropsType> = ({isHide, btnType, buttonName, ...rest}) => {
     return (
         <>
             {!isHide ? (
-                <StyledButton btnType={btnType} {...rest} >{buttonName}</StyledButton>
+                <S.Button btnType={btnType} {...rest} >{buttonName}</S.Button>
             ) : null}
         </>
     )
