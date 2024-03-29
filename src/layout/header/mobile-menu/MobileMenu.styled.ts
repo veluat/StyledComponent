@@ -1,13 +1,13 @@
 import styled, {css} from "styled-components";
 import {theme} from "@assets/style/Theme.ts";
 
-export const StyledMobileMenu = styled.nav`
+export const MobileMenu = styled.nav`
   display: none;
 
   @media ${theme.media.tablet} {
     display: block;
   }
-`;
+`
 
 export const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
@@ -109,23 +109,31 @@ export const BurgerButton = styled.button<{ isOpen: boolean }>`
 export const ListItem = styled.li``
 
 export const CustomLink = styled.a`
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: ${theme.colors.fontGray};
-  position: relative;
-  text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: ${theme.colors.fontGray};
+    position: relative;
+    text-align: center;
 
-  &:hover {
-    color: ${theme.colors.fontWhite};
-    border-bottom: 1px solid ${theme.colors.primary};
-    padding-bottom: 3px;
-  }
+    &:hover {
+        color: ${theme.colors.fontWhite};
+        border-bottom: 1px solid ${theme.colors.primary};
+        padding-bottom: 3px;
+    }
 
-  &:active {
-    color: ${theme.colors.fontWhite};
-    border-bottom: 1px solid ${theme.colors.primary};
-    padding-bottom: 3px;
-  }
+    &:active {
+        color: ${theme.colors.fontWhite};
+        border-bottom: 1px solid ${theme.colors.primary};
+        padding-bottom: 3px;
+    }
 `
+
+export const S = {
+    MobileMenu,
+    MobileMenuPopup,
+    BurgerButton,
+    ListItem,
+    CustomLink
+}

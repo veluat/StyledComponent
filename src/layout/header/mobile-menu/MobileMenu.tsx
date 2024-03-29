@@ -1,29 +1,30 @@
+import React, {useState} from "react";
 import {ItemType} from "@layout/header";
-import {
-    BurgerButton,
-    CustomLink,
-    ListItem,
-    MobileMenuPopup,
-    StyledMobileMenu
-} from "@layout/header/mobile-menu/MobileMenu.styled.ts";
+import {S} from "@layout/header/mobile-menu/MobileMenu.styled.ts";
 
-export const MobileMenu = (props: { menuItems: Array<ItemType> }) => {
+export const MobileMenu: React.FC<{ menuItems: Array<ItemType> }> = ({menuItems}) => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const onBurgerBtnClick = () => {
+        setMenuIsOpen(!menuIsOpen)
+    }
+
     return (
-        <StyledMobileMenu>
-            <BurgerButton isOpen={false}>
+        <S.MobileMenu>
+            <S.BurgerButton onClick={onBurgerBtnClick} isOpen={menuIsOpen}>
                 <span></span>
-            </BurgerButton>
-            <MobileMenuPopup isOpen={false}>
+            </S.BurgerButton>
+
+            <S.MobileMenuPopup onClick={() => setMenuIsOpen(false)} isOpen={menuIsOpen}>
                 <ul>
-                    {props.menuItems.map((item, index) => {
+                    {menuItems.map((item, index) => {
                         return (
-                            <ListItem key={index}>
-                                <CustomLink href={item.href}>{item.title}</CustomLink>
-                            </ListItem>
-                        );
+                            <S.ListItem key={index}>
+                                <S.CustomLink href={item.href}>{item.title}</S.CustomLink>
+                            </S.ListItem>
+                        )
                     })}
                 </ul>
-            </MobileMenuPopup>
-        </StyledMobileMenu>
+            </S.MobileMenuPopup>
+        </S.MobileMenu>
     )
 }
