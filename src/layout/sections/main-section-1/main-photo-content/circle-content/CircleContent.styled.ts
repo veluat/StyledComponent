@@ -6,7 +6,7 @@ export const Star = styled.div`
   top: 45.5%;
   padding-left: 5px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 620px) {
     padding-left: 0;
     left: 11%;
   }
@@ -21,9 +21,7 @@ export const Group = styled.div`
   left: -1%;
   top: 35%;
   
-  @media screen and (max-width: 640px) {
-    left: 5.5%;
-    top: 45.2%;
+  @media screen and (max-width: 620px) {
   }
   
   @media screen and (max-width: 576px) {

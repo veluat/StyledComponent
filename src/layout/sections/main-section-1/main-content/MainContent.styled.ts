@@ -4,7 +4,7 @@ import {theme} from "@assets/style/Theme.ts";
 export const MainContentStyled = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 548px;
+  max-width: 544px;
   width: 100%;
   max-height: 585px;
   height: 100%;

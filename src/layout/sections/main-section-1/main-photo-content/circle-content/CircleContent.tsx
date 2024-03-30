@@ -3,7 +3,7 @@ import {useResponsiveSize} from "@/hook";
 import {Group, Star} from "@layout/sections/main-section-1/main-photo-content/circle-content/CircleContent.styled.ts";
 
 export const CircleContent = () => {
-    const isMobile = useResponsiveSize(640)
+    const isMobile = useResponsiveSize(620)
     const idGroup = isMobile ? "group_small" : "group"
     return (
         <>
