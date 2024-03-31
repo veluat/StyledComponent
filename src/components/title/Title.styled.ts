@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {theme} from "@assets/style/Theme.ts";
 
 export const H1Styled = styled.h1`
-  max-width: 644px;
+  max-width: 544px;
   width: 100%;
   margin-top: -12px;
 

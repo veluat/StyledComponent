@@ -1,7 +1,8 @@
+import React from "react";
 import {Menu} from "@layout/header/menu";
 import {Logo} from "@components/logo";
 import {MobileMenu} from "@layout/header/mobile-menu";
-import {StyledHeader} from "@layout/header/Header.styled.ts";
+import {S} from "@layout/header/Header.styled.ts";
 import {Button} from "@components/button/Button.tsx";
 
 const items: ItemType[] = [
@@ -11,14 +12,14 @@ const items: ItemType[] = [
     {title: 'Collections', href: 'popular'},
 ]
 
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
-        <StyledHeader>
+        <S.Header>
             <Logo/>
             <Menu menuItems={items}/>
             <MobileMenu menuItems={items}/>
             <Button btnType='primary' buttonName='Contact' height='48px'/>
-        </StyledHeader>
+        </S.Header>
     )
 }
 
