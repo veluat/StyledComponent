@@ -11,5 +11,4 @@ export const SectionContainer = styled.section`
   @media ${theme.media.mobile} {
     padding: 40px 16px;
   }
-
 `

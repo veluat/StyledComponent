@@ -21,7 +21,7 @@ export const ArtOfWeek = () => {
 
                 <Cards
                     cardData={CardData}
-                    width='370px'
+                    width='360px'
                     height="340px"
                     radius="16px"
                 />
