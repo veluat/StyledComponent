@@ -15,8 +15,8 @@ export const PopularArtists = () => {
             <FlexWrapper direction='column' gap={isHide ? '32px' : '64px'}>
                 <SectionHeader isHide={isHide}>
                     <Title title={<div>Popular <span>Artists</span> On This Week</div>}
-                           width={isHide ? '357px' : '307px'}/>
-                    <Button btnType='primary' buttonName='See All' isHide={isHide} width='134px'/>
+                           width={isHide ? '357px' : '407px'}/>
+                    <Button btnType='primary' buttonName='See All' isHide={isHide}/>
                 </SectionHeader>
                 <PopImages popData={PopData}/>
 
@@ -34,9 +34,9 @@ const SectionHeader = styled.div<{ isHide: boolean }>`
   width: 100%;
   height: 116px;
   margin-left: 31.5px;
-  margin-top: -5px;
+  margin-top: -25px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: ${props => props.isHide ? 'center' : 'space-between'};
-  align-items: ${props => props.isHide ? '' : 'center'};
+  align-items: ${props => props.isHide ? '' : 'flex-end'};
 `

@@ -15,8 +15,8 @@ export const ArtOfWeek = () => {
             <FlexWrapper direction='column' gap={isHide ? '32px' : '64px'}>
                 <SectionHeader isHide={isHide}>
                     <Title title={<div><span>Amazing</span> and Super Unique Art of This <span>Week</span></div>}
-                           width={isMobile ? '357px' : '506px'}/>
-                    <Button btnType='primary' buttonName='See All' isHide={isHide} width='134px'/>
+                           width={isMobile ? '357px' : '600px'}/>
+                    <Button btnType='primary' buttonName='See All' isHide={isHide}/>
                 </SectionHeader>
 
                 <Cards
