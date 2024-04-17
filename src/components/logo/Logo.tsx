@@ -1,15 +1,15 @@
 import {FlexWrapper} from "@components/flex-wrapper";
 import {Icon} from "@components/icon";
-import {LogoWrapper} from "@components/logo/Logo.styled.ts";
+import {S} from "@components/logo/Logo.styled.ts";
 import {useResponsiveSize} from "@/hook";
 import {animateScroll as scroll} from 'react-scroll'
 
 export const Logo = () => {
-    const isMobile = useResponsiveSize(990);
+    const isMobile = useResponsiveSize(820);
     const onClickHandler = () => scroll.scrollToTop()
 
     return (
-        <LogoWrapper>
+        <S.LogoWrapper>
             <a onClick={onClickHandler}>
                 <FlexWrapper justify="flex-start" gap="8px">
                     <Icon
@@ -21,6 +21,6 @@ export const Logo = () => {
                     <h3>Creative<span>art</span></h3>
                 </FlexWrapper>
             </a>
-        </LogoWrapper>
+        </S.LogoWrapper>
     )
 }

@@ -14,15 +14,6 @@ export const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Canela Trial';
-    src: url('./../../assets/fonts/Canela-Regular.eot?') format('eot');
-    src: url('./../../assets/fonts/Canela-Regular.woff2?') format('woff2');
-    src: url('./../../assets/fonts/Canela-Regular.ttf?') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Canela Trial';
     src: url('./../../assets/fonts/Canela-Medium.eot?') format('eot');
     src: url('./../../assets/fonts/Canela-Medium.woff2?') format('woff2');
     src: url('./../../assets/fonts/Canela-Medium.ttf?') format('truetype');
@@ -30,17 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
-  @font-face {
-    font-family: 'Canela Trial';
-    src: url('./../../assets/fonts/Canela-Bold.eot?') format('eot');
-    src: url('./../../assets/fonts/Canela-Bold.woff2?') format('woff2');
-    src: url('./../../assets/fonts/Canela-Bold.ttf?') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-
   body {
-    margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -48,7 +29,6 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.fontWhite};
     line-height: 1.6;
-    min-width: 360px;
     overflow-x: hidden;
     height: 100%;
     width: 100%;

@@ -9,6 +9,7 @@ export const theme = {
         headerLink: 'rgba(255, 255, 253, 0.72)',
     },
     padding: '92px 111px',
+    transition: 'all .2s ease-in-out',
     media: {
         desktop: 'screen and (min-width: 1512px)',
         extraDesktop: 'screen and (max-width: 1200px)',

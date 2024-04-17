@@ -1,24 +1,24 @@
 import styled from "styled-components";
 import {theme} from "@assets/style/Theme.ts";
 
-export const H1Styled = styled.h1`
-  max-width: 544px;
-  width: 100%;
-  margin-top: -12px;
+const H1 = styled.h1`
+    max-width: 544px;
+    width: 100%;
+    margin-top: -12px;
 
-  @media ${theme.media.tablet} {
-    text-align: center;
-  }
+    @media ${theme.media.tablet} {
+        text-align: center;
+    }
 `
 
-export const H2Styled = styled.h2<{ width?: string }>`
-  max-width: ${props => props.width};
-  width: 100%;
-  margin-top: -7px;
+const H2 = styled.h2<{ width?: string }>`
+    max-width: ${props => props.width};
+    width: 100%;
+    margin-top: -7px;
 
-  @media ${theme.media.tablet} {
-    text-align: center;
-  }
+    @media ${theme.media.tablet} {
+        text-align: center;
+    }
 `
-
+export const S = {H1, H2}
 

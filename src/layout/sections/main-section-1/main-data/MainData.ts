@@ -6,9 +6,9 @@ export const MainData: MainType = {
     endingTime: '05:45:47',
     backgroundImage: mainBG,
     statistics: [
-        { id: 1, title: 'Art work', value: 8.9 },
-        { id: 2, title: 'Artist', value: 65 },
-        { id: 3, title: 'Collection', value: 87 },
+        {id: 1, title: 'Art work', value: 8.9},
+        {id: 2, title: 'Artist', value: 65},
+        {id: 3, title: 'Collection', value: 87},
     ],
 }
 

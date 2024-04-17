@@ -1,11 +1,11 @@
-import {DescriptionStyled} from "@components/description/Description.styled.ts";
+import {S} from "@components/description/Description.styled.ts";
 
 export const Description = (props: DescriptionPropsType) => {
     const {description, width, ...rest} = props
     return (
-        <DescriptionStyled width={width} {...rest}>
+        <S.Description width={width} {...rest}>
             {description}
-        </DescriptionStyled>
+        </S.Description>
     )
 }
 

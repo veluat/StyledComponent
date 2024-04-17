@@ -2,13 +2,7 @@ import React from 'react';
 import {FlexWrapper} from "@components/flex-wrapper";
 import {Photo} from "@components/photo";
 import {Icon} from "@components/icon";
-import {
-    CardFullness,
-    CardImage,
-    CardItemStyled,
-    CardPrice,
-    CardTitle
-} from "@layout/sections/art-of-week-section-2/cards/cards-item/CardItem.styled.ts";
+import {S} from "@layout/sections/art-of-week-section-2/cards/cards-item/CardItem.styled.ts";
 import {Button} from "@components/button/Button.tsx";
 import {useResponsiveSize} from "@/hook";
 import {CardDataType} from "@layout/sections/art-of-week-section-2/card-data";
@@ -26,44 +20,44 @@ export const CardItem: React.FC<CardsItemProps & CardDataType> = ({
                                                                       endingTime,
                                                                       backgroundImage,
                                                                       id
-}) => {
+                                                                  }) => {
     const isMobile = useResponsiveSize(576)
     const isPoint = useResponsiveSize(620)
 
     return (
-        <CardItemStyled>
+        <S.CardItemStyled>
             <FlexWrapper direction="column" gap='24px'>
-                <CardImage>
+                <S.CardImage>
                     <Photo
                         img={backgroundImage}
                         maxWidth={width}
                         maxHeight={id === 1 && isPoint ? '311px' : height}
                         radius={radius}
                     />
-                </CardImage>
+                </S.CardImage>
 
-                <CardTitle>
+                <S.CardTitle>
                     <FlexWrapper justify="space-between">
                         <h3>{title}</h3>
-                        <CardPrice>
+                        <S.CardPrice>
                             <FlexWrapper align='center' gap='4px'>
                                 <Icon IconTitle='doubleArrow'/>
                                 <h5>{price}{currency}</h5>
                             </FlexWrapper>
-                        </CardPrice>
+                        </S.CardPrice>
                     </FlexWrapper>
-                </CardTitle>
+                </S.CardTitle>
 
-                <CardFullness>
+                <S.CardFullness>
                     <FlexWrapper justify="space-between">
                         <StatusCardBlock title='Ending In' endingTime={endingTime}/>
                         <Button btnType='outlined'
                                 buttonName='Place A Bid'
                                 width={isMobile ? '168px' : '178px'}/>
                     </FlexWrapper>
-                </CardFullness>
+                </S.CardFullness>
             </FlexWrapper>
-        </CardItemStyled>
+        </S.CardItemStyled>
     )
 }
 

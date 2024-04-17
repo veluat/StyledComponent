@@ -1,16 +1,16 @@
 import React from 'react';
 import {ImagesContainer} from "@layout/sections/pop-artists-section-4/pop-images/images-container/ImagesContainer";
 import {PopType} from "@layout/sections/pop-artists-section-4/pop-data";
-import {PopGrid, PopGridItem} from "@layout/sections/pop-artists-section-4/pop-images/PopImages.styled.ts";
+import {S} from "@layout/sections/pop-artists-section-4/pop-images/PopImages.styled.ts";
 import {useResponsiveSize} from "@/hook";
 
 export const PopImages: React.FC<PopImagesProps> = ({popData}) => {
-const isTablet = useResponsiveSize(920)
+    const isTablet = useResponsiveSize(920)
     return (
-        <PopGrid>
+        <S.PopGrid>
             {popData.map(e => {
                 return (
-                    <PopGridItem>
+                    <S.PopGridItem>
                         <ImagesContainer
                             key={e.id}
                             width={e.width}
@@ -21,10 +21,10 @@ const isTablet = useResponsiveSize(920)
                             id={e.id}
                             position={isTablet}
                         />
-                    </PopGridItem>
+                    </S.PopGridItem>
                 )
             })}
-        </PopGrid>
+        </S.PopGrid>
     )
 }
 

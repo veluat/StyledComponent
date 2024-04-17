@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterMenuWrapper} from "@layout/footer/footer-menu/FooterMenu.styled.ts";
+import {S} from "@layout/footer/footer-menu/FooterMenu.styled.ts";
 
 export const FooterMenu: React.FC<PropsType> = ({items}) => {
     const menuItems = items.map(item => {
@@ -11,9 +11,9 @@ export const FooterMenu: React.FC<PropsType> = ({items}) => {
     })
     return (
         <ul>
-            <FooterMenuWrapper>
+            <S.FooterMenuWrapper>
                 {menuItems}
-            </FooterMenuWrapper>
+            </S.FooterMenuWrapper>
         </ul>
     )
 }

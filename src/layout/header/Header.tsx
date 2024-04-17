@@ -1,9 +1,13 @@
 import React from "react";
-import {Menu} from "@layout/header/menu";
+import {DesktopMenu} from "@layout/header/desktop-menu";
 import {Logo} from "@components/logo";
-import {MobileMenu} from "@layout/header/mobile-menu";
 import {S} from "@layout/header/Header.styled.ts";
 import {Button} from "@components/button/Button.tsx";
+import {useResponsiveSize} from "@/hook";
+import {BurgerMenu} from "@layout/header/burger-menu";
+import {Fade} from "react-awesome-reveal";
+import {useWindowScroll} from "@/hook/useWindowScroll.tsx";
+import {animateScroll as scroll} from 'react-scroll'
 
 const items: ItemType[] = [
     {title: 'Marketplace', href: 'home'},
@@ -13,12 +17,25 @@ const items: ItemType[] = [
 ]
 
 export const Header: React.FC = () => {
+    const isMobile = useResponsiveSize(990)
+    const isScrolledWidow = useWindowScroll()
+    const scrollToBottom = () => {
+        scroll.scrollToBottom()
+    }
     return (
-        <S.Header>
-            <Logo/>
-            <Menu menuItems={items}/>
-            <MobileMenu menuItems={items}/>
-            <Button btnType='primary' buttonName='Contact' height='48px'/>
+        <S.Header isScrolled={isScrolledWidow}>
+            <Fade delay={400} triggerOnce={true}>
+                <Logo/>
+            </Fade>
+            {isMobile ?
+                <BurgerMenu menuItems={items}/>
+                : <DesktopMenu menuItems={items}/>
+            }
+            <Fade delay={400} triggerOnce={true}>
+                <div onClick={scrollToBottom}>
+                    <Button btnType='primary' buttonName='Contact' height='48px'/>
+                </div>
+            </Fade>
         </S.Header>
     )
 }

@@ -1,13 +1,13 @@
-import {CopyrightStyled, CopyrightWrapper, LinkWrapper} from "@layout/footer/copyright/Copyright.styled.ts";
+import {S} from "@layout/footer/copyright/Copyright.styled.ts";
 
 export const Copyright = () => {
     return (
-        <CopyrightWrapper>
-            <CopyrightStyled>© Copyright 2023 - Creativeart</CopyrightStyled>
-            <LinkWrapper>
+        <S.CopyrightWrapper>
+            <S.Copyright>© Copyright 2023 - Creativeart</S.Copyright>
+            <S.LinkWrapper>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms & Conditions</a>
-            </LinkWrapper>
-        </CopyrightWrapper>
+            </S.LinkWrapper>
+        </S.CopyrightWrapper>
     );
 };

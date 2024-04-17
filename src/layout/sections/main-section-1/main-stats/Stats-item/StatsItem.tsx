@@ -1,19 +1,19 @@
 import {FlexWrapper} from "@components/flex-wrapper";
-import {StatsItemWrap} from "@layout/sections/main-section-1/main-stats/Stats-item/StatsItem.styled.ts";
+import {S} from "@layout/sections/main-section-1/main-stats/Stats-item/StatsItem.styled.ts";
 
 export const StatsItem = (props: FrameProps) => {
     const {stats, title, ...rest} = props
     return (
-        <StatsItemWrap {...rest}>
+        <S.StatsItemWrap {...rest}>
             <FlexWrapper direction='column' gap='16px'>
                 <h2>
                     <span>{stats}</span>K
                 </h2>
                 <p>{title}</p>
             </FlexWrapper>
-        </StatsItemWrap>
-    );
-};
+        </S.StatsItemWrap>
+    )
+}
 
 type FrameProps = {
     stats: string

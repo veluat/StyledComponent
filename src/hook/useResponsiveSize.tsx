@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 
 export const useResponsiveSize = (breakpoint: number | string) => {
     const [width, setWidth] = useState(window.innerWidth)

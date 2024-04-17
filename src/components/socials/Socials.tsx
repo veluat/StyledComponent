@@ -1,14 +1,14 @@
 import {FooterSocialType} from "@layout/footer/footer-data";
 import {FlexWrapper} from "@components/flex-wrapper";
 import {Icon} from "@components/icon";
-import {SocialWrap} from "@components/socials/Socials.styled.ts";
+import {S} from "@components/socials/Socials.styled.ts";
 
 export const Socials = (props: SocialsType) => {
     const {socialsTitle} = props
     return (
         <FlexWrapper gap='12px'>
             {socialsTitle.map((el, i) =>
-                <SocialWrap>
+                <S.SocialWrap>
                     <a href={el.link} target='_blank' rel='noreferrer' key={i}>
                         <Icon iconId={el.id}
                               IconTitle={el.title}
@@ -16,7 +16,7 @@ export const Socials = (props: SocialsType) => {
                               height='24px'
                               viewBox='0 0 24 24'/>
                     </a>
-                </SocialWrap>
+                </S.SocialWrap>
             )}
         </FlexWrapper>
     )

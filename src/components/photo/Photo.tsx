@@ -1,10 +1,10 @@
-import {StyledPhoto} from "@components/photo/Photo.styled.ts";
+import {S} from "@components/photo/Photo.styled.ts";
 
 export const Photo = (props: PhotoType) => {
     const {img, alt, ...rest} = props;
     return (
         <>
-            <StyledPhoto src={img} alt={alt} {...rest} />
+            <S.Photo src={img} alt={alt} {...rest} />
         </>
     )
 }
