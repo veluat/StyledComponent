@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# CREATIVE ART
+**A web development project for a simple and secure platform for purchasing and exchanging digital ART and NFTs.**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+:white_check_mark: Example of work with styled-components.
+___
+**Demo can be found** [here](https://veluat.github.io/creative-art-layout)
+___
+### The following libraries are included in the project
+* react
+    * react-dom
+    * react-awesome-reveal
+    * react-curved-text
+    * react-scroll
+* javascript
+* styled-components
+___
 
-Currently, two official plugins are available:
+![project](src/assets/images/read.me/art-1.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+:white_check_mark: Responsive and adaptive design:
+```css
+{max-width: 1512px;
+min-width: 375px;}
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![project](src/assets/images/read.me/art-2.gif)
