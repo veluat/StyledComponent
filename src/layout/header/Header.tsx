@@ -7,7 +7,6 @@ import {useResponsiveSize} from "@/hook";
 import {BurgerMenu} from "@layout/header/burger-menu";
 import {Fade} from "react-awesome-reveal";
 import {useWindowScroll} from "@/hook/useWindowScroll.tsx";
-import {animateScroll as scroll} from 'react-scroll'
 
 const items: ItemType[] = [
     {title: 'Marketplace', href: 'home'},
@@ -20,10 +19,11 @@ export const Header: React.FC = () => {
     const isMobile = useResponsiveSize(990)
     const isScrolledWidow = useWindowScroll()
     const scrollToBottom = () => {
-        scroll.scrollToBottom()
+        window.scroll(0, 0)
     }
     return (
         <S.Header isScrolled={isScrolledWidow}>
+            <S.HeaderContainer>
             <Fade delay={400} triggerOnce={true}>
                 <Logo/>
             </Fade>
@@ -36,6 +36,7 @@ export const Header: React.FC = () => {
                     <Button btnType='primary' buttonName='Contact' height='48px'/>
                 </div>
             </Fade>
+            </S.HeaderContainer>
         </S.Header>
     )
 }

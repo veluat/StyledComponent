@@ -12,9 +12,9 @@ const BurgerMenu = styled.nav`
 const BurgerMenuPopup = styled.div<{ isOpen: boolean }>`
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     z-index: 999999;
     background-color: rgba(9, 15, 29, 0.98);
     display: none;
@@ -42,7 +42,7 @@ const BurgerMenuPopup = styled.div<{ isOpen: boolean }>`
 const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: fixed;
     top: 40px;
-    right: 30px;
+    right: 18px;
     width: 30px;
     height: 30px;
     z-index: 9999999999;

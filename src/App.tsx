@@ -5,10 +5,11 @@ import {CreateAndSell} from "@layout/sections/create-and-sell-section-3";
 import {PopularArtists} from "@layout/sections/pop-artists-section-4";
 import {Subscribe} from "@layout/sections/subscribe-section-5";
 import {Footer} from "@layout/footer";
+import {S} from '@/App.styled.ts'
 
 export function App() {
     return (
-        <div>
+        <S.AppContainer>
             <Header/>
             <Main/>
             <ArtOfWeek/>
@@ -16,6 +17,6 @@ export function App() {
             <PopularArtists/>
             <Subscribe/>
             <Footer/>
-        </div>
+        </S.AppContainer>
     )
 }
