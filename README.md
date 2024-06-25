@@ -1,10 +1,8 @@
-# CREATIVE ART
-**A web development project for a simple and secure platform for purchasing and exchanging digital ART and NFTs.**
+# :art: Digital Art & NFT Marketplace Demo
+### The Digital Art & NFT Marketplace Demo is a project that showcases a simple and secure platform for purchasing and exchanging digital art and non-fungible tokens (NFTs).
 
-:white_check_mark: Example of work with styled-components.
-___
-**Demo can be found** [here](https://veluat.github.io/creative-art-layout)
-___
+### 🔗 Demo can be found [here](https://veluat.github.io/digital-art-layout)
+
 ### The following libraries are included in the project
 * react
     * react-dom
