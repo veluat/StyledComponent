@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/digital-art-layout',
+  base: 'digital-art-layout',
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, 'src') },
